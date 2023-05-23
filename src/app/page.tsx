@@ -1,6 +1,6 @@
 /* import Image from 'next/image' */
 "use client"
-import {Heading} from '../Components/Atoms'
+// import {Heading} from '../Components/Atoms'
 
 
 export default function Home() {
