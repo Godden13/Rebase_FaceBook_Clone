@@ -32,18 +32,17 @@ export  const FlexRow = styled("div")`
 display: flex;
 justify-content: space-between;
 width: 100%;
-`
-export  const FlexRow2 = styled(FlexRow)`
-display: flex;
-justify-content: space-between;
-width: 100%;
 gap: 10px;
-border: 1px solid blue; 
 `
+
 
 export  const Genders = styled.div `
 display: flex;
 justify-content: space-between;
+height: 35px;
+align-items: center;
+border-radius: 4px;
+padding: 0 5px;
 width: 100%;
-border: 1px solid red; 
+border: 1px solid grey; 
 `

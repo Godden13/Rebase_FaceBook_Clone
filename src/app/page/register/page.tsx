@@ -1,14 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
-import { Main } from '@/Components/Organism'
-import { FlexRow, FlexRow2, Genders, RightForm } from '@/Components/Molecules'
-import { Heading, Heading2, Input, Input2, Line, Ptag, Select, SignUpButton, SmallP } from '@/Components/Atoms'
+import { Bg, Main } from '@/Components/Organism'
+import { FlexRow, Genders, RightForm } from '@/Components/Molecules'
+import { Field, Heading, Heading2, Input, Input1, Input2, Line, Link3, Minor, Ptag, Round, Row, Select, SignUpButton, SmallP, SmallP2, Xmark } from '@/Components/Atoms'
 
 function Register() {
   return (
     <>
-      <Main>
+      <Bg>
         <RightForm>
+        <Xmark>boy</Xmark>
           <Heading2><b>Sign up</b></Heading2>
           <Ptag>It's Quick and easy</Ptag>
           <Line/>
@@ -16,10 +17,13 @@ function Register() {
           <Input2 placeholder='Fisrt name'></Input2>
           <Input2 placeholder='Last name'></Input2>
           </FlexRow>
-          <Input placeholder='Mobile number or email'></Input>
-          <Input placeholder='New password'></Input>
+          <Input1 placeholder='Mobile number or email'></Input1>
+          <Input1 placeholder='New password'></Input1>
           
-          <SmallP>Bithday</SmallP>
+          <Row>
+          <SmallP2>Birthday</SmallP2>  
+          <Round>?</Round>
+          </Row>  
           <FlexRow>
           <Select>
             <option>Jan</option>
@@ -86,7 +90,11 @@ function Register() {
           </Select>
           </FlexRow>
 
-<FlexRow2>
+         <Row>
+          <SmallP2>Gender</SmallP2>  
+          <Round>?</Round>
+          </Row>   
+<FlexRow>
           <Genders>
           <label>female</label>
           <input type="radio" />
@@ -101,15 +109,21 @@ function Register() {
           <label>custome</label>
           <input type="radio" />
           </Genders>
-</FlexRow2>      
-
-          <SmallP>People who use our service may have uploaded your contact information to Facebook. Learn more.</SmallP>
-          <SmallP>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies 
-          Policy. You may receive SMS Notifications from us and can opt out any time.</SmallP>
+</FlexRow>      
+<div>
+         <Row>
+          <Minor>People who use our service may have uploaded your contact information to Facebook.
+          <Link3>Learn more.</Link3></Minor> 
+        </Row> 
+          <Minor>By clicking Sign Up, you agree to our Terms,Privacy Policyand Cookies Policy.You may receive SMS Notifications from us and can opt out any time.</Minor>
+</div>
+          <Field>
           <SignUpButton>sing up</SignUpButton>
+          </Field>
+
         </RightForm>
 
-      </Main>
+      </Bg>
     </>
   )
 }

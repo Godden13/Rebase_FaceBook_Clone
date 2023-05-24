@@ -758,6 +758,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./src/app/page/register/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/page/register/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/page/register/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/app/page/register/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./src/app/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/page.tsx",
@@ -780,32 +806,6 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./src/app/page/register/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/app/page/register/page.tsx",
-        "name": "*",
-        "chunks": [
-          "app/page/register/page:static/chunks/app/page/register/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./src/app/page/register/page.tsx",
-        "name": "",
-        "chunks": [
-          "app/page/register/page:static/chunks/app/page/register/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./src/app/page/register/page.tsx",
-        "name": "default",
-        "chunks": [
-          "app/page/register/page:static/chunks/app/page/register/page.js"
         ],
         "async": false
       }
@@ -2546,6 +2546,44 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page/register/page.tsx": {
+      "id": "(app-client)/./src/app/page/register/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page/register/page.tsx#": {
+      "id": "(app-client)/./src/app/page/register/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page/register/page.tsx#default": {
+      "id": "(app-client)/./src/app/page/register/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/globals.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
     "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page.tsx": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "*",
@@ -2567,44 +2605,6 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page/register/page.tsx": {
-      "id": "(app-client)/./src/app/page/register/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page/register/page:static/chunks/app/page/register/page.js"
-      ],
-      "async": false
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page/register/page.tsx#": {
-      "id": "(app-client)/./src/app/page/register/page.tsx",
-      "name": "",
-      "chunks": [
-        "app/page/register/page:static/chunks/app/page/register/page.js"
-      ],
-      "async": false
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page/register/page.tsx#default": {
-      "id": "(app-client)/./src/app/page/register/page.tsx",
-      "name": "default",
-      "chunks": [
-        "app/page/register/page:static/chunks/app/page/register/page.js"
       ],
       "async": false
     }

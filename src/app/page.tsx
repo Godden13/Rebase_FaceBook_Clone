@@ -2,14 +2,19 @@
 "use client"
 import { Foot, Main, Middle } from '../Components/Organism'
 import { LeftHolder, RightForm, RightHolder } from '../Components/Molecules'
-import {Heading2, Heading, Input, LogInButton, Link, SignUpButton, Line, SmallP, Row, Link2} from '../Components/Atoms'
+import {Heading2, Heading, Input, LogInButton, Link, SignUpButton, Line, SmallP, Row, Link2, Field} from '../Components/Atoms'
+import Register from './page/register/page'
+import { useState } from 'react'
 
 
 
 
 export default function Home() {
+const [see, setSee] = useState(false)
+
   return (
     <Main>
+     {see && <Register/>}
       <Middle>
       <LeftHolder>
       <Heading>facebook</Heading>
@@ -20,9 +25,13 @@ export default function Home() {
       <Input placeholder='Email or phone number'></Input>
       <Input placeholder='Password'></Input>
       <LogInButton>Log in</LogInButton>
+      <Field>
       <Link2>forgot password?</Link2>
+      </Field>
       <Line/>
-      <SignUpButton>create new account</SignUpButton>
+      <Field>
+      <SignUpButton onClick={() => setSee(!see) }>create new account</SignUpButton>
+      </Field>
     </RightForm>
     <Row>
     <Link><b>Create a Page</b></Link> 
@@ -31,6 +40,7 @@ export default function Home() {
     </RightHolder>
     </Middle>
     <Foot/>
+    
     </Main>
   )
 }

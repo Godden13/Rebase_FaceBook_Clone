@@ -8,6 +8,15 @@ export const Ptag = styled.p`
   margin-bottom: 10px;
 `;
 
+export const Xmark = styled.p`
+  font-size: 14px;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+`;
+
 export const Link = styled("p")`
   font-size: 14px;
   color: #1c1e21;
@@ -20,13 +29,42 @@ export const Link = styled("p")`
 
 export const Link2 = styled(Link)`
   color: #1877f2;
+  font-size: 10px;
 `;
 
-export const SmallP = styled.p`
+export const Link3 = styled(Link2)`
+  color: #385898;
+  cursor: pointer;
+`;
+
+export const SmallP = styled("p")`
   font-size: 12px;
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
+`;
+
+export const SmallP2 = styled(SmallP)`
+  margin-bottom: -8px;
+`;
+
+export const Minor = styled(SmallP)`
+  font-size: 10px;
+  color: #777;
+`;
+
+export const Round = styled.button`
+  border-radius: 50%;
+  width: 10px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: grey;
+  padding: 1px;
+  border: none;
+  margin-bottom: -8px;
 `;
 
 export const Heading2 = styled.h2`
@@ -88,8 +126,17 @@ export const Input = styled("input")`
   width: 100%;
 `;
 
+export const Input1 = styled(Input)`
+  background: #f5f6f7;
+  font-size: 13px;
+  height: 35px;
+`;
+
 export const Input2 = styled(Input)`
   width: 180px;
+  background: #f5f6f7;
+  font-size: 13px;
+  height: 35px;
 `;
 
 export const Row = styled.div`
@@ -109,10 +156,16 @@ export const Select = styled.select`
   width: 100%;
   height: 35px;
   background: white;
-  color: gray;
+  color: black;
   padding-left: 5px;
   font-size: 14px;
-  border: none;
-  margin-left: 10px;
+  border: 1px solid grey;
+  border-radius: 4px;
+`;
 
+export const Field = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `;
