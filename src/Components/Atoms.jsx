@@ -1,7 +1,29 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Ptag = styled.p`
   font-size: 14px;
+  color: #1c1e21;
+  max-width: 600px;
+  margin-bottom: 10px;
+`;
+
+export const Link = styled("p")`
+  font-size: 14px;
+  color: #1c1e21;
+  max-width: 600px;
+  margin-bottom: 10px;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Link2 = styled(Link)`
+  color: #1877f2;
+`;
+
+export const SmallP = styled.p`
+  font-size: 12px;
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
@@ -15,7 +37,7 @@ export const Heading2 = styled.h2`
 `;
 
 export const Heading = styled.h1`
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 900;
   line-height: 32px;
   color: #1877f2;
@@ -39,7 +61,10 @@ export const SignUpButton = styled.button`
   color: #fff;
   font-size: 18px;
   height: 36px;
-  padding: 0 32px;
+  width: 170px;
+  &:hover {
+    background-color: #068b06;
+  }
 `;
 
 export const LogInput = styled.button`
@@ -52,7 +77,7 @@ export const LogInput = styled.button`
   border: 1px solid #dddfe2;
 `;
 
-export const Input = styled.input`
+export const Input = styled("input")`
   font-size: 17px;
   padding: 14px 16px;
   background: #fff;
@@ -60,11 +85,34 @@ export const Input = styled.input`
   height: 45px;
   border: 1px solid #dddfe2;
   border-radius: 5px;
+  width: 100%;
+`;
+
+export const Input2 = styled(Input)`
+  width: 180px;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `;
 
 export const Line = styled.hr`
   background: #f3f3f391;
   height: 1px;
   margin-bottom: 10px;
-  Width: 100%;
+  width: 100%;
+`;
+
+export const Select = styled.select`
+  width: 100%;
+  height: 35px;
+  background: white;
+  color: gray;
+  padding-left: 5px;
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+
 `;
