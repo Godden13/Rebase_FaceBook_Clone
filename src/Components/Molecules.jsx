@@ -8,7 +8,7 @@ export const LeftHolder = styled.div`
   justify-content: center;
 `;
 
-export const RightForm = styled.div`
+export const RightForm = styled.form`
   display: flex;
   flex-direction: column;
   background-color: #fff;

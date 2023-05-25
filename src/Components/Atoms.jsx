@@ -32,7 +32,7 @@ export const LogInButton = styled.button`
   width: 100%;
 `;
 
-export const SignUpButton = styled.button`
+export const SignUpButton = styled('button')`
   background-color: #00a400;
   border: none;
   border-radius: 6px;
