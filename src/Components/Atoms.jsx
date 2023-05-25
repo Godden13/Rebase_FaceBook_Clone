@@ -1,20 +1,26 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const Ptag = styled.p`
+export const Ptag = styled("P")`
   font-size: 14px;
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
 `;
 
+export const Ptag2 = styled(Ptag)`
+  margin-bottom: 0;
+  color: grey;
+  font-size: 12px;
+`;
+
 export const Xmark = styled.p`
-  font-size: 14px;
-  color: black;
+  font-size: 28px;
+  color: grey;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 5px;
+  margin: 3px 10px;
 `;
 
 export const Link = styled("p")`
@@ -22,6 +28,7 @@ export const Link = styled("p")`
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
@@ -29,7 +36,8 @@ export const Link = styled("p")`
 
 export const Link2 = styled(Link)`
   color: #1877f2;
-  font-size: 10px;
+  font-size: 16px;
+  cursor: pointer;
 `;
 
 export const Link3 = styled(Link2)`
@@ -49,8 +57,9 @@ export const SmallP2 = styled(SmallP)`
 `;
 
 export const Minor = styled(SmallP)`
-  font-size: 10px;
+  font-size: 12px;
   color: #777;
+  margin: 0;
 `;
 
 export const Round = styled.button`
@@ -67,18 +76,26 @@ export const Round = styled.button`
   margin-bottom: -8px;
 `;
 
-export const Heading2 = styled.h2`
-  font-size: 28px;
+export const Heading2 = styled("h2")`
+  font-size: 25px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
   font-weight: normal;
-  line-height: 32px;
-  max-width: 500px;
+  line-height: 28px;
+  max-width: 400px;
 `;
 
+export const Heading2p = styled(Heading2)`
+  margin-bottom: -10px;
+  font-size: 26px;
+`;
+
+
 export const Heading = styled.h1`
-  font-size: 60px;
+  font-size: 58px;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 32px;
-  color: #1877f2;
+  color: #0968e3;
 `;
 
 export const LogInButton = styled.button`
@@ -90,18 +107,20 @@ export const LogInButton = styled.button`
   font-size: 20px;
   padding: 8px 16px;
   width: 100%;
+  cursor: pointer;
 `;
 
 export const SignUpButton = styled.button`
-  background-color: #00a400;
+  background-color: #00a400cc;
+  cursor: pointer;
   border: none;
   border-radius: 6px;
   color: #fff;
   font-size: 18px;
   height: 36px;
-  width: 170px;
+  width: 180px;
   &:hover {
-    background-color: #068b06;
+    background-color: #00a400;
   }
 `;
 
@@ -116,7 +135,7 @@ export const LogInput = styled.button`
 `;
 
 export const Input = styled("input")`
-  font-size: 17px;
+  font-size: 14px;
   padding: 14px 16px;
   background: #fff;
   color: #1d2129;
@@ -129,19 +148,21 @@ export const Input = styled("input")`
 export const Input1 = styled(Input)`
   background: #f5f6f7;
   font-size: 13px;
-  height: 35px;
+  height: 31px;
 `;
 
 export const Input2 = styled(Input)`
-  width: 180px;
+  width: 100%;
   background: #f5f6f7;
   font-size: 13px;
-  height: 35px;
+  height: 31px;
 `;
 
 export const Row = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  width: 100%;
   gap: 5px;
 `;
 
@@ -152,15 +173,19 @@ export const Line = styled.hr`
   width: 100%;
 `;
 
-export const Select = styled.select`
+export const Select = styled("select")`
   width: 100%;
-  height: 35px;
+  height: 32px;
   background: white;
   color: black;
   padding-left: 5px;
   font-size: 14px;
   border: 1px solid grey;
   border-radius: 4px;
+`;
+
+export const Select2 = styled(Select)`
+  font-size: 12px;
 `;
 
 export const Field = styled.div`

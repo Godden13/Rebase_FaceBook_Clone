@@ -14,24 +14,25 @@ export const Bg = styled(Main)`
   height: 100vh;
   width:100%;
   position: absolute;
+  z-index: 1;
 `;
 
 export const Middle = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
-  margin-top: -95px;
+  width: 900px;
+  margin-top: -110px;
 `;
 
 export const Foot = styled.footer`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 130px;
+  height: 200px;
   background-color: #fff;
   width: 100%;
   position: absolute;
   bottom: 0;
-  Z-index: -1;
 `;
