@@ -2,7 +2,7 @@
 "use client"
 import { Bg, Main } from '@/Components/Organism'
 import { FlexRow, Genders, RightForm2 } from '@/Components/Molecules'
-import { Field, Heading2p, Input1, Input2, Line, Minor, Ptag, Ptag2, Round, Row, Select, Select2, SignUpButton, SmallP2, Xmark } from '@/Components/Atoms'
+import { Field, Heading2p, Href, Input1, Input2, Line, Link2, Minor, Ptag, Ptag2, Round, Row, Select, Select2, SignUpButton, SmallP2, Xmark } from '@/Components/Atoms'
 import { useState } from 'react'
 
 function Register() {
@@ -128,9 +128,9 @@ function Register() {
           }
 
           <div>
-            <Minor>People who use our service may have uploaded your contact information to Facebook.Learn more.</Minor>
+            <Minor>People who use our service may have uploaded your contact information to Facebook.<Href>Learn more.</Href></Minor>
             <Ptag />
-            <Minor>By clicking Sign Up, you agree to our Terms,Privacy Policyand Cookies Policy.You may receive SMS Notifications from us and can opt out any time.</Minor>
+            <Minor>By clicking Sign Up, you agree to our <Href>Terms,Privacy Policy</Href> and <Href>Cookies Policy</Href>.You may receive SMS Notifications from us and can opt out any time.</Minor>
           </div>
 
           <Field>

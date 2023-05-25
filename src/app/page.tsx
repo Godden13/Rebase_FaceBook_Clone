@@ -2,7 +2,7 @@
 "use client"
 import { Foot, Main, Middle } from '../Components/Organism'
 import { FootHolder, LeftHolder, RightForm, RightHolder } from '../Components/Molecules'
-import { Heading2, Heading, Input, LogInButton, Link, SignUpButton, Line, SmallP, Row, Link2, Field, Minor, Ptag } from '../Components/Atoms'
+import { Heading2, Heading, Input, LogInButton, Link, SignUpButton, Line, SmallP, Row, Link2, Field, Minor, Ptag, Row2, Row3, Line2, FootButton } from '../Components/Atoms'
 import { useState } from 'react'
 import Register from './modal/Modal'
 
@@ -38,10 +38,10 @@ export default function Home() {
               <SignUpButton onClick={(e) => signUp(e)}> <b>create new account</b></SignUpButton>
             </Field>
           </RightForm>
-          <Row>
+          <Row2>
             <Link><b>Create a Page</b></Link>
             <SmallP>for a celebrity, brand or business.</SmallP>
-          </Row>
+          </Row2>
         </RightHolder>
       </Middle>
       <Foot>
@@ -52,9 +52,10 @@ export default function Home() {
             <Minor>Fula</Minor> <Minor>Español (España)</Minor>
             <Minor>Deutsch</Minor> <Minor>Bahasa Indonesia</Minor> <Minor>Italiano</Minor>
             <Minor>Português (Brasil)</Minor><Minor>لعربية</Minor> <Minor>हिन्द</Minor><Minor>中文(简体)</Minor>
+            <FootButton>+</FootButton>
           </Row>
-          <Line />
-          <Row>
+          <Line2 />
+          <Row3>
             <Minor>Sign Up</Minor><Minor>LogIn</Minor>
             <Minor>Messenger</Minor> <Minor>FacebookLite</Minor>
             <Minor>Watch</Minor> <Minor>Places</Minor>
@@ -69,7 +70,7 @@ export default function Home() {
             <Minor>Cookies</Minor> <Minor>Adchoices</Minor>
             <Minor>Terms</Minor> <Minor>Help</Minor>
             <Minor>Contact Uploading & Non-UsersSettings</Minor>
-          </Row>
+          </Row3>
           <Ptag />
 
           <Minor>Meta © 2023</Minor>

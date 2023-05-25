@@ -12,7 +12,7 @@ export const Main = styled("div")`
 export const Bg = styled(Main)`
   background-color: #f0f2f5c4;
   height: 100vh;
-  width:100%;
+  width: 100%;
   position: absolute;
   z-index: 1;
 `;
@@ -22,7 +22,16 @@ export const Middle = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 900px;
-  margin-top: -110px;
+  margin-top: -200px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 425px) {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -80px;
+  }
 `;
 
 export const Foot = styled.footer`

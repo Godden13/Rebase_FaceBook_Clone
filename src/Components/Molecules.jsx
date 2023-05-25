@@ -28,6 +28,9 @@ export const RightForm = styled("form")`
   padding: 15px 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    @media only screen and (max-width: 375px) {
+    width: 318px;
+  }
 `;
 
 export const RightForm2 = styled(RightForm)`
@@ -36,14 +39,21 @@ export const RightForm2 = styled(RightForm)`
 `;
 
 export const FootHolder = styled(RightForm)`
-  width: 46%;
+  width: 50%;
   flex-wrap: wrap;
   max-width: 100% ;
-  border: 2px solid red;
+  background- color: transparent;
+  box-shadow: none;
   gap: 2px;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 0;
   border-radius: 0;
+    @media only screen and (max-width: 768px) {
+    width: 80%;
+  }
+    @media only screen and (max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const FlexRow = styled("div")`
