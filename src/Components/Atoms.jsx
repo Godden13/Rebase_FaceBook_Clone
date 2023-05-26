@@ -14,8 +14,10 @@ export const Ptag2 = styled(Ptag)`
   font-size: 12px;
 `;
 
-export const Xmark = styled.p`
+export const Xmark = styled.button`
   font-size: 28px;
+  background-color: #fff;
+  border: none;
   color: grey;
   position: absolute;
   top: 0;
@@ -46,7 +48,7 @@ export const Link3 = styled(Link2)`
 `;
 
 export const SmallP = styled("p")`
-  font-size: 12px;
+  font-size: 14px;
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
@@ -57,7 +59,7 @@ export const SmallP2 = styled(SmallP)`
 `;
 
 export const Minor = styled(SmallP)`
-  font-size: 12px;
+  font-size: 11px;
   color: #777;
   margin: 0;
 `;
@@ -77,7 +79,7 @@ export const Round = styled.button`
 `;
 
 export const Heading2 = styled("h2")`
-  font-size: 25px;
+  font-size: 23px;
   font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 28px;
@@ -89,9 +91,8 @@ export const Heading2p = styled(Heading2)`
   font-size: 26px;
 `;
 
-
 export const Heading = styled.h1`
-  font-size: 58px;
+  font-size: 56px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 32px;
@@ -110,7 +111,7 @@ export const LogInButton = styled.button`
   cursor: pointer;
 `;
 
-export const SignUpButton = styled.button`
+export const SignUpButton = styled("button")`
   background-color: #00a400cc;
   cursor: pointer;
   border: none;
@@ -122,6 +123,17 @@ export const SignUpButton = styled.button`
   &:hover {
     background-color: #00a400;
   }
+`;
+
+export const FootButton = styled.span`
+  background-color: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  color: #9e9e9e;
+  font-size: 16px;
+  padding: 2px 7px;
 `;
 
 export const LogInput = styled.button`
@@ -158,19 +170,30 @@ export const Input2 = styled(Input)`
   height: 31px;
 `;
 
-export const Row = styled.div`
+export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  gap: 5px;
+  gap: 8px;
 `;
 
-export const Line = styled.hr`
+export const Row3 = styled(Row)`
+  gap: 10px;
+`;
+
+export const Row2 = styled(Row)`
+  justify-content: center;
+`;
+
+export const Line = styled("hr")`
   background: #f3f3f391;
   height: 1px;
   margin-bottom: 10px;
   width: 100%;
+`;
+export const Line2 = styled(Line)`
+  margin-top: 10px;
 `;
 
 export const Select = styled("select")`
@@ -193,4 +216,13 @@ export const Field = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+`;
+
+export const Href = styled.a`
+  color: #385898;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;

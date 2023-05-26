@@ -758,6 +758,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./src/app/modal/Modal.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/modal/Modal.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/modal/Modal.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/app/modal/Modal.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./src/app/page.tsx": {
       "*": {
         "id": "(sc_client)/./src/app/page.tsx",
@@ -2517,6 +2543,30 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/godden/Desktop/programming/FullStack_Projects/rebase_facebook_clone/src/app/modal/Modal.tsx": {
+      "id": "(app-client)/./src/app/modal/Modal.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/godden/Desktop/programming/FullStack_Projects/rebase_facebook_clone/src/app/modal/Modal.tsx#": {
+      "id": "(app-client)/./src/app/modal/Modal.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/godden/Desktop/programming/FullStack_Projects/rebase_facebook_clone/src/app/modal/Modal.tsx#default": {
+      "id": "(app-client)/./src/app/modal/Modal.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
