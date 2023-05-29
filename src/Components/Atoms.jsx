@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Ptag = styled("P")`
-  font-size: 14px;
+  font-size: 13px;
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
