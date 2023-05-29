@@ -1,0 +1,347 @@
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+import { AiFillRead } from "react-icons/ai";
+import { FaLock, FaCaretDown } from "react-icons/fa";
+import { FcGallery } from "react-icons/fc";
+import { HiOutlineEmojiHappy } from "react-icons/hi";
+
+import { MdOndemandVideo } from "react-icons/md";
+
+export const Ptag = styled("p")`
+  font-size: 13px;
+  color: #1c1e21;
+  max-width: 600px;
+  margin-bottom: 10px;
+`;
+
+export const Ptag2 = styled(Ptag)`
+  margin-bottom: 0;
+  color: grey;
+  font-size: 14px;
+`;
+
+export const Xmark = styled.button`
+  font-size: 28px;
+  background-color: #fff;
+  border: none;
+  color: grey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 3px 10px;
+`;
+
+export const Link = styled("p")`
+  font-size: 14px;
+  color: #1c1e21;
+  max-width: 600px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Link2 = styled(Link)`
+  color: #1877f2;
+  font-size: 16px;
+  cursor: pointer;
+`;
+
+export const Link3 = styled(Link2)`
+  color: #385898;
+  cursor: pointer;
+`;
+
+export const SmallP = styled("p")`
+  font-size: 14px;
+  color: #1c1e21;
+  max-width: 600px;
+  margin-bottom: 10px;
+`;
+
+export const SmallP2 = styled(SmallP)`
+  margin-bottom: -8px;
+`;
+
+export const Minor = styled(SmallP)`
+  font-size: 11px;
+  color: #777;
+  margin: 0;
+`;
+
+export const Round = styled.button`
+  border-radius: 50%;
+  width: 10px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: grey;
+  padding: 1px;
+  border: none;
+  margin-bottom: -8px;
+`;
+
+export const Heading2 = styled("h2")`
+  font-size: 23px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  max-width: 400px;
+`;
+
+export const Heading2p = styled(Heading2)`
+  margin-bottom: -10px;
+  font-size: 26px;
+`;
+
+export const Heading = styled.h1`
+  font-size: 56px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  line-height: 32px;
+  color: #0968e3;
+`;
+
+export const LogInButton = styled.button`
+  background-color: #1877f2;
+  color: #fff;
+  margin: 0 0 8px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 8px 16px;
+  width: 100%;
+  cursor: pointer;
+`;
+
+export const SignUpButton = styled("button")`
+  background-color: #00a400cc;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  height: 36px;
+  width: 180px;
+  &:hover {
+    background-color: #00a400;
+  }
+`;
+
+export const FootButton = styled.span`
+  background-color: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+  color: #9e9e9e;
+  font-size: 16px;
+  padding: 2px 7px;
+`;
+
+export const LogInput = styled.button`
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 85%;
+  border-radius: 6px;
+  color: black;
+  background: #fff;
+  border: 1px solid #dddfe2;
+`;
+
+export const Input = styled("input")`
+  font-size: 14px;
+  padding: 14px 16px;
+  background: #fff;
+  color: #1d2129;
+  height: 45px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  width: 100%;
+`;
+
+export const Input1 = styled(Input)`
+  background: #f5f6f7;
+  font-size: 13px;
+  height: 31px;
+`;
+
+export const Input2 = styled(Input)`
+  width: 100%;
+  background: #f5f6f7;
+  font-size: 13px;
+  height: 31px;
+`;
+
+export const Row = styled("div")`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+`;
+
+export const Row3 = styled(Row)`
+  gap: 10px;
+`;
+
+export const Row2 = styled(Row)`
+  justify-content: center;
+`;
+
+export const Line = styled("hr")`
+  background: #f3f3f391;
+  height: 1px;
+  margin-bottom: 10px;
+  width: 100%;
+`;
+export const Line2 = styled(Line)`
+  margin-top: 10px;
+`;
+
+export const Select = styled("select")`
+  width: 100%;
+  height: 32px;
+  background: white;
+  color: black;
+  padding-left: 5px;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 4px;
+`;
+
+export const Select2 = styled(Select)`
+  font-size: 12px;
+`;
+
+export const Field = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const Href = styled.a`
+  color: #385898;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Read = styled(AiFillRead)`
+  font-size: 25px;
+  color: blue;
+`;
+
+export const Reels = styled(MdOndemandVideo)`
+  font-size: 25px;
+  color: red;
+`;
+
+export const Mind__input = styled.input`
+  width: 585px;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 78px;
+  padding: 1.9%;
+  border: none;
+  outline: none;
+  color: #fdfc47;
+  background-color: rgb(237, 237, 237);
+`;
+
+export const Proimg = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+`;
+
+export const ClosepopUp = styled.span`
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 200;
+  border-radius: 50%;
+  background-color: rgb(220, 220, 220);
+`;
+
+export const Lock = styled(FaLock)`
+  font-size: small;
+`;
+export const Downarrow = styled(FaCaretDown)`
+  font-size: small;
+`;
+
+export const Whappy = styled(HiOutlineEmojiHappy)`
+  font-size: small;
+`;
+
+export const Bac = styled(FcGallery)`
+  font-size: small;
+`;
+
+export const LockedDiv = styled.div`
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(169, 169, 169);
+  border-radius: 6px;
+  font-size: 18px;
+  gap: 2%;
+`;
+
+export const WrtieMind__status = styled.textarea`
+  width: 100%;
+  min-height: 100px;
+  font-size: 23px;
+  padding: 1.6%;
+  border: none;
+  outline: none;
+  text-align: top;
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 100px;
+`;
+
+export const List__li = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  &:hover {
+    background: #f0f1f4;
+  }
+`;
+
+
+interface styledprop {
+  active?: Boolean;
+}
+
+export const Postsub__Button = styled.button<styledprop>`
+  color: white;
+  width: 95%;
+  height: 52px;
+  border: none;
+  outline: none;
+  cursor: no-drop;
+  font-size: 21px;
+  font-weight: 500;
+  border-radius: 7px;
+  background: #e2e5e9;
+  margin-top: 3%;
+  background-color: ${({ active }) => (active ? "#4599ff" : "#dcdcdc")};
+`;
