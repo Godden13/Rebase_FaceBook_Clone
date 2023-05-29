@@ -14,8 +14,10 @@ export const Ptag2 = styled(Ptag)`
   font-size: 12px;
 `;
 
-export const Xmark = styled.p`
+export const Xmark = styled.button`
   font-size: 28px;
+  background-color: #fff;
+  border: none;
   color: grey;
   position: absolute;
   top: 0;

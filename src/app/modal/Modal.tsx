@@ -1,26 +1,87 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
-import { Bg, Main } from '@/Components/Organism'
-import { FlexRow, Genders, RightForm2 } from '@/Components/Molecules'
-import { Field, Heading2p, Href, Input1, Input2, Line, Link2, Minor, Ptag, Ptag2, Round, Row, Select, Select2, SignUpButton, SmallP2, Xmark } from '@/Components/Atoms'
-import { useState } from 'react'
+"use client";
+import { Bg, Main } from "@/Components/Organism";
+import { FlexRow, Genders, RightForm2 } from "@/Components/Molecules";
+import {
+  Field,
+  Heading2p,
+  Href,
+  Input1,
+  Input2,
+  Line,
+  Link2,
+  Minor,
+  Ptag,
+  Ptag2,
+  Round,
+  Row,
+  Select,
+  Select2,
+  SignUpButton,
+  SmallP2,
+  Xmark,
+} from "@/Components/Atoms";
+import { useState } from "react";
+import { initFirebase } from "@/firebase/config";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailLink,
+  signInWithPhoneNumber
+} from "@firebase/auth";
 
-function Register() {
-  const [show, setShow] = useState(false)
+function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => void}) {
+  const [show, setShow] = useState(false);
+  const [data, setData] = useState({
+    FirstName: "",
+    LastName: "",
+    emailPhone: "",
+    Password: "",
+  });
+  const app = initFirebase();
+
   return (
     <>
       <Bg>
         <RightForm2>
-          <Xmark><b>x</b></Xmark>
-          <Heading2p><b>Sign up</b></Heading2p>
+          <Xmark
+            onClick={() => {
+              setSee(!see);
+            }}
+          >
+            <b>x</b>
+          </Xmark>
+          <Heading2p>
+            <b>Sign up</b>
+          </Heading2p>
           <Ptag2>It's Quick and easy</Ptag2>
           <Line />
           <FlexRow>
-            <Input2 placeholder='Fisrt name'></Input2>
-            <Input2 placeholder='Last name'></Input2>
+            <Input2
+              placeholder="First name"
+              onChange={(e) => {
+                setData((prev) => ({ ...prev, email: e.target.value }));
+              }}
+            />
+            <Input2
+              placeholder="Last name"
+              onChange={(e) => {
+                setData((prev) => ({ ...prev, email: e.target.value }));
+              }}
+            />
           </FlexRow>
-          <Input1 placeholder='Mobile number or email'></Input1>
-          <Input1 placeholder='New password'></Input1>
+          <Input1
+            placeholder="Mobile number or email"
+            onChange={(e) => {
+              setData((prev) => ({ ...prev, email: e.target.value }));
+            }}
+          />
+          <Input1
+            placeholder="New password"
+            onChange={(e) => {
+              setData((prev) => ({ ...prev, email: e.target.value }));
+            }}
+          />
 
           <Row>
             <SmallP2>Birthday</SmallP2>
@@ -98,52 +159,56 @@ function Register() {
           </Row>
           <FlexRow>
             <Genders onClick={() => setShow(false)}>
-              <label>female</label>
-              <input type="radio" />
+              <label htmlFor="female">female</label>
+              <input type="radio" name="gender" id="female" />
             </Genders>
 
             <Genders onClick={() => setShow(false)}>
-              <label>male</label>
-              <input type="radio" />
+              <label htmlFor="male">male</label>
+              <input type="radio" name="gender" id="male" />
             </Genders>
 
             <Genders onClick={() => setShow(true)}>
-              <label>custome</label>
-              <input type="radio" />
+              <label htmlFor="custom">custom</label>
+              <input type="radio" name="gender" id="custom" />
             </Genders>
           </FlexRow>
-          {show && 
-          <>
-           <Select2>
-            <option selected ={true}   disabled ="disabled" >select your pronoun</option>
-            <option>She:"Wishes her a happy birthday"</option>
-            <option>He:"Wishes him a happy birthday"</option>
-            <option>They:"Wish them a happy birthday"</option>
-          </Select2>
+          {show && (
+            <>
+              <Select2>
+                <option selected={true}>select your pronoun</option>
+                <option>She:"Wishes her a happy birthday"</option>
+                <option>He:"Wishes him a happy birthday"</option>
+                <option>They:"Wish them a happy birthday"</option>
+              </Select2>
 
-          <SmallP2>Your gender is visible to everyone</SmallP2>
+              <SmallP2>Your gender is visible to everyone</SmallP2>
 
-          <Input1 placeholder='Gender (optional)' />
-          </>
-          }
+              <Input1 placeholder="Gender (optional)" />
+            </>
+          )}
 
           <div>
-            <Minor>People who use our service may have uploaded your contact information to Facebook.<Href>Learn more.</Href></Minor>
+            <Minor>
+              People who use our service may have uploaded your contact
+              information to Facebook.<Href>Learn more.</Href>
+            </Minor>
             <Ptag />
-            <Minor>By clicking Sign Up, you agree to our <Href>Terms,Privacy Policy</Href> and <Href>Cookies Policy</Href>.You may receive SMS Notifications from us and can opt out any time.</Minor>
+            <Minor>
+              By clicking Sign Up, you agree to our{" "}
+              <Href>Terms,Privacy Policy</Href> and <Href>Cookies Policy</Href>
+              .You may receive SMS Notifications from us and can opt out any
+              time.
+            </Minor>
           </div>
 
           <Field>
             <SignUpButton>sing up</SignUpButton>
           </Field>
-
         </RightForm2>
-
       </Bg>
     </>
-  )
+  );
 }
 
-export default Register
-
-
+export default Register;
