@@ -813,12 +813,12 @@ self.__RSC_MANIFEST={
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/layout": [
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/layout": [
       "static/css/app/layout.css"
     ]
   },
   "clientModules": {
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -826,7 +826,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -834,7 +834,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -842,7 +842,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -850,7 +850,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -858,7 +858,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -866,7 +866,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#getServerActionDispatcher": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#getServerActionDispatcher": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "getServerActionDispatcher",
       "chunks": [
@@ -874,7 +874,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#getServerActionDispatcher": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#getServerActionDispatcher": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "getServerActionDispatcher",
       "chunks": [
@@ -882,7 +882,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -890,7 +890,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -898,7 +898,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#TODO-APP": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#TODO-APP": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "TODO-APP",
       "chunks": [
@@ -906,7 +906,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#TODO-APP": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#TODO-APP": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "TODO-APP",
       "chunks": [
@@ -914,7 +914,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#__NA": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#__NA": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "__NA",
       "chunks": [
@@ -922,7 +922,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#__NA": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#__NA": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "__NA",
       "chunks": [
@@ -930,7 +930,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#location": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#location": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "location",
       "chunks": [
@@ -938,7 +938,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#location": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#location": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "location",
       "chunks": [
@@ -946,7 +946,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#\"http": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#\"http": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "\"http",
       "chunks": [
@@ -954,7 +954,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#\"http": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#\"http": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "\"http",
       "chunks": [
@@ -962,7 +962,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#searchParams": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#searchParams": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "searchParams",
       "chunks": [
@@ -970,7 +970,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#searchParams": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#searchParams": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "searchParams",
       "chunks": [
@@ -978,7 +978,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#pathname": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pathname",
       "chunks": [
@@ -986,7 +986,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#pathname": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pathname",
       "chunks": [
@@ -994,7 +994,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#type": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#type": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "type",
       "chunks": [
@@ -1002,7 +1002,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#type": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#type": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "type",
       "chunks": [
@@ -1010,7 +1010,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#cache": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#cache": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "cache",
       "chunks": [
@@ -1018,7 +1018,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#cache": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#cache": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "cache",
       "chunks": [
@@ -1026,7 +1026,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#status": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#status": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "status",
       "chunks": [
@@ -1034,7 +1034,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#status": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#status": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "status",
       "chunks": [
@@ -1042,7 +1042,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#data": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#data": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "data",
       "chunks": [
@@ -1050,7 +1050,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#data": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#data": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "data",
       "chunks": [
@@ -1058,7 +1058,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#subTreeData": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#subTreeData": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "subTreeData",
       "chunks": [
@@ -1066,7 +1066,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#subTreeData": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#subTreeData": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "subTreeData",
       "chunks": [
@@ -1074,7 +1074,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#parallelRoutes": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#parallelRoutes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "parallelRoutes",
       "chunks": [
@@ -1082,7 +1082,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#parallelRoutes": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#parallelRoutes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "parallelRoutes",
       "chunks": [
@@ -1090,7 +1090,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#mutable": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#mutable": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "mutable",
       "chunks": [
@@ -1098,7 +1098,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#mutable": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#mutable": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "mutable",
       "chunks": [
@@ -1106,7 +1106,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#isExternalUrl": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#isExternalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "isExternalUrl",
       "chunks": [
@@ -1114,7 +1114,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#isExternalUrl": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#isExternalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "isExternalUrl",
       "chunks": [
@@ -1122,7 +1122,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#locationSearch": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#locationSearch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "locationSearch",
       "chunks": [
@@ -1130,7 +1130,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#locationSearch": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#locationSearch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "locationSearch",
       "chunks": [
@@ -1138,7 +1138,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#back": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#back": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "back",
       "chunks": [
@@ -1146,7 +1146,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#back": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#back": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "back",
       "chunks": [
@@ -1154,7 +1154,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#forward": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#forward": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "forward",
       "chunks": [
@@ -1162,7 +1162,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#forward": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#forward": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "forward",
       "chunks": [
@@ -1170,7 +1170,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#prefetch": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#prefetch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "prefetch",
       "chunks": [
@@ -1178,7 +1178,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#prefetch": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#prefetch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "prefetch",
       "chunks": [
@@ -1186,7 +1186,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#kind": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#kind": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "kind",
       "chunks": [
@@ -1194,7 +1194,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#kind": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#kind": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "kind",
       "chunks": [
@@ -1202,7 +1202,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#replace": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#replace": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "replace",
       "chunks": [
@@ -1210,7 +1210,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#replace": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#replace": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "replace",
       "chunks": [
@@ -1218,7 +1218,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#push": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#push": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "push",
       "chunks": [
@@ -1226,7 +1226,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#push": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#push": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "push",
       "chunks": [
@@ -1234,7 +1234,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#refresh": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#refresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "refresh",
       "chunks": [
@@ -1242,7 +1242,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#refresh": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#refresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "refresh",
       "chunks": [
@@ -1250,7 +1250,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#origin": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#origin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "origin",
       "chunks": [
@@ -1258,7 +1258,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#origin": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#origin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "origin",
       "chunks": [
@@ -1266,7 +1266,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#fastRefresh": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#fastRefresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "fastRefresh",
       "chunks": [
@@ -1274,7 +1274,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#fastRefresh": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#fastRefresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "fastRefresh",
       "chunks": [
@@ -1282,7 +1282,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#router": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "router",
       "chunks": [
@@ -1290,7 +1290,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#router": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "router",
       "chunks": [
@@ -1298,7 +1298,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#(eg": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#(eg": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "(eg",
       "chunks": [
@@ -1306,7 +1306,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#(eg": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#(eg": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "(eg",
       "chunks": [
@@ -1314,7 +1314,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#url": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#url": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "url",
       "chunks": [
@@ -1322,7 +1322,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#url": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#url": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "url",
       "chunks": [
@@ -1330,7 +1330,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#tree": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#tree": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "tree",
       "chunks": [
@@ -1338,7 +1338,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#tree": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#tree": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "tree",
       "chunks": [
@@ -1346,7 +1346,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#notFound": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#notFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFound",
       "chunks": [
@@ -1354,7 +1354,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#notFound": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#notFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFound",
       "chunks": [
@@ -1362,7 +1362,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#notFoundStyles": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#notFoundStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFoundStyles",
       "chunks": [
@@ -1370,7 +1370,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#notFoundStyles": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#notFoundStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFoundStyles",
       "chunks": [
@@ -1378,7 +1378,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#asNotFound": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#asNotFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "asNotFound",
       "chunks": [
@@ -1386,7 +1386,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#asNotFound": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#asNotFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "asNotFound",
       "chunks": [
@@ -1394,7 +1394,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#pushRef": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#pushRef": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pushRef",
       "chunks": [
@@ -1402,7 +1402,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#pushRef": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#pushRef": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pushRef",
       "chunks": [
@@ -1410,7 +1410,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#canonicalUrl": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#canonicalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "canonicalUrl",
       "chunks": [
@@ -1418,7 +1418,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#canonicalUrl": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#canonicalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "canonicalUrl",
       "chunks": [
@@ -1426,7 +1426,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#sync": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#sync": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "sync",
       "chunks": [
@@ -1434,7 +1434,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#sync": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#sync": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "sync",
       "chunks": [
@@ -1442,7 +1442,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#value": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "value",
       "chunks": [
@@ -1450,7 +1450,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#value": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "value",
       "chunks": [
@@ -1458,7 +1458,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#childNodes": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#childNodes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "childNodes",
       "chunks": [
@@ -1466,7 +1466,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#childNodes": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#childNodes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "childNodes",
       "chunks": [
@@ -1474,7 +1474,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#assetPrefix": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#assetPrefix": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "assetPrefix",
       "chunks": [
@@ -1482,7 +1482,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#assetPrefix": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#assetPrefix": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "assetPrefix",
       "chunks": [
@@ -1490,7 +1490,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#errorComponent": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/app-router.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "errorComponent",
       "chunks": [
@@ -1498,7 +1498,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#errorComponent": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/app-router.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "errorComponent",
       "chunks": [
@@ -1506,7 +1506,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -1514,7 +1514,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -1522,7 +1522,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -1530,7 +1530,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -1538,7 +1538,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -1546,7 +1546,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -1554,7 +1554,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -1562,7 +1562,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -1570,7 +1570,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -1578,7 +1578,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -1586,7 +1586,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#error": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#error": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "error",
       "chunks": [
@@ -1594,7 +1594,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#error": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#error": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "error",
       "chunks": [
@@ -1602,7 +1602,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#https": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#https": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "https",
       "chunks": [
@@ -1610,7 +1610,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#https": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#https": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "https",
       "chunks": [
@@ -1618,7 +1618,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#fontFamily": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#fontFamily": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontFamily",
       "chunks": [
@@ -1626,7 +1626,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#fontFamily": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#fontFamily": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontFamily",
       "chunks": [
@@ -1634,7 +1634,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#height": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#height": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "height",
       "chunks": [
@@ -1642,7 +1642,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#height": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#height": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "height",
       "chunks": [
@@ -1650,7 +1650,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#textAlign": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#textAlign": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "textAlign",
       "chunks": [
@@ -1658,7 +1658,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#textAlign": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#textAlign": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "textAlign",
       "chunks": [
@@ -1666,7 +1666,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#display": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#display": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "display",
       "chunks": [
@@ -1674,7 +1674,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#display": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#display": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "display",
       "chunks": [
@@ -1682,7 +1682,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#flexDirection": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#flexDirection": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "flexDirection",
       "chunks": [
@@ -1690,7 +1690,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#flexDirection": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#flexDirection": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "flexDirection",
       "chunks": [
@@ -1698,7 +1698,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#alignItems": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#alignItems": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "alignItems",
       "chunks": [
@@ -1706,7 +1706,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#alignItems": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#alignItems": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "alignItems",
       "chunks": [
@@ -1714,7 +1714,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#justifyContent": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#justifyContent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "justifyContent",
       "chunks": [
@@ -1722,7 +1722,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#justifyContent": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#justifyContent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "justifyContent",
       "chunks": [
@@ -1730,7 +1730,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#desc": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#desc": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "desc",
       "chunks": [
@@ -1738,7 +1738,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#desc": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#desc": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "desc",
       "chunks": [
@@ -1746,7 +1746,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#text": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#text": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "text",
       "chunks": [
@@ -1754,7 +1754,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#text": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#text": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "text",
       "chunks": [
@@ -1762,7 +1762,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#fontSize": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#fontSize": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontSize",
       "chunks": [
@@ -1770,7 +1770,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#fontSize": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#fontSize": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontSize",
       "chunks": [
@@ -1778,7 +1778,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#fontWeight": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#fontWeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontWeight",
       "chunks": [
@@ -1786,7 +1786,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#fontWeight": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#fontWeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontWeight",
       "chunks": [
@@ -1794,7 +1794,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#lineHeight": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#lineHeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "lineHeight",
       "chunks": [
@@ -1802,7 +1802,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#lineHeight": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#lineHeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "lineHeight",
       "chunks": [
@@ -1810,7 +1810,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#margin": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#margin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "margin",
       "chunks": [
@@ -1818,7 +1818,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#margin": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#margin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "margin",
       "chunks": [
@@ -1826,7 +1826,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#previousPathname": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#previousPathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "previousPathname",
       "chunks": [
@@ -1834,7 +1834,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#previousPathname": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#previousPathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "previousPathname",
       "chunks": [
@@ -1842,7 +1842,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#reset": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "reset",
       "chunks": [
@@ -1850,7 +1850,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#reset": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "reset",
       "chunks": [
@@ -1858,7 +1858,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#style": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#style": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "style",
       "chunks": [
@@ -1866,7 +1866,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#style": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#style": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "style",
       "chunks": [
@@ -1874,7 +1874,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#\"Digest": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#\"Digest": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "\"Digest",
       "chunks": [
@@ -1882,7 +1882,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#\"Digest": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#\"Digest": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "\"Digest",
       "chunks": [
@@ -1890,7 +1890,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#pathname": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "pathname",
       "chunks": [
@@ -1898,7 +1898,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#pathname": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "pathname",
       "chunks": [
@@ -1906,7 +1906,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#errorComponent": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorComponent",
       "chunks": [
@@ -1914,7 +1914,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#errorComponent": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorComponent",
       "chunks": [
@@ -1922,7 +1922,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#errorStyles": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#errorStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorStyles",
       "chunks": [
@@ -1930,7 +1930,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#errorStyles": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#errorStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorStyles",
       "chunks": [
@@ -1938,7 +1938,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#value": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/error-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "value",
       "chunks": [
@@ -1946,7 +1946,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#value": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/error-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "value",
       "chunks": [
@@ -1954,7 +1954,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -1962,7 +1962,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -1970,7 +1970,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -1978,7 +1978,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -1986,7 +1986,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -1994,7 +1994,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -2002,7 +2002,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -2010,7 +2010,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -2018,7 +2018,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -2026,7 +2026,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -2034,7 +2034,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#redirect": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#redirect": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirect",
       "chunks": [
@@ -2042,7 +2042,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirect": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirect": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirect",
       "chunks": [
@@ -2050,7 +2050,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#redirectType": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#redirectType": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirectType",
       "chunks": [
@@ -2058,7 +2058,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirectType": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirectType": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirectType",
       "chunks": [
@@ -2066,7 +2066,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#reset": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2074,7 +2074,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#reset": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2082,7 +2082,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#router": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "router",
       "chunks": [
@@ -2090,7 +2090,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#router": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "router",
       "chunks": [
@@ -2098,7 +2098,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#value": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/redirect-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "value",
       "chunks": [
@@ -2106,7 +2106,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#value": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/redirect-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "value",
       "chunks": [
@@ -2114,7 +2114,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -2122,7 +2122,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -2130,7 +2130,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -2138,7 +2138,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -2146,7 +2146,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -2154,7 +2154,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -2162,7 +2162,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -2170,7 +2170,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -2178,7 +2178,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -2186,7 +2186,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -2194,7 +2194,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -2202,7 +2202,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -2210,7 +2210,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -2218,7 +2218,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -2226,7 +2226,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -2234,7 +2234,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -2242,7 +2242,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -2250,7 +2250,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -2258,7 +2258,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -2266,7 +2266,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -2274,7 +2274,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -2282,7 +2282,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -2290,7 +2290,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -2298,7 +2298,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -2306,15 +2306,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
-      "name": "SearchParamsContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "SearchParamsContext",
       "chunks": [
@@ -2322,7 +2314,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
+      "name": "SearchParamsContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -2330,7 +2330,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -2338,7 +2338,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -2346,7 +2346,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -2354,7 +2354,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -2362,7 +2362,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -2370,15 +2370,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
-      "name": "ServerInsertedHTMLContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "ServerInsertedHTMLContext",
       "chunks": [
@@ -2386,7 +2378,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
+      "name": "ServerInsertedHTMLContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -2394,7 +2394,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -2402,7 +2402,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/layout-router.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -2410,7 +2410,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/layout-router.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -2418,7 +2418,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/layout-router.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/layout-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -2426,7 +2426,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/layout-router.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/layout-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -2434,7 +2434,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/layout-router.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/layout-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -2442,7 +2442,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/layout-router.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/layout-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -2450,7 +2450,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/render-from-template-context.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -2458,7 +2458,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -2466,7 +2466,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/render-from-template-context.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/render-from-template-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -2474,7 +2474,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -2482,7 +2482,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/render-from-template-context.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -2490,7 +2490,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -2498,7 +2498,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -2506,7 +2506,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -2514,7 +2514,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -2522,7 +2522,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -2530,7 +2530,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -2538,7 +2538,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -2546,7 +2546,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/modal/Modal.tsx": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/modal/Modal.tsx": {
       "id": "(app-client)/./src/app/modal/Modal.tsx",
       "name": "*",
       "chunks": [
@@ -2554,7 +2554,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/modal/Modal.tsx#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/modal/Modal.tsx#": {
       "id": "(app-client)/./src/app/modal/Modal.tsx",
       "name": "",
       "chunks": [
@@ -2562,7 +2562,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/modal/Modal.tsx#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/modal/Modal.tsx#default": {
       "id": "(app-client)/./src/app/modal/Modal.tsx",
       "name": "default",
       "chunks": [
@@ -2570,7 +2570,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page.tsx": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/page.tsx": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "*",
       "chunks": [
@@ -2578,7 +2578,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page.tsx#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/page.tsx#": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "",
       "chunks": [
@@ -2586,7 +2586,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/page.tsx#default": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/page.tsx#default": {
       "id": "(app-client)/./src/app/page.tsx",
       "name": "default",
       "chunks": [
@@ -2594,14 +2594,14 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/src/app/globals.css#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/globals.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
       ]
     },
-    "/home/kadji/NODE/fullStack/Rebase_FaceBook_Clone/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
+    "/Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
