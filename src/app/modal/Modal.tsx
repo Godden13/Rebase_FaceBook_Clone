@@ -30,7 +30,7 @@ import {
   signInWithPhoneNumber
 } from "@firebase/auth";
 
-function Register({ see, setSee }) {
+function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => void}) {
   const [show, setShow] = useState(false);
   const [data, setData] = useState({
     FirstName: "",
@@ -159,18 +159,18 @@ function Register({ see, setSee }) {
           </Row>
           <FlexRow>
             <Genders onClick={() => setShow(false)}>
-              <label>female</label>
-              <input type="radio" />
+              <label htmlFor="female">female</label>
+              <input type="radio" name="gender" id="female" />
             </Genders>
 
             <Genders onClick={() => setShow(false)}>
-              <label>male</label>
-              <input type="radio" />
+              <label htmlFor="male">male</label>
+              <input type="radio" name="gender" id="male" />
             </Genders>
 
             <Genders onClick={() => setShow(true)}>
-              <label>custom</label>
-              <input type="radio" />
+              <label htmlFor="custom">custom</label>
+              <input type="radio" name="gender" id="custom" />
             </Genders>
           </FlexRow>
           {show && (
