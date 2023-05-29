@@ -4,16 +4,16 @@ import { getAuth, signOut } from "@firebase/auth";
 export default function Shop() {
   const app = initFirebase();
 
-  const auth = getAuth();
-  const handleClick = () => {
-    signOut(auth)
-      .then(() => {
-        console.log("Success");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+  // const auth = getAuth();
+  // const handleClick = () => {
+  //   signOut(auth)
+  //     .then(() => {
+  //       console.log("Success");
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }
 
   return (
     <main>
