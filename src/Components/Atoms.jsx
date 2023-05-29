@@ -11,7 +11,7 @@ export const Ptag = styled("P")`
 export const Ptag2 = styled(Ptag)`
   margin-bottom: 0;
   color: grey;
-  font-size: 12px;
+  font-size: 14px;
 `;
 
 export const Xmark = styled.button`
