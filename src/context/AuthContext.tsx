@@ -8,10 +8,12 @@ import {
   signInWithEmailLink,
   signOut,
 } from "firebase/auth";
+import { initFirebase } from "@/firebase/config";
 const AuthContext = createContext<any>({});
 
 export const useAuth = () => useContext(AuthContext);
-const auth = getAuth();
+const app = initFirebase()
+const auth = getAuth(app);
 
 export const AuthContextPRovider = ({
   children,

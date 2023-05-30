@@ -22,28 +22,40 @@ import {
   Xmark,
 } from "@/Components/Atoms";
 import { useState } from "react";
-import { initFirebase } from "@/firebase/config";
+import { getInfo, initFirebase } from "@/firebase/config";
 import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailLink,
   signInWithPhoneNumber
 } from "@firebase/auth";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => void}) {
   const [show, setShow] = useState(false);
   const [data, setData] = useState({
     FirstName: "",
     LastName: "",
-    emailPhone: "",
+    email: "",
     Password: "",
   });
-  const app = initFirebase();
+
+  const handleSubmit = async (e:any) => {
+    e.preventDefault()
+    const user = await addDoc(collection(getInfo, "users"), {
+      id:serverTimestamp(),
+      FirstName: data.FirstName,
+      LastName: data.LastName,
+      email: data.email,
+      Password: data.Password,
+    })
+    console.log(user)
+  }
 
   return (
     <>
       <Bg>
-        <RightForm2>
+        <RightForm2 onSubmit={handleSubmit}>
           <Xmark
             onClick={() => {
               setSee(!see);
@@ -60,13 +72,13 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
             <Input2
               placeholder="First name"
               onChange={(e) => {
-                setData((prev) => ({ ...prev, email: e.target.value }));
+                setData((prev) => ({ ...prev, FirstName: e.target.value }));
               }}
             />
             <Input2
               placeholder="Last name"
               onChange={(e) => {
-                setData((prev) => ({ ...prev, email: e.target.value }));
+                setData((prev) => ({ ...prev, LastName: e.target.value }));
               }}
             />
           </FlexRow>
@@ -79,7 +91,7 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
           <Input1
             placeholder="New password"
             onChange={(e) => {
-              setData((prev) => ({ ...prev, email: e.target.value }));
+              setData((prev) => ({ ...prev, Password: e.target.value }));
             }}
           />
 
