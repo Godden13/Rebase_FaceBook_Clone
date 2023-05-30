@@ -67,7 +67,7 @@ const PostPopForm = () => {
               <TittleCreate>
                 <h2>Create Post </h2>
               </TittleCreate>
-              <ClosepopUp>x</ClosepopUp>
+              <ClosepopUp onClick={() => setClose(!true)}>x</ClosepopUp>
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
