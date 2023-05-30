@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const Ptag = styled("P")`
+export const Ptag = styled('p')`
   font-size: 14px;
   color: #1c1e21;
   max-width: 600px;
@@ -11,7 +11,7 @@ export const Ptag = styled("P")`
 export const Paragraph = styled(Ptag)`
   font-size: 14px;
   color: #1c1e21;
-  margin-bottom: 0;
+  margin-bottom: 0; 
   font-weight: 600;
 `;
 

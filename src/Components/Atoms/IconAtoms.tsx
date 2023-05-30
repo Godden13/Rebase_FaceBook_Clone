@@ -108,3 +108,11 @@ export const Laptop = styled(BsLaptopFill)`
   font-size: 28px;
   color: #00b2ff;
 `;
+
+export const Dropdown = styled.button`
+  background-color: #c9c9c9db;
+  border: 1px solid #c9c9c9db;
+  color: black;
+  border-radius: 50%;
+  padding: 2px;
+`;
