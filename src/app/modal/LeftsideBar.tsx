@@ -22,12 +22,7 @@ import {
   Dropdown
 } from "@/Components/Atoms/IconAtoms";
 import { Bg ,  Leftside, IconsHolder} from "@/Components/Organism";
-import styled from "@emotion/styled";
 import { useState } from "react";
-
-
-
-
 
 export default function LeftSideBar() {
   const [slide, setSlide] = useState(false);
