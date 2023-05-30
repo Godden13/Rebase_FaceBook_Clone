@@ -4,7 +4,6 @@ interface StyledProps {
   trans?: any;
 }
 
-
 export const LeftHolder = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,7 +32,7 @@ export const RightForm = styled("form")`
   padding: 15px 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 375px) {
     width: 318px;
   }
 `;
@@ -78,8 +77,6 @@ export const Genders = styled.div`
   width: 100%;
   border: 1px solid grey;
 `;
-
-
 
 export const Stories__1container = styled("div")`
   width: 90%;
@@ -154,7 +151,6 @@ export const First__card = styled.div<StyledProps>`
   transform: translateX(${({ trans = "0" }) => trans + "px"});
   transition: 0.5s;
 `;
-
 
 export const Onyourmind = styled.div`
   width: 100%;
@@ -260,7 +256,6 @@ export const StatusPreference = styled.div`
   font-size: 20px;
 `;
 
-
 export const Styled__backDiv = styled("div")`
   width: 95%;
   height: 40px;
@@ -290,3 +285,74 @@ export const List = styled.ul`
   justify-content: center;
   text-align: center;
 `;
+
+export const FeedPost__wrapper = styled("div")`
+padding: 2
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+`;
+
+export const FeedPostTop = styled("div")`
+  width: 95%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+`;
+
+export const PostImg = styled(FeedPostTop)`
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+  object-fit: cover;
+  background-size: cover;
+`;
+
+export const PostTopLeft = styled.div`
+  width: 25%;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+`;
+
+export const FeedPost__action = styled("div")`
+  display: flex;
+  align-items: center;
+`;
+export const Feedpost__message = styled(FeedPost__action)`
+  width: 75%;
+  height: 50px;
+  justify-content: center;
+  margin-top: 2%;
+  border: 1px solid aqua;
+`;
+
+export const FeedMainImg = styled.div`
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const FeedPost__bottom = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+export const PostBottom = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+

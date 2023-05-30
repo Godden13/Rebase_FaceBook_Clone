@@ -1,9 +1,10 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { AiFillRead } from "react-icons/ai";
-import { FaLock, FaCaretDown } from "react-icons/fa";
+import { FaLock, FaCaretDown, FaGlobeEurope } from "react-icons/fa";
 import { FcGallery } from "react-icons/fc";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
+import { BiDotsHorizontalRounded } from "react-icons/bi";
 
 import { MdOndemandVideo } from "react-icons/md";
 
@@ -288,6 +289,16 @@ export const Bac = styled(FcGallery)`
   font-size: small;
 `;
 
+export const Globe = styled(FaGlobeEurope)`
+  font-size: small;
+  color: gray;
+`;
+
+export const Dots = styled(BiDotsHorizontalRounded)`
+  color: black;
+  font-size: 15px;
+`;
+
 export const LockedDiv = styled.div`
   width: 100px;
   display: flex;
@@ -325,7 +336,6 @@ export const List__li = styled.li`
     background: #f0f1f4;
   }
 `;
-
 
 interface styledprop {
   active?: Boolean;

@@ -9,10 +9,10 @@ import {
   Icons__containers, 
 } from "@/Components/Molecules";
 import { Mind__input, Proimg } from "@/Components/Atoms";
-import ProfilePicture from "../assets/rylie.jpg";
-import Live from "../assets/live.png";
-import Gallery from "../assets/gallerry.png";
-import Feel from "../assets/smile.png";
+import ProfilePicture from "../../assets/rylie.jpg";
+import Live from "../../assets/live.png";
+import Gallery from "../../assets/gallerry.png";
+import Feel from "../../assets/smile.png";
 import PostPopForm from "./PostPopForm";
 import { useState } from "react";
 interface PostProps {

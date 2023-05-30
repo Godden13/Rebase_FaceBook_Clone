@@ -26,11 +26,11 @@ import {
 
 import Image from "next/image";
 
-import ThemeImoji1 from "../assets/SATP_Aa_square-2x.png";
-import ThemeImoji2 from "../assets/smile.png";
-import GalleryImoji from "../assets/gallerry.png";
-import TagImoji from "../assets/tag.png";
-import GiftImoji from "../assets/gift.png";
+import ThemeImoji1 from "../../assets/SATP_Aa_square-2x.png";
+import ThemeImoji2 from "../../assets/smile.png";
+import GalleryImoji from "../../assets/gallerry.png";
+import TagImoji from "../../assets/tag.png";
+import GiftImoji from "../../assets/gift.png";
 
 const themeStyle = {
   width: "40px",

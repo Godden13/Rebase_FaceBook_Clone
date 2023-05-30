@@ -46,26 +46,24 @@ export const Foot = styled.footer`
   bottom: 0;
 `;
 
-
 export const Story = styled.div`
-width: 687px;
-height: 303px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
-border: 1px solid rgb(211, 211, 211);
-background-color: #fff;
-@media (max-width: 768px) {
-  width: 500px;
-}
+  width: 687px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  border: 1px solid rgb(211, 211, 211);
+  background-color: #fff;
+  @media (max-width: 768px) {
+    width: 500px;
+  }
 
-@media (max-width: 400px) {
-  width: 320px;
-}
-`
-
+  @media (max-width: 400px) {
+    width: 320px;
+  }
+`;
 
 export const PostForm = styled("form")`
   width: 687px;
@@ -121,3 +119,21 @@ export const MainPop = styled.div`
   border: 2px solid red;
   background-color: white transparent;
 `;
+
+export const FeedCards = styled.div`
+  width: 685px;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+`;
+
+
+
+
