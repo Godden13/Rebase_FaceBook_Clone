@@ -50,9 +50,8 @@ const LiStyle = {
   height: "23px",
 };
 
-const PostPopForm = () => {
+const PostPopForm = ({ setOpen } : any) => {
   const [textValue, setTextValue] = useState("");
-  const [close, setClose] = useState(false);
 
   const handleTextChange = (e: any) => {
     setTextValue(e.target.value);
@@ -67,7 +66,7 @@ const PostPopForm = () => {
               <TittleCreate>
                 <h2>Create Post </h2>
               </TittleCreate>
-              <ClosepopUp onClick={() => setClose(!true)}>x</ClosepopUp>
+              <ClosepopUp onClick={() => setOpen(false)}>x</ClosepopUp>
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>

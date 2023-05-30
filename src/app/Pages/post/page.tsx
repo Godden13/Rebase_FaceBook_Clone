@@ -9,7 +9,7 @@ import PostPopForm from "@/app/modal/PostPopForm";
 const profile = () => {
   return (
     <Main>
-      <PostPopForm />
+      <Postbox />
     </Main>
   );
 };

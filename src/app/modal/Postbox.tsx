@@ -6,7 +6,7 @@ import {
   Multi__media,
   Multi__media_innercontainer,
   Icons__container,
-  Icons__containers, 
+  Icons__containers,
 } from "@/Components/Molecules";
 import { Mind__input, Proimg } from "@/Components/Atoms";
 import ProfilePicture from "../../assets/rylie.jpg";
@@ -20,7 +20,6 @@ interface PostProps {
   height: any;
 }
 
-
 export const ImageStyle = {
   borderRadius: "50%",
   width: "40px",
@@ -31,13 +30,15 @@ const ImageIcons = {
   width: "24px",
   height: "24px",
   cursor: "pointer",
-}
+};
 
 const Postbox = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <PostForm>
-      {open && <PostPopForm />}
+      {open && <PostPopForm setOpen={setOpen} />}
+
       <PostForm__innerContainer>
         <Onyourmind>
           <Proimg>
@@ -61,11 +62,11 @@ const Postbox = () => {
               <span>Live Video</span>
             </Icons__container>
             <Icons__container>
-            <Image src={Gallery} alt="live video" style={ImageIcons} />
+              <Image src={Gallery} alt="live video" style={ImageIcons} />
               <span>Photo/video</span>
             </Icons__container>
             <Icons__containers>
-            <Image src={Feel} alt="live video" style={ImageIcons} />
+              <Image src={Feel} alt="live video" style={ImageIcons} />
               <span>Feeling/activity</span>
             </Icons__containers>
           </Multi__media_innercontainer>
