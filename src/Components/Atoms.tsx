@@ -344,7 +344,7 @@ interface styledprop {
 export const Postsub__Button = styled.button<styledprop>`
   color: white;
   width: 95%;
-  height: 52px;
+  height: 51px;
   border: none;
   outline: none;
   cursor: no-drop;
