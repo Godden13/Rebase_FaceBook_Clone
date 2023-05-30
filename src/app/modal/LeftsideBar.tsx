@@ -29,7 +29,7 @@ export const IconsHolder = styled.div`
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding: 6px 0 6px 2px; 
+  padding: 8px 0 8px 2px; 
   border-radius: 2px;
   &:hover {
     background-color: #bfbbbb5e;
