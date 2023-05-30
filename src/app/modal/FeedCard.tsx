@@ -48,7 +48,7 @@ function FeedCard() {
                 src={ProfilePicture}
                 alt="prof"
                 style={ProfilePis}
-                margin-rigth="20px"
+                margin-rigth="22px"
               />
             </PostImg>
             <div>
