@@ -20,7 +20,7 @@ import {
   SignUpButton,
   SmallP2,
   Xmark,
-} from "@/Components/Atoms";
+} from "@/Components/atoms/Atoms";
 import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import {

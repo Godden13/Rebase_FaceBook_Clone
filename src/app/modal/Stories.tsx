@@ -8,22 +8,17 @@ import {
   First__card,
 } from "@/Components/Molecules";
 
-import { Read, Reels } from "@/Components/Atoms";
+import { Read, Reels } from "@/Components/atoms/IconsAtoms";
 
 import MappedImages from "../../assets/2.jpg";
 
 import Image from "next/image";
 import { Key, useState } from "react";
 
-
-
 import styled from "@emotion/styled";
 import image from "next/image";
 
-const imageStyles = {
-  width: "120px",
-  height: "80px",
-};
+import { imageStyles } from "@/Components/atoms/Atoms";
 
 interface ImageCarouselProps {
   images: any;
@@ -35,62 +30,50 @@ const imagesC = [
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
   {
     title: "James Smith",
     src: MappedImages,
-    emoji: "🍉",
   },
 ];
 

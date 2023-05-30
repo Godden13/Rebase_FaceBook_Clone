@@ -8,29 +8,15 @@ import {
   Icons__container,
   Icons__containers,
 } from "@/Components/Molecules";
-import { Mind__input, Proimg } from "@/Components/Atoms";
+import { Mind__input, Proimg } from "@/Components/atoms/Atoms";
 import ProfilePicture from "../../assets/rylie.jpg";
 import Live from "../../assets/live.png";
 import Gallery from "../../assets/gallerry.png";
 import Feel from "../../assets/smile.png";
 import PostPopForm from "./PostPopForm";
 import { useState } from "react";
-interface PostProps {
-  width: any;
-  height: any;
-}
 
-export const ImageStyle = {
-  borderRadius: "50%",
-  width: "40px",
-  height: "40px",
-};
-
-const ImageIcons = {
-  width: "24px",
-  height: "24px",
-  cursor: "pointer",
-};
+import { ImageStyle, ImageIcons } from "@/Components/atoms/Atoms";
 
 const Postbox = () => {
   const [open, setOpen] = useState(false);

@@ -30,7 +30,7 @@ import {
 
 import Image from "next/image";
 
-import { Globe, Dots } from "@/Components/Atoms";
+import { Globe, Dots } from "@/Components/atoms/Atoms";
 
 interface ImgProps {
   width: any;

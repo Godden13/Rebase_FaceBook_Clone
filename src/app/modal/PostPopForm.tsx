@@ -14,15 +14,13 @@ import {
 } from "@/Components/Molecules";
 import {
   ClosepopUp,
-  Lock,
-  Downarrow,
   LockedDiv,
   WrtieMind__status,
-  Bac,
-  Whappy,
   List__li,
   Postsub__Button,
-} from "@/Components/Atoms";
+} from "@/Components/atoms/Atoms";
+
+import { Whappy, Bac, Lock, Downarrow } from "@/Components/atoms/IconsAtoms";
 
 import Image from "next/image";
 
@@ -30,27 +28,12 @@ import ThemeImoji1 from "../../assets/SATP_Aa_square-2x.png";
 import ThemeImoji2 from "../../assets/smile.png";
 import GalleryImoji from "../../assets/gallerry.png";
 import TagImoji from "../../assets/tag.png";
-import GiftImoji from "../../assets/gift.png";
+import GiftImoji from "../../assets/gift.png"; 
 
-const themeStyle = {
-  width: "40px",
-  height: "40px",
-  cursor: "pointer",
-};
+import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/atoms/Atoms";
 
-const themeStyle1 = {
-  width: "30px",
-  height: "30px",
-  cursor: "pointer",
-};
 
-const LiStyle = {
-  cursor: "pointer",
-  width: "23px",
-  height: "23px",
-};
-
-const PostPopForm = ({ setOpen } : any) => {
+const PostPopForm = ({ setOpen }: any) => {
   const [textValue, setTextValue] = useState("");
 
   const handleTextChange = (e: any) => {
@@ -88,8 +71,8 @@ const PostPopForm = ({ setOpen } : any) => {
             />
           </WriteStatus>
           <Styled__backDiv>
-            <Image src={ThemeImoji1} alt="the user" style={themeStyle} />
-            <Image src={ThemeImoji2} alt="smile" style={themeStyle1} />
+            <Image src={ThemeImoji1} alt="the user" style={ThemeStyle} />
+            <Image src={ThemeImoji2} alt="smile" style={ThemeStyle1} />
           </Styled__backDiv>
           <PostDiv>
             <p>Add to your Post</p>

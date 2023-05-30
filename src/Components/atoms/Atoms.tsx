@@ -1,12 +1,5 @@
-import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { AiFillRead } from "react-icons/ai";
-import { FaLock, FaCaretDown, FaGlobeEurope } from "react-icons/fa";
-import { FcGallery } from "react-icons/fc";
-import { HiOutlineEmojiHappy } from "react-icons/hi";
-import { BiDotsHorizontalRounded } from "react-icons/bi";
 
-import { MdOndemandVideo } from "react-icons/md";
 
 export const Ptag = styled("p")`
   font-size: 13px;
@@ -234,15 +227,7 @@ export const Href = styled.a`
   }
 `;
 
-export const Read = styled(AiFillRead)`
-  font-size: 25px;
-  color: blue;
-`;
 
-export const Reels = styled(MdOndemandVideo)`
-  font-size: 25px;
-  color: red;
-`;
 
 export const Mind__input = styled.input`
   width: 585px;
@@ -272,31 +257,6 @@ export const ClosepopUp = styled.span`
   font-weight: 200;
   border-radius: 50%;
   background-color: rgb(220, 220, 220);
-`;
-
-export const Lock = styled(FaLock)`
-  font-size: small;
-`;
-export const Downarrow = styled(FaCaretDown)`
-  font-size: small;
-`;
-
-export const Whappy = styled(HiOutlineEmojiHappy)`
-  font-size: small;
-`;
-
-export const Bac = styled(FcGallery)`
-  font-size: small;
-`;
-
-export const Globe = styled(FaGlobeEurope)`
-  font-size: small;
-  color: gray;
-`;
-
-export const Dots = styled(BiDotsHorizontalRounded)`
-  color: black;
-  font-size: 15px;
 `;
 
 export const LockedDiv = styled.div`
@@ -355,3 +315,44 @@ export const Postsub__Button = styled.button<styledprop>`
   margin-top: 3%;
   background-color: ${({ active }) => (active ? "#4599ff" : "#dcdcdc")};
 `;
+
+interface PostProps {
+  width: any;
+  height: any;
+}
+
+export const ImageStyle = {
+  borderRadius: "50%",
+  width: "40px",
+  height: "40px",
+};
+
+export const ImageIcons = {
+  width: "24px",
+  height: "24px",
+  cursor: "pointer",
+};
+
+export const imageStyles = {
+  width: "120px",
+  height: "80px",
+};
+
+
+export const ThemeStyle = {
+  width: "40px",
+  height: "40px",
+  cursor: "pointer",
+};
+
+export const ThemeStyle1 = {
+  width: "30px",
+  height: "30px",
+  cursor: "pointer",
+};
+
+export const LiStyle = {
+  cursor: "pointer",
+  width: "23px",
+  height: "23px",
+};
