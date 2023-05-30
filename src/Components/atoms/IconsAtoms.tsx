@@ -8,18 +8,18 @@ import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { MdOndemandVideo } from "react-icons/md";
 
 export const Read = styled(AiFillRead)`
-  font-size: 25px;
+  font-size: 24px;
   color: blue;
 `;
 
 export const Reels = styled(MdOndemandVideo)`
-  font-size: 25px;
+  font-size: 24px;
   color: red;
 `;
 
 
 export const Lock = styled(FaLock)`
-  font-size: small;
+  font-size: large;
 `;
 export const Downarrow = styled(FaCaretDown)`
   font-size: small;
