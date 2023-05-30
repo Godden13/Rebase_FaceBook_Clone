@@ -4,17 +4,14 @@ import {
   FootHolder,
   LeftHolder,
   RightForm,
-  RightHolder,
-} from "../Components/Molecules";
+} from "@/Components/Molecules";
 import {
   Heading2,
   Heading,
   Input,
   LogInButton,
-  Link,
   SignUpButton,
   Line,
-  SmallP,
   Row,
   Link2,
   Field,
@@ -24,7 +21,7 @@ import {
   Row3,
   Line2,
   FootButton,
-} from "../Components/Atoms";
+} from "../Components/Atoms/Atoms";
 import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import { useRouter } from "next/navigation";
