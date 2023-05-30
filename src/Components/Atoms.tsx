@@ -1,7 +1,110 @@
-import { css } from "@emotion/react";
+// import { css } from "@emotion/react";
 import styled from "@emotion/styled";
+import { GoSearch } from "react-icons/go";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillHome, AiOutlineRight } from "react-icons/ai";
+import { MdOndemandVideo } from "react-icons/md";
+import { AiOutlineShop } from "react-icons/ai";
+import { HiUserGroup } from "react-icons/hi";
+import { BiCreditCard } from "react-icons/bi";
+import { CgMenuGridO } from "react-icons/cg";
+import { RiMessengerFill } from "react-icons/ri";
+import { IoIosNotifications } from "react-icons/io";
+import { RiSettings5Fill, RiFeedbackFill } from "react-icons/ri";
+import { MdOutlineHelp } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
+import { GrLogout } from "react-icons/gr";
 
-export const Ptag = styled("P")`
+export const SearchIcon = styled(GoSearch)`
+  color: #67656b;
+  font-size: 15px;
+  left: 5%;
+  position: absolute;
+`;
+
+export const Facebook = styled(BsFacebook)`
+  color: #1877f2;
+  font-size: 45px;
+`;
+
+export const Home = styled(AiFillHome)`
+  color: #1877f2;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 400;
+`;
+
+export const Video = styled(MdOndemandVideo)`
+  color: #67656b;
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Shop = styled(AiOutlineShop)`
+  color: #67656b;
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Groupes = styled(HiUserGroup)`
+  color: #67656b;
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Feeds = styled(BiCreditCard)`
+  color: #67656b;
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Menu = styled(CgMenuGridO)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Messenger = styled(RiMessengerFill)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Notifications = styled(IoIosNotifications)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Settings = styled(RiSettings5Fill)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Support = styled(MdOutlineHelp)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Display = styled(FaMoon)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const FeedBack = styled(RiFeedbackFill)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const LogOut = styled(GrLogout)`
+  color: #67656b;
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const RightArrow = styled(AiOutlineRight)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
+export const Ptag = styled("p")`
   font-size: 14px;
   color: #1c1e21;
   max-width: 600px;
@@ -14,10 +117,8 @@ export const Ptag2 = styled(Ptag)`
   font-size: 12px;
 `;
 
-export const Xmark = styled.button`
+export const Xmark = styled.p`
   font-size: 28px;
-  background-color: #fff;
-  border: none;
   color: grey;
   position: absolute;
   top: 0;
@@ -86,6 +187,14 @@ export const Heading2 = styled("h2")`
   max-width: 400px;
 `;
 
+export const Attribute = styled.div`
+  font-size: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  line-height: 32px;
+  color: #1877f2;
+`;
+
 export const Heading2p = styled(Heading2)`
   margin-bottom: -10px;
   font-size: 26px;
@@ -120,6 +229,7 @@ export const SignUpButton = styled("button")`
   font-size: 18px;
   height: 36px;
   width: 180px;
+
   &:hover {
     background-color: #00a400;
   }
@@ -168,6 +278,22 @@ export const Input2 = styled(Input)`
   background: #f5f6f7;
   font-size: 13px;
   height: 31px;
+`;
+
+export const NavInput = styled("input")`
+  background: #f5f6f7;
+  border: none;
+  border-radius: 30px;
+  color: #1d2129;
+  font-size: 14px;
+  height: 35px;
+  padding: 14px 16px;
+  padding-left: 30px;
+  width: 100%;
+
+  &:hover {
+    background-color: #ddd;
+  }
 `;
 
 export const Row = styled("div")`
@@ -225,4 +351,34 @@ export const Href = styled.a`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const Circle = styled("span")`
+  align-items: center;
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+`;
+
+export const Name = styled("p")`
+  font-size: 18px;
+  font-weight: 700;
+`;
+
+export const Detail = styled.p`
+  color: #1877f2;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+`;
+
+export const Phrase = styled("p")`
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 `;
