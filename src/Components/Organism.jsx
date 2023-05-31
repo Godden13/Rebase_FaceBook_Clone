@@ -46,6 +46,31 @@ export const Foot = styled.footer`
   bottom: 0;
 `;
 
+export const Nav = styled("div")`
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #bec3c9;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+`;
+
+export const ProfilPopUp = styled("div")`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+`;
+
+export const PopUpBox = styled("div")`
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  height: 460px;
+  justify: center;
+  width: 380px;
+  `
 export const Leftside = styled("div")`
 display: flex;
 flex-direction: column;
