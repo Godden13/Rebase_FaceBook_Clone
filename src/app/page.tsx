@@ -6,6 +6,26 @@ import {
   RightForm,
   RightHolder,
 } from "../Components/Molecules";
+/* import {
+  Heading2,
+  Heading,
+  Input,
+  LogInButton,
+  Link,
+  SignUpButton,
+  Line,
+  SmallP,
+  Row,
+  Link2,
+  Field,
+  Minor,
+  Ptag,
+  Row2,
+  Row3,
+  Line2,
+  FootButton,
+} from "@"; */
+
 import {
   Heading2,
   Heading,
@@ -24,7 +44,8 @@ import {
   Row3,
   Line2,
   FootButton,
-} from "../Components/Atoms";
+} from "@/Components/Atoms/Atoms";
+
 import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import { useRouter } from "next/navigation";

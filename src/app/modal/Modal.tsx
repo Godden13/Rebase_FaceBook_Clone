@@ -2,7 +2,7 @@
 "use client";
 import { Bg, Main } from "@/Components/Organism";
 import { FlexRow, Genders, RightForm2 } from "@/Components/Molecules";
-import {
+/* import {
   Field,
   Heading2p,
   Href,
@@ -21,6 +21,25 @@ import {
   SmallP2,
   Xmark,
 } from "@/Components/Atoms";
+ */
+
+import { Field, Heading2p,
+  Href,
+  Input1,
+  Input2,
+  Line,
+  Link2,
+  Minor,
+  Ptag,
+  Ptag2,
+  Round,
+  Row,
+  Select,
+  Select2,
+  SignUpButton,
+  SmallP2,
+  Xmark, } from "@/Components/Atoms/Atoms";
+
 import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import {

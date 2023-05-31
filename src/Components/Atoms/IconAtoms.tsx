@@ -1,8 +1,18 @@
 "use client";
 import styled from "@emotion/styled";
 import { FcCalendar, FcAdvertising, FcCloseUpMode } from "react-icons/fc";
-import { FaUserFriends } from "react-icons/fa";
+import {
+  FaUserFriends,
+  FaCaretDown,
+  FaLock,
+  FaGlobeEurope,
+} from "react-icons/fa";
+import { AiFillRead } from "react-icons/ai";
 import { ImBookmark } from "react-icons/im";
+import { MdOndemandVideo } from "react-icons/md";
+import { FcGallery } from "react-icons/fc";
+import { HiOutlineEmojiHappy } from "react-icons/hi";
+import { BiDotsHorizontalRounded } from "react-icons/bi";
 import {
   RiBarChart2Fill,
   RiArrowDropDownLine,
@@ -19,6 +29,16 @@ import {
   BsFillCreditCardFill,
   BsFillCalendar2RangeFill,
 } from "react-icons/bs";
+
+export const Read = styled(AiFillRead)`
+  font-size: 24px;
+  color: blue;
+`;
+
+export const Reels = styled(MdOndemandVideo)`
+  font-size: 24px;
+  color: red;
+`;
 
 export const DropdownIcon = styled(RiArrowDropDownLine)`
   color: black;
@@ -115,4 +135,30 @@ export const Dropdown = styled.button`
   color: black;
   border-radius: 50%;
   padding: 2px;
+`;
+
+export const Whappy = styled(HiOutlineEmojiHappy)`
+  font-size: small;
+`;
+
+export const Bac = styled(FcGallery)`
+  font-size: small;
+`;
+
+export const Downarrow = styled(FaCaretDown)`
+  font-size: small;
+`;
+
+export const Lock = styled(FaLock)`
+  font-size: large;
+`;
+
+export const Globe = styled(FaGlobeEurope)`
+  font-size: small;
+  color: gray;
+`;
+
+export const Dots = styled(BiDotsHorizontalRounded)`
+  color: black;
+  font-size: 15px;
 `;
