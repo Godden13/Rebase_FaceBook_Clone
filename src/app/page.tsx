@@ -62,6 +62,7 @@ export default function Home() {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(error);
+        router.push("/");
         // ..
       });
   };
