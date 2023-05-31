@@ -15,6 +15,7 @@ import {
   Detail,
   Display,
   FeedBack,
+  FootPhrase,
   LogOut,
   Name,
   Phrase,
@@ -83,6 +84,10 @@ export default function page() {
                 <Phrase>Log Out</Phrase>
               </MenuInfos>
             </IconField>
+            <FootPhrase>
+            Privacy · Terms · Advertising · Ad Choices · Cookies · More · Meta ©
+            2023
+          </FootPhrase>
           </SectionIcons>
         </InnerField>
       </PopUpBox>

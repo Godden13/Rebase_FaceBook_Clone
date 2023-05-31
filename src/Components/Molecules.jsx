@@ -118,7 +118,7 @@ export const ProfilField = styled.div`
 
 export const SectionIcons = styled.div`
   margin: 40px auto;
-  width: 98%;
+  width: 97%;
 `;
 
 export const IconField = styled.div`

@@ -96,7 +96,7 @@ export const FeedBack = styled(RiFeedbackFill)`
 export const LogOut = styled(GrLogout)`
   color: #67656b;
   cursor: pointer;
-  font-size: 23px;
+  font-size: 20px;
 `;
 
 export const RightArrow = styled(AiOutlineRight)`
@@ -369,7 +369,7 @@ export const Name = styled("p")`
 `;
 
 export const Detail = styled.p`
-  color: #1877f2;
+  color: #1876f2;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -381,4 +381,10 @@ export const Phrase = styled("p")`
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
+`;
+
+export const FootPhrase = styled.p`
+  color: #65676b;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
 `;
