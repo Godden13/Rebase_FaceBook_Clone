@@ -3,11 +3,8 @@ import ProfilePicture from "../../assets/images/persons/5.jpeg";
 import Snoop from "../../assets/images/persons/6.jpeg";
 
 import { Feed__multimedia, Multi__smallcontainers } from "@/Components/Molecules";
-const ProfilePis = {
-  borderRadius: "50%",
-  width: "50px",
-  height: "50px",
-};
+
+import { ProfilePis } from "@/Components/Atoms/Atoms";
 
 interface feedProps {
   width: string;
@@ -34,11 +31,12 @@ import { Globe, Dots, LikedPost, Comments, SharePost, Xmarker } from "@/Componen
 
 import Liked from "../../assets/images/like.png";
 import Loved from "../../assets/images/heart.png";
+import { CSSProperties } from "react";
 
 interface ImgProps {
   width: any;
   height: any;
-  style: any;
+  style?: CSSProperties ;
 }
 FeedMainImg;
 function FeedCard() {

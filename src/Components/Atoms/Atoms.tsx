@@ -367,10 +367,16 @@ export const MainPis = {
   width: "99%",
   height: "470px",
   marginTop: "20px",
-  objectFit: "cover"
+  backgroundSize: "cover",
 };
 
 export const Timer = styled.span`
 color: gray;
 font-size: 12px;
 `
+ export const ProfilePis = {
+  
+  width: "50px",
+  height: "50px",
+  
+};
