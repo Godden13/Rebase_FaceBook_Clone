@@ -4,8 +4,7 @@ import {
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithPhoneNumber,
-  signInWithEmailLink,
+  sendSignInLinkToEmail,
   signOut,
 } from "firebase/auth";
 import { initFirebase } from "@/firebase/config";
@@ -42,6 +41,13 @@ export const AuthContextPRovider = ({
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
+  const EmailLink = (email: string) => {
+    return sendSignInLinkToEmail(auth, email, {
+      url: 'http/localhost:3000/login',
+      handleCodeInApp: true,
+    })
+  };
+
   const login = (email: string, password: string) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
@@ -52,7 +58,7 @@ export const AuthContextPRovider = ({
   };
 
   return (
-    <AuthContext.Provider value={{ user, signUp, login, logOut }}>
+    <AuthContext.Provider value={{ user, signUp, login, EmailLink, logOut }}>
       {isLoading ? null : children}
     </AuthContext.Provider>
   );
