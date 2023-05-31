@@ -15,7 +15,6 @@ export const Paragraph = styled(Ptag)`
   font-weight: 600;
 `;
 
-
 export const Ptag2 = styled(Ptag)`
   margin-bottom: 0;
   color: grey;
@@ -92,6 +91,14 @@ export const Heading2 = styled("h2")`
   font-weight: normal;
   line-height: 28px;
   max-width: 400px;
+`;
+
+export const Attribute = styled.div`
+  font-size: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  line-height: 32px;
+  color: #1877f2;
 `;
 
 export const Heading2p = styled(Heading2)`
@@ -178,6 +185,22 @@ export const Input2 = styled(Input)`
   height: 31px;
 `;
 
+export const NavInput = styled("input")`
+  background: #f5f6f7;
+  border: none;
+  border-radius: 30px;
+  color: #1d2129;
+  font-size: 14px;
+  height: 35px;
+  padding: 14px 16px;
+  padding-left: 30px;
+  width: 100%;
+
+  &:hover {
+    background-color: #ddd;
+  }
+`;
+        
 export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
@@ -234,3 +257,41 @@ export const Href = styled.a`
     text-decoration: underline;
   }
 `;
+
+
+export const Circle = styled("span")`
+  align-items: center;
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+`;
+
+export const Name = styled("p")`
+  font-size: 18px;
+  font-weight: 700;
+`;
+
+export const Detail = styled.p`
+  color: #1876f2;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+`;
+
+export const Phrase = styled("p")`
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+`;
+
+export const FootPhrase = styled.p`
+  color: #65676b;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+`;
+
