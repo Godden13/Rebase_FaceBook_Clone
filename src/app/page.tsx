@@ -44,8 +44,12 @@ import {
   Row3,
   Line2,
   FootButton,
+<<<<<<< HEAD
 } from "@/Components/Atoms/Atoms";
 
+=======
+} from "../Components/Atoms/Atoms";
+>>>>>>> development
 import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import { useRouter } from "next/navigation";
