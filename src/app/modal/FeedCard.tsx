@@ -2,6 +2,7 @@ import { FeedCards } from "@/Components/Organism";
 import ProfilePicture from "../../assets/images/persons/5.jpeg";
 import Snoop from "../../assets/images/persons/6.jpeg";
 
+import { Feed__multimedia, Multi__smallcontainers } from "@/Components/Molecules";
 const ProfilePis = {
   borderRadius: "50%",
   width: "50px",
@@ -13,7 +14,7 @@ interface feedProps {
   height: string;
 }
 
-import { MainPis } from "@/Components/Atoms/Atoms";
+import { MainPis, Timer, Xmark } from "@/Components/Atoms/Atoms";
 
 import {
   FeedPost__wrapper,
@@ -29,7 +30,7 @@ import {
 
 import Image from "next/image";
 
-import { Globe, Dots } from "@/Components/Atoms/IconAtoms";
+import { Globe, Dots, LikedPost, Comments, SharePost, Xmarker } from "@/Components/Atoms/IconAtoms";
 
 import Liked from "../../assets/images/like.png";
 import Loved from "../../assets/images/heart.png";
@@ -56,14 +57,14 @@ function FeedCard() {
             </PostImg>
             <div>
               <p>Snoop Dog</p>
-              <span>
+              <Timer>
                 10h ago <Globe />
-              </span>
+              </Timer>
             </div>
           </PostTopLeft>
           <FeedPost__action>
             <Dots />
-            <p>x</p>
+            <Xmarker />
           </FeedPost__action>
         </FeedPostTop>
         <Feedpost__message>
@@ -74,17 +75,27 @@ function FeedCard() {
         </FeedMainImg>
         <FeedPost__bottom>
           <PostBottom>
-            <Image src={Liked} alt="gh" />
-            <Image src={Loved} alt="gh" />
+            <Image src={Liked} alt="gh" height={30} width={30} />
+            <Image src={Loved} alt="gh" height={30} width={30} />
             <span>145</span>
           </PostBottom>
           <p>45 comments ...</p>
         </FeedPost__bottom>
-        <div className="Muitl__actions">
-          <div><p>Lkie</p></div>
-          <div><p>Comments</p></div>
-          <div><p>Share</p></div>
-        </div>
+        <Feed__multimedia>
+          <Multi__smallcontainers>
+            <p>
+              <LikedPost> </LikedPost>Like
+            </p>
+          </Multi__smallcontainers>
+          <Multi__smallcontainers>
+            <Comments />
+            <p>Comments</p>
+          </Multi__smallcontainers>
+          <Multi__smallcontainers>
+            <SharePost />
+            <p>Share</p>
+          </Multi__smallcontainers>
+        </Feed__multimedia>
       </FeedPost__wrapper>
     </FeedCards>
   );

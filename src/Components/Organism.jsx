@@ -146,8 +146,8 @@ export const MainPop = styled.div`
 `;
 
 export const FeedCards = styled.div`
-  width: 605px;
-  height: 800px;
+  width: 618px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;

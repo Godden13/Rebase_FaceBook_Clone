@@ -288,22 +288,23 @@ export const Icons__containers = styled.div`
 `;
 
 export const FeedPost__wrapper = styled("div")`
-  padding: 2;
+  height: 100%;
+  padding: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 `;
 
 export const FeedPostTop = styled("div")`
-  width: 95%;
-  height: 70px;
+  width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 `;
 
 export const PostImg = styled(FeedPostTop)`
@@ -319,22 +320,28 @@ export const PostImg = styled(FeedPostTop)`
 `;
 
 export const PostTopLeft = styled.div`
-  width: 25%;
+  width: 30%;
   display: flex;
   align-items: center;
-  background-color: yellow;
+  /* background-color: yellow; */
+  line-height: 1.6;
+  gap: 8px;
 `;
 
 export const FeedPost__action = styled("div")`
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 8px;
 `;
 export const Feedpost__message = styled(FeedPost__action)`
-  width: 75%;
+  width: 95%;
   height: 50px;
-  justify-content: center;
-  margin-top: 2%;
-  border: 1px solid aqua;
+  justify-content: flex-start;
+  margin-top: 1.4%;
+  text-align: left;
+  font-size: 18px;
+  /* border: 1px solid aqua; */
 `;
 
 export const FeedMainImg = styled.div`
@@ -349,9 +356,43 @@ export const FeedPost__bottom = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: 1.4%;
 `;
 
-export const PostBottom = styled.div`
+export const PostBottom = styled("div")`
   display: flex;
   align-items: center;
+  gap: 0.3em;
+  color: #696969;
+`;
+
+export const Feed__multimedia = styled(PostBottom)`
+  width: 90%;
+  height: 45px;
+  margin-top: 14px;
+  padding-top: 4px;
+  justify-content: space-between;
+  border-top: 1px solid rgb(211, 211, 211);
+`;
+
+export const Multi__smallcontainers = styled.div`
+  width: 400px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  padding: 7px;
+  font-size: 17px;
+  color: 	black;
+  letter-spacing: 0.5px;
+  gap: 0.4rem;
+  &:hover {
+    background: 	rgb(192,192,192);
+    transition: all 0.4s ease-in-out;
+    border-radius: 6px;
+    margin-bottom: 4px;
+  }
 `;

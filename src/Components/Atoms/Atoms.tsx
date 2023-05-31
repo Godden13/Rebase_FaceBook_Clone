@@ -369,3 +369,8 @@ export const MainPis = {
   marginTop: "20px",
   objectFit: "cover"
 };
+
+export const Timer = styled.span`
+color: gray;
+font-size: 12px;
+`
