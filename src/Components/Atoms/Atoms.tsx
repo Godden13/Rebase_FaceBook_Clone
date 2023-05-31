@@ -1,10 +1,22 @@
+
 import styled from "@emotion/styled";
 
 export const Ptag = styled("p")`
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+
+export const Ptag = styled('p')`
   font-size: 14px;
   color: #1c1e21;
   max-width: 600px;
   margin-bottom: 10px;
+`;
+
+export const Paragraph = styled(Ptag)`
+  font-size: 14px;
+  color: #1c1e21;
+  margin-bottom: 0; 
+  font-weight: 600;
 `;
 
 export const Ptag2 = styled(Ptag)`
@@ -13,8 +25,10 @@ export const Ptag2 = styled(Ptag)`
   font-size: 12px;
 `;
 
-export const Xmark = styled.p`
+export const Xmark = styled.button`
   font-size: 28px;
+  background-color: #fff;
+  border: none;
   color: grey;
   position: absolute;
   top: 0;
@@ -125,7 +139,6 @@ export const SignUpButton = styled("button")`
   font-size: 18px;
   height: 36px;
   width: 180px;
-
   &:hover {
     background-color: #00a400;
   }
@@ -191,7 +204,6 @@ export const NavInput = styled("input")`
     background-color: #ddd;
   }
 `;
-
 export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
@@ -284,3 +296,4 @@ export const FootPhrase = styled.p`
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
 `;
+
