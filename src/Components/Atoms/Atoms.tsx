@@ -15,7 +15,6 @@ export const Paragraph = styled(Ptag)`
   font-weight: 600;
 `;
 
-
 export const Ptag2 = styled(Ptag)`
   margin-bottom: 0;
   color: grey;
