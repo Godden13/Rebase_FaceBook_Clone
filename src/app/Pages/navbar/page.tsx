@@ -1,18 +1,17 @@
 "use client";
+import { Circle, NavInput } from "@/Components/Atoms/Atoms";
 import {
-  Circle,
   Facebook,
   Feeds,
   Groupes,
   Home,
   Menu,
   Messenger,
-  NavInput,
   Notifications,
   SearchIcon,
   Shop,
   Video,
-} from "@/Components/Atoms";
+} from "@/Components/Atoms/IconsAtoms";
 import { LeftAttr, MiddleAttr, RightAttr } from "@/Components/Molecules";
 import { Nav } from "@/Components/Organism";
 import NavImg from "../../../assets/images/car.jpg";

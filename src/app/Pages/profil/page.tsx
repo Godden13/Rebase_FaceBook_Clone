@@ -13,16 +13,18 @@ import Image from "next/image";
 import {
   Circle,
   Detail,
-  Display,
-  FeedBack,
   FootPhrase,
-  LogOut,
   Name,
   Phrase,
+} from "@/Components/Atoms/Atoms";
+import {
   RightArrow,
   Settings,
   Support,
-} from "@/Components/Atoms";
+  Display,
+  FeedBack,
+  LogOut,
+} from "@/Components/Atoms/IconsAtoms";
 
 export default function page() {
   return (
@@ -85,9 +87,9 @@ export default function page() {
               </MenuInfos>
             </IconField>
             <FootPhrase>
-            Privacy · Terms · Advertising · Ad Choices · Cookies · More · Meta ©
-            2023
-          </FootPhrase>
+              Privacy · Terms · Advertising · Ad Choices · Cookies · More · Meta
+              © 2023
+            </FootPhrase>
           </SectionIcons>
         </InnerField>
       </PopUpBox>
