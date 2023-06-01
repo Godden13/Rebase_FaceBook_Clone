@@ -1,4 +1,4 @@
-// File: /Users/godden/Desktop/programming/FullStack_Projects/rebase_facebook_clone/src/app/Pages/shop/page.tsx
+// File: /Users/godden/Desktop/programming/FullStack_Projects/Rebase_FaceBook_Clone/src/app/Pages/shop/page.tsx
 import * as entry from '../../../../../src/app/Pages/shop/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
