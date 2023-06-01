@@ -134,6 +134,20 @@ export const PostForm = styled("form")`
   }
 `;
 
+export const RightSide = styled("div")`
+  display: flex;
+  justify-content: right;
+  min-height: 100vh;
+  max-width: 100%;
+`;
+
+export const RightBar = styled("div")`
+  background-color: #fff;
+  height: 550px;
+  overflow-y: scroll;
+  width: 400px;
+`;
+
 export const PopForm = styled(PostForm)`
   width: 498px;
   height: 450px;

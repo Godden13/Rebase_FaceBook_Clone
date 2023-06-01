@@ -272,6 +272,10 @@ export const Name = styled("p")`
   font-weight: 700;
 `;
 
+export const Name1 = styled("p")`
+  font-size: 15px;
+`;
+
 export const Detail = styled.p`
   color: #1876f2;
   cursor: pointer;
@@ -291,6 +295,21 @@ export const FootPhrase = styled.p`
   color: #65676b;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
+`;
+
+export const RightHeaders = styled("h3")`
+  font-family: Helvetica, Arial, sans-serif;
+`;
+
+export const Describe = styled.p`
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+`;
+
+export const PageLink = styled.a`
+  color: grey;
+  font-size: 13px;
+  font-style: italic;
 `;
 
 export const imageStyles = {
