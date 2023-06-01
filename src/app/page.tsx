@@ -6,6 +6,7 @@ import {
   RightForm,
   RightHolder,
 } from "../Components/Molecules";
+
 import {
   Heading2,
   Heading,
@@ -24,7 +25,9 @@ import {
   Row3,
   Line2,
   FootButton,
-} from "../Components/Atoms";
+} from "@/Components/Atoms/Atoms";
+
+
 import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import { useRouter } from "next/navigation";
@@ -62,6 +65,7 @@ export default function Home() {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(error);
+        router.push("/");
         // ..
       });
   };

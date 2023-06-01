@@ -1,7 +1,6 @@
-import { initFirebase } from "@/firebase/config";
-import { getAuth, signOut } from "@firebase/auth";
 
 export default function Shop() {
+<<<<<<< HEAD
   const app = initFirebase();
 
   const auth = getAuth();
@@ -15,10 +14,11 @@ export default function Shop() {
   //     });
   // }
 
+=======
+>>>>>>> a021aea9e05a048e097391fe2d85af99baf0408a
   return (
     <main>
       <h1>girl</h1>
-      {/* <button onClick={handleClick}></button> */}
     </main>
   );
 }
