@@ -295,7 +295,8 @@ export const FootPhrase = styled.p`
 
 export const imageStyles = {
   width: "120px",
-  height: "80px",
+  height: "160px",
+  backgroundSize: "cover",
 };
 
 export const ClosepopUp = styled.span`
@@ -335,6 +336,9 @@ export const WrtieMind__status = styled.textarea`
   font-size: 18px;
   margin-top: 30px;
   min-height: 100px;
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
 `;
 
 export const List__li = styled.li`
@@ -468,3 +472,8 @@ export const NextButton = styled.button`
   background-color: white;
 `;
 
+export const Para = styled.p `
+@media (max-width: 400PX) {
+  display: none;
+}
+`

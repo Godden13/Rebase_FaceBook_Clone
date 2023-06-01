@@ -145,8 +145,8 @@ export const PopForm = styled(PostForm)`
   }
 
   @media (max-width: 400px) {
-    width: 300px;
-    height: 400px;
+    width: 310px;
+    height: 420px;
   }
 `;
 

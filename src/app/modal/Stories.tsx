@@ -8,7 +8,7 @@ import {
   First__card,
 } from "@/Components/Molecules";
 
-import Man from  "../../assets/images/persons/man.jpeg"
+import Man from "../../assets/images/persons/man.jpeg";
 
 import { Read, Reels } from "../../Components/Atoms/IconAtoms";
 
@@ -18,13 +18,16 @@ import { Key, useState } from "react";
 import styled from "@emotion/styled";
 import image from "next/image";
 
-import { NextButton, PrevButton, imageStyles } from "../../Components/Atoms/Atoms";
+import {
+  NextButton,
+  PrevButton,
+  imageStyles,
+} from "../../Components/Atoms/Atoms";
 
 interface ImageCarouselProps {
   images: any;
   alt: string;
 }
-
 
 export const ImagesC = [
   {
@@ -115,12 +118,11 @@ const Stories = () => {
           {ImagesC.map((image: any, index: Key) => (
             <First__card key={index} trans={trans}>
               <>
-                {index}
+                {/* {index} */}
                 <Image
                   key={index}
                   src={image.src}
                   alt="kjk"
-                  object-fit
                   style={imageStyles}
                 />
               </>

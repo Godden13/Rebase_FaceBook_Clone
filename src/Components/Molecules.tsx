@@ -140,7 +140,7 @@ export const Carousel__stories = styled.div`
 `;
 
 export const First__card = styled.div<StyledProps>`
-  height: 400px;
+  /* height: 400px; */
   height: 170px;
   display: flex;
   align-items: center;
@@ -215,6 +215,9 @@ export const PostDiv = styled(Styled__backDiv)`
   box-shadow: 5px 0px 5px -34px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 5px 0px 5px -34px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 5px 0px 5px -34px rgba(0, 0, 0, 0.19);
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 export const List = styled.ul`
@@ -388,11 +391,11 @@ export const Multi__smallcontainers = styled.div`
   margin-top: 4px;
   padding: 7px;
   font-size: 17px;
-  color: 	black;
+  color: black;
   letter-spacing: 0.5px;
   gap: 0.4rem;
   &:hover {
-    background: 	rgb(192,192,192);
+    background: rgb(192, 192, 192);
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
     margin-bottom: 4px;
