@@ -71,3 +71,17 @@ export const PopUpBox = styled("div")`
   justify: center;
   width: 380px;
 `;
+
+export const RightSide = styled("div")`
+  display: flex;
+  justify-content: right;
+  min-height: 100vh;
+  max-width: 100%;
+`;
+
+export const RightBar = styled("div")`
+  background-color: #fff;
+  height: 550px;
+  overflow-y: scroll;
+  width: 400px;
+`;
