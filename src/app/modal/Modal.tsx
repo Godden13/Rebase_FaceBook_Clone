@@ -23,12 +23,7 @@ import {
 } from "@/Components/Atoms/Atoms";
 import { useState } from "react";
 import { getInfo, initFirebase } from "@/firebase/config";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailLink,
-  signInWithPhoneNumber,
-} from "@firebase/auth";
+
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext";
 
@@ -47,28 +42,28 @@ function Register({
   });
   const [custom, setCustom] = useState("")
   const [data, setData] = useState({
-    FirstName: "",
-    LastName: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    Password: "",
+    password: "",
     gender: "",
   });
-  const { EmailLink } = useAuth();
+  const { EmailLink, signUp } = useAuth();
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const user = await addDoc(collection(getInfo, "users"), {
       id: serverTimestamp(),
-      FirstName: data.FirstName,
-      lastName: data.LastName,
+      firstName: data.firstName,
+      lastName: data.lastName,
       email: data.email,
-      password: data.Password,
+      password: data.password,
       dob: new Date(
         `${dateInfo.month} ${dateInfo.day} ${dateInfo.year}`
       ).toDateString(),
       gender: data.gender,
     });
-    await EmailLink(data.email);
+    await signUp(data.email, data.password).then(EmailLink(data.email));
     console.log(user);
     setSee(!see);
   };
@@ -93,13 +88,13 @@ function Register({
             <Input2
               placeholder="First name"
               onChange={(e) => {
-                setData((prev) => ({ ...prev, FirstName: e.target.value }));
+                setData((prev) => ({ ...prev, firstName: e.target.value }));
               }}
             />
             <Input2
               placeholder="Last name"
               onChange={(e) => {
-                setData((prev) => ({ ...prev, LastName: e.target.value }));
+                setData((prev) => ({ ...prev, lastName: e.target.value }));
               }}
             />
           </FlexRow>
@@ -112,7 +107,7 @@ function Register({
           <Input1
             placeholder="New password"
             onChange={(e) => {
-              setData((prev) => ({ ...prev, Password: e.target.value }));
+              setData((prev) => ({ ...prev, password: e.target.value }));
             }}
           />
 
