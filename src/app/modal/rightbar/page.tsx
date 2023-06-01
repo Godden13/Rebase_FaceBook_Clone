@@ -152,7 +152,7 @@ export default function page() {
               width="30"
               style={{ borderRadius: "50px" }}
             />
-            <Name1>Raymond Tchengang</Name1>
+            <Name1>Alan Kadji</Name1>
           </ProfilField1>
         </ContactInfos>
         <RightHeaders>Group Conversations</RightHeaders>
