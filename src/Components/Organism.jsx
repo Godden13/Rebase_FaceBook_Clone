@@ -91,6 +91,7 @@ export const PopUpBox = styled("div")`
   justify-content: center;
   width: 380px;
   `
+
 export const Leftside = styled("div")`
 display: flex;
 flex-direction: column;

@@ -200,6 +200,7 @@ export const NavInput = styled("input")`
     background-color: #ddd;
   }
 `;
+        
 export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
@@ -256,6 +257,7 @@ export const Href = styled.a`
     text-decoration: underline;
   }
 `;
+
 
 export const Circle = styled("span")`
   align-items: center;
