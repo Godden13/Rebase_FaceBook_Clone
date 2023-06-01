@@ -43,9 +43,9 @@ export const AuthContextPRovider = ({
 
   const EmailLink = (email: string) => {
     return sendSignInLinkToEmail(auth, email, {
-      url: 'http/localhost:3000/login',
+      url: "https://rebase-face-book-clone.vercel.app/Pages/shop",
       handleCodeInApp: true,
-    })
+    });
   };
 
   const login = (email: string, password: string) => {

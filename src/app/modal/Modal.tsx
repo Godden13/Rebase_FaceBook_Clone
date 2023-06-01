@@ -25,12 +25,6 @@ import { Field, Heading2p,
 
 import { useState } from "react";
 import { getInfo, initFirebase } from "@/firebase/config";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailLink,
-  signInWithPhoneNumber,
-} from "@firebase/auth";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext";
 
@@ -52,10 +46,10 @@ function Register({
     FirstName: "",
     LastName: "",
     email: "",
-    Password: "",
+    password: "",
     gender: "",
   });
-  const { EmailLink } = useAuth();
+  const { EmailLink, signUp } = useAuth();
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -64,12 +58,13 @@ function Register({
       FirstName: data.FirstName,
       lastName: data.LastName,
       email: data.email,
-      password: data.Password,
+      password: data.password,
       dob: new Date(
         `${dateInfo.month} ${dateInfo.day} ${dateInfo.year}`
       ).toDateString(),
       gender: data.gender,
     });
+    await signUp(data.email, data.password)
     await EmailLink(data.email);
     console.log(user);
     setSee(!see);
@@ -114,7 +109,7 @@ function Register({
           <Input1
             placeholder="New password"
             onChange={(e) => {
-              setData((prev) => ({ ...prev, Password: e.target.value }));
+              setData((prev) => ({ ...prev, password: e.target.value }));
             }}
           />
 
@@ -221,7 +216,16 @@ function Register({
 
             <Genders onClick={() => setShow(false)}>
               <label htmlFor="male">male</label>
-              <input type="radio" name="gender" id="male" value="male" />
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                onChange={(e) => {
+                  setData((prev) => ({ ...prev, gender: e.target.value }));
+                  console.log(e);
+                }}
+              />
             </Genders>
 
             <Genders onClick={() => setShow(true)}>
@@ -233,7 +237,7 @@ function Register({
                 onChange={async (e) => {
                   await setData((prev) => ({
                     ...prev,
-                    gender: custom
+                    gender: custom,
                   }));
                 }}
               />
@@ -250,7 +254,12 @@ function Register({
 
               <SmallP2>Your gender is visible to everyone</SmallP2>
 
-              <Input1 placeholder="Gender (optional)" onChange={(e)=>{setCustom(e.target.value);}} />
+              <Input1
+                placeholder="Gender (optional)"
+                onChange={(e) => {
+                  setCustom(e.target.value);
+                }}
+              />
             </>
           )}
 

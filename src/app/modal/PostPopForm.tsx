@@ -33,6 +33,9 @@ import TagImoji from "../../assets/images/icons/tag.png";
 import GiftImoji from  "../../assets/images/gift.png";
 
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { getInfo, initFirebase } from "@/firebase/config";
+
 
 const PostPopForm = ({ setOpen }: any) => {
   const [textValue, setTextValue] = useState("");
@@ -40,6 +43,17 @@ const PostPopForm = ({ setOpen }: any) => {
   const handleTextChange = (e: any) => {
     setTextValue(e.target.value);
   };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const post = await addDoc(collection(getInfo, "posts"), {
+      id: serverTimestamp(),
+      name:"Hello",
+      
+    })
+  } 
+
+
 
   return (
     <>
