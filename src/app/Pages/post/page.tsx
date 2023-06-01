@@ -9,7 +9,7 @@ import FeedCard from "@/app/modal/FeedCard";
 const profile = () => {
   return (
     <Main>
-      <Postbox />
+      <Stories/>
     </Main>
   );
 

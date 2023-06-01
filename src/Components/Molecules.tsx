@@ -93,6 +93,7 @@ export const StoriesIcon__container = styled(Stories__1container)`
   height: 55px;
   border: none;
   gap: 3%;
+  border-bottom: 3.4px solid blue;
   &:hover {
     background: #f0f3f4;
     transition: all 0.4s ease-in-out;

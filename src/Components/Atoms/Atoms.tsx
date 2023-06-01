@@ -298,7 +298,6 @@ export const imageStyles = {
   height: "80px",
 };
 
-
 export const ClosepopUp = styled.span`
   width: 30px;
   height: 30px;
@@ -370,7 +369,6 @@ export const Postsub__Button = styled.button<styledprop>`
   background-color: ${({ active }) => (active ? "#4599ff" : "#dcdcdc")};
 `;
 
-
 export const ThemeStyle = {
   width: "40px",
   height: "40px",
@@ -388,8 +386,6 @@ export const LiStyle = {
   width: "23px",
   height: "23px",
 };
-
-
 
 export const Mind__input = styled.input`
   width: 585px;
@@ -409,7 +405,6 @@ export const Proimg = styled.div`
   border-radius: 50%;
 `;
 
-
 export const ImageStyle = {
   borderRadius: "50%",
   width: "40px",
@@ -427,18 +422,16 @@ export const MainPis = {
   width: "99%",
   height: "470px",
   marginTop: "20px",
- /*  backgroundSize: "cover", */
+  /*  backgroundSize: "cover", */
 };
 
 export const Timer = styled.span`
-color: gray;
-font-size: 12px;
-`
- export const ProfilePis = {
-  
+  color: gray;
+  font-size: 12px;
+`;
+export const ProfilePis = {
   width: "50px",
   height: "50px",
-  
 };
 
 export const ImageStyles = {
@@ -446,7 +439,32 @@ export const ImageStyles = {
   height: "auto",
   flex: "0 0 auto",
   scrollSnapAlign: "center",
-}
- 
+};
 
-  
+export const PrevButton = styled.button`
+  width: 62px;
+  height: 54px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  background-color: white;
+`;
+
+
+export const NextButton = styled.button`
+  width: 62px;
+  height: 54px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  background-color: white;
+`;
+
