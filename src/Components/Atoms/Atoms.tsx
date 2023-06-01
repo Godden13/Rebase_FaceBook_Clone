@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
 export const Ptag = styled("p")`
   font-size: 14px;
@@ -7,14 +8,23 @@ export const Ptag = styled("p")`
   margin-bottom: 10px;
 `;
 
+export const Paragraph = styled(Ptag)`
+  font-size: 14px;
+  color: #1c1e21;
+  margin-bottom: 0;
+  font-weight: 600;
+`;
+
 export const Ptag2 = styled(Ptag)`
   margin-bottom: 0;
   color: grey;
   font-size: 12px;
 `;
 
-export const Xmark = styled.p`
+export const Xmark = styled.button`
   font-size: 28px;
+  background-color: #fff;
+  border: none;
   color: grey;
   position: absolute;
   top: 0;
@@ -125,7 +135,6 @@ export const SignUpButton = styled("button")`
   font-size: 18px;
   height: 36px;
   width: 180px;
-
   &:hover {
     background-color: #00a400;
   }
@@ -191,7 +200,6 @@ export const NavInput = styled("input")`
     background-color: #ddd;
   }
 `;
-
 export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
@@ -303,3 +311,149 @@ export const PageLink = styled.a`
   font-size: 13px;
   font-style: italic;
 `;
+=======
+export const imageStyles = {
+  width: "120px",
+  height: "80px",
+};
+
+
+export const ClosepopUp = styled.span`
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 200;
+  border-radius: 50%;
+  background-color: rgb(220, 220, 220);
+`;
+
+export const LockedDiv = styled.div`
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(169, 169, 169);
+  border-radius: 6px;
+  font-size: 18px;
+  gap: 2%;
+`;
+
+export const WrtieMind__status = styled.textarea`
+  width: 100%;
+  min-height: 100px;
+  font-size: 23px;
+  padding: 1.6%;
+  border: none;
+  outline: none;
+  text-align: top;
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 100px;
+`;
+
+export const List__li = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  &:hover {
+    background: #f0f1f4;
+  }
+`;
+
+interface styledprop {
+  active?: Boolean;
+}
+
+export const Postsub__Button = styled.button<styledprop>`
+  color: white;
+  width: 95%;
+  height: 51px;
+  border: none;
+  outline: none;
+  cursor: no-drop;
+  font-size: 21px;
+  font-weight: 500;
+  border-radius: 7px;
+  background: #e2e5e9;
+  margin-top: 3%;
+  background-color: ${({ active }) => (active ? "#4599ff" : "#dcdcdc")};
+`;
+
+
+export const ThemeStyle = {
+  width: "40px",
+  height: "40px",
+  cursor: "pointer",
+};
+
+export const ThemeStyle1 = {
+  width: "30px",
+  height: "30px",
+  cursor: "pointer",
+};
+
+export const LiStyle = {
+  cursor: "pointer",
+  width: "23px",
+  height: "23px",
+};
+
+
+
+export const Mind__input = styled.input`
+  width: 585px;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 78px;
+  padding: 1.9%;
+  border: none;
+  outline: none;
+  color: #fdfc47;
+  background-color: rgb(237, 237, 237);
+`;
+
+export const Proimg = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+`;
+
+
+export const ImageStyle = {
+  borderRadius: "50%",
+  width: "40px",
+  height: "40px",
+};
+
+export const ImageIcons = {
+  width: "24px",
+  height: "24px",
+  cursor: "pointer",
+};
+
+export const MainPis = {
+  borderRadius: "1%",
+  width: "99%",
+  height: "470px",
+  marginTop: "20px",
+  backgroundSize: "cover",
+};
+
+export const Timer = styled.span`
+color: gray;
+font-size: 12px;
+`
+ export const ProfilePis = {
+  
+  width: "50px",
+  height: "50px",
+  
+};
