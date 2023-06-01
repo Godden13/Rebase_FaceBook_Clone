@@ -2,9 +2,9 @@
 "use client";
 import { Bg, Main } from "@/Components/Organism";
 import { FlexRow, Genders, RightForm2 } from "@/Components/Molecules";
-import {
-  Field,
-  Heading2p,
+
+
+import { Field, Heading2p,
   Href,
   Input1,
   Input2,
@@ -19,8 +19,10 @@ import {
   Select2,
   SignUpButton,
   SmallP2,
-  Xmark,
-} from "@/Components/Atoms/Atoms";
+  Xmark, } from "@/Components/Atoms/Atoms";
+
+
+
 import { useState } from "react";
 import { getInfo, initFirebase } from "@/firebase/config";
 
@@ -63,7 +65,8 @@ function Register({
       ).toDateString(),
       gender: data.gender,
     });
-    await signUp(data.email, data.password).then(EmailLink(data.email));
+    await signUp(data.email, data.password)
+    await EmailLink(data.email);
     console.log(user);
     setSee(!see);
   };
@@ -214,7 +217,16 @@ function Register({
 
             <Genders onClick={() => setShow(false)}>
               <label htmlFor="male">male</label>
-              <input type="radio" name="gender" id="male" value="male" />
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                onChange={(e) => {
+                  setData((prev) => ({ ...prev, gender: e.target.value }));
+                  console.log(e);
+                }}
+              />
             </Genders>
 
             <Genders onClick={() => setShow(true)}>
@@ -226,7 +238,7 @@ function Register({
                 onChange={async (e) => {
                   await setData((prev) => ({
                     ...prev,
-                    gender: custom
+                    gender: custom,
                   }));
                 }}
               />
@@ -243,7 +255,12 @@ function Register({
 
               <SmallP2>Your gender is visible to everyone</SmallP2>
 
-              <Input1 placeholder="Gender (optional)" onChange={(e)=>{setCustom(e.target.value);}} />
+              <Input1
+                placeholder="Gender (optional)"
+                onChange={(e) => {
+                  setCustom(e.target.value);
+                }}
+              />
             </>
           )}
 
