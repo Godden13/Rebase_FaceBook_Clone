@@ -163,12 +163,13 @@ export const CreatePost__title__innerContianer = styled.div`
 
 export const CreatePost__profile__prefence = styled.div`
   width: 97%;
-  height: 55px;
+  height: 65px;
   gap: 3%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: white;
+  margin-bottom: 14px;
 `;
 
 export const WriteStatus = styled(CreatePost__profile__prefence)`

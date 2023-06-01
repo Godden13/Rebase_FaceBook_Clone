@@ -21,7 +21,7 @@ import {
   Postsub__Button,
 } from "@/Components/Atoms/Atoms";
 
-import { Whappy, Bac, Lock, Downarrow } from "@/Components/Atoms/IconAtoms";
+import { Whappy, Bac, Lock, Downarrow, Xmarker } from "@/Components/Atoms/IconAtoms";
 
 import Image from "next/image";
 
@@ -50,7 +50,8 @@ const PostPopForm = ({ setOpen }: any) => {
               <TittleCreate>
                 <h2>Create Post </h2>
               </TittleCreate>
-              <ClosepopUp onClick={() => setOpen(false)}>x</ClosepopUp>
+               <ClosepopUp onClick={() => setOpen(false)}> <Xmarker /> </ClosepopUp> 
+             {/* <Xmarker onClick={() => setOpen(false)} /> */}
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>

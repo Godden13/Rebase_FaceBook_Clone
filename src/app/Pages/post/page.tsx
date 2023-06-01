@@ -9,9 +9,10 @@ import FeedCard from "@/app/modal/FeedCard";
 const profile = () => {
   return (
     <Main>
-      <FeedCard />
+      <Postbox />
     </Main>
   );
+
 };
 
 export default profile;

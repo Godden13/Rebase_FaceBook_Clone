@@ -26,8 +26,7 @@ interface ImageCarouselProps {
 }
 
 
-const imagesC = [
-  ,
+export const ImagesC = [
   {
     title: "James Smith",
     src: Man,
@@ -113,7 +112,7 @@ const Stories = () => {
         <button onClick={scrollBack}>&lt;</button>
 
         <Carousel__stories>
-          {imagesC.map((image: any, index: Key) => (
+          {ImagesC.map((image: any, index: Key) => (
             <First__card key={index} trans={trans}>
               <>
                 {index}

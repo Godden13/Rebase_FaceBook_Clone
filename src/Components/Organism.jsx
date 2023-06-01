@@ -135,8 +135,8 @@ export const PostForm = styled("form")`
 `;
 
 export const PopForm = styled(PostForm)`
-  width: 498px;
-  height: 450px;
+  width: 500px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
@@ -166,20 +166,23 @@ export const MainPop = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  border: 2px solid red;
+  border: none;
   background-color: white transparent;
 `;
 
 export const FeedCards = styled.div`
-  width: 618px;
-  height: 700px;
+  width: min(618px, 97vw);
+  height: max(700px, fit-content);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-i  tems: center;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   margin: 30px 0;
+  @media (max-width: 768px) {
+    width: 300x;
+  }
 `;

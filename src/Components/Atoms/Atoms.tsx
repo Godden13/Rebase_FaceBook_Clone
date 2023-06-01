@@ -312,7 +312,8 @@ export const ClosepopUp = styled.span`
 `;
 
 export const LockedDiv = styled.div`
-  width: 100px;
+  width: 110px;
+  heigth: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,6 +321,7 @@ export const LockedDiv = styled.div`
   border-radius: 6px;
   font-size: 18px;
   gap: 2%;
+  margin-bottom: 10px;
 `;
 
 export const WrtieMind__status = styled.textarea`
@@ -340,7 +342,7 @@ export const List__li = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style-type: none;
+  list-style-type: none; 40px
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -425,7 +427,7 @@ export const MainPis = {
   width: "99%",
   height: "470px",
   marginTop: "20px",
-  backgroundSize: "cover",
+ /*  backgroundSize: "cover", */
 };
 
 export const Timer = styled.span`
@@ -438,3 +440,13 @@ font-size: 12px;
   height: "50px",
   
 };
+
+export const ImageStyles = {
+  width: "100%",
+  height: "auto",
+  flex: "0 0 auto",
+  scrollSnapAlign: "center",
+}
+ 
+
+  
