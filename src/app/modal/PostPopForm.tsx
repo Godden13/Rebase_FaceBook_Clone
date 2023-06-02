@@ -39,6 +39,7 @@ import { getInfo, initFirebase } from "@/firebase/config";
 
 const PostPopForm = ({ setOpen }: any) => {
   const [textValue, setTextValue] = useState("");
+  const [imageUpload, setImageUpload] = useState(null)
 
   const handleTextChange = (e: any) => {
     setTextValue(e.target.value);

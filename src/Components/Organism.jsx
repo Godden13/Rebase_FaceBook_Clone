@@ -103,17 +103,6 @@ export const PopUpBox = styled("div")`
   width: 380px;
   `
 
-export const Leftside = styled("div")`
-display: flex;
-flex-direction: column;
-padding:40px 0  0 5px ;
-align-items: center;
-width: 210px;
-border: 2px solid red;
-height: 100%;
-overflow-x: scroll;
-`;
-
 export const IconsHolder = styled.div`
   display: flex;
   align-items: center;

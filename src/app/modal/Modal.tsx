@@ -50,7 +50,7 @@ function Register({
     password: "",
     gender: "",
   });
-  const { EmailLink, signUp } = useAuth();
+  const { signUp, confirmEmail } = useAuth();
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -66,7 +66,7 @@ function Register({
       gender: data.gender,
     });
     await signUp(data.email, data.password)
-    await EmailLink(data.email);
+    await confirmEmail();
     console.log(user);
     setSee(!see);
   };
@@ -209,7 +209,7 @@ function Register({
                 id="female"
                 value="female"
                 onChange={(e) => {
-                  setData((prev) => ({ ...prev, gender: e.target.value }));
+                  setData((prev) => ({ ...prev, gender: "female" }));
                   console.log(e);
                 }}
               />
@@ -223,7 +223,7 @@ function Register({
                 id="male"
                 value="male"
                 onChange={(e) => {
-                  setData((prev) => ({ ...prev, gender: e.target.value }));
+                  setData((prev) => ({ ...prev, gender: "male" }));
                   console.log(e);
                 }}
               />
