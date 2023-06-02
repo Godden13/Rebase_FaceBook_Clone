@@ -1,6 +1,7 @@
 import { FeedCards } from "@/Components/Organism";
-import ProfilePicture from "../../assets/images/persons/5.jpeg";
-import Snoop from "../../assets/images/persons/6.jpeg";
+import ProfilePicture from "../assets/images/persons/5.jpeg";
+
+import Snoop from "../assets/images/persons/6.jpeg";
 
 import { Feed__multimedia, Multi__smallcontainers } from "@/Components/Molecules";
 
@@ -29,8 +30,8 @@ import Image from "next/image";
 
 import { Globe, Dots, LikedPost, Comments, SharePost, Xmarker } from "@/Components/Atoms/IconAtoms";
 
-import Liked from "../../assets/images/like.png";
-import Loved from "../../assets/images/heart.png";
+import Liked from "../assets/images/like.png";
+import Loved from "../assets/images/heart.png";
 import { CSSProperties } from "react";
 
 interface ImgProps {

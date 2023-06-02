@@ -1,10 +1,10 @@
 "use client";
 
-import Stories from "@/app/modal/Stories";
-import Postbox from "@/app/modal/Postbox";
+import Stories from "@/modal/Stories";
+import Postbox from "@/modal/Postbox";
 import { Main } from "@/Components/Organism";
-import PostPopForm from "@/app/modal/PostPopForm";
-import FeedCard from "@/app/modal/FeedCard";
+import PostPopForm from "@/modal/PostPopForm";
+import FeedCard from "@/modal/FeedCard";
 
 const profile = () => {
   return (

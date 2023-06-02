@@ -30,7 +30,7 @@ import { useState } from "react";
 import { initFirebase } from "@/firebase/config";
 import { useRouter } from "next/navigation";
 import { signInWithEmailAndPassword, getAuth } from "@firebase/auth";
-import Register from "./modal/Modal";
+import Register from "../modal/Modal";
 
 export default function Home() {
   const app = initFirebase();

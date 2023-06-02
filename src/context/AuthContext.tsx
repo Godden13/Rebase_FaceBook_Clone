@@ -29,6 +29,7 @@ export const AuthContextPRovider = ({
         setUser({
           uid: user.uid,
           email: user.email,
+         displayName: user.displayName, 
         });
       } else {
         setUser(null);
