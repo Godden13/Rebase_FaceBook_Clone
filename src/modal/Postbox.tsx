@@ -10,7 +10,7 @@ import {
 } from "@/Components/Molecules";
 
 import { Mind__input, Proimg } from "@/Components/Atoms/Atoms";
-import ProfilePicture  from "../assets/images/persons/4.jpeg";
+import ProfilePicture  from "@/assets/images/persons/4.jpeg";
 import Live from "@/assets/images/icons/live.png";
 import Gallery from "@/assets/images/icons/gallerry.png";
 import Feel  from "@/assets/images/icons/smile.png";

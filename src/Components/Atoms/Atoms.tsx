@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 
 export const Ptag = styled("p")`
   font-size: 14px;

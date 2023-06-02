@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { PopForm, MainPop } from "@/Components/Organism";
+import { PopForm, MainPop, Bg } from "@/Components/Organism";
 import {
   CreatePost__title,
   CreatePost__title__innerContianer,
@@ -63,7 +63,7 @@ const PostPopForm = ({ setOpen }: any) => {
 
   return (
     <>
-      <MainPop>
+      <Bg>
         <PopForm>
           <CreatePost__title>
             <CreatePost__title__innerContianer>
@@ -71,7 +71,6 @@ const PostPopForm = ({ setOpen }: any) => {
                 <h2>Create Post </h2>
               </TittleCreate>
                <ClosepopUp onClick={() => setOpen(false)}> <Xmarker /> </ClosepopUp> 
-             {/* <Xmarker onClick={() => setOpen(false)} /> */}
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
@@ -99,7 +98,7 @@ const PostPopForm = ({ setOpen }: any) => {
             <Para>Add to your Post</Para>
             <List>
               <List__li>
-                <Image src={GalleryImoji} alt="alt" style={LiStyle}><input type="file" name="" id="" /></Image>
+                <Image src={GalleryImoji} alt="alt" style={LiStyle}/>
               </List__li>
               <List__li>
                 <Image src={TagImoji} alt="alt" style={LiStyle} />
@@ -123,7 +122,7 @@ const PostPopForm = ({ setOpen }: any) => {
             Post
           </Postsub__Button>
         </PopForm>
-      </MainPop>
+      </Bg>
     </>
   );
 };
