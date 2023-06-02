@@ -82,6 +82,9 @@ export const RightSide = styled("div")`
 export const RightBar = styled("div")`
   background-color: #fff;
   height: 550px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 auto;
   overflow-y: scroll;
-  width: 400px;
+  width: 380px;
 `;

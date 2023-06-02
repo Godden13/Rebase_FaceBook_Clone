@@ -120,7 +120,7 @@ export const ProfilField1 = styled.div`
   align-items: center;
   display: flex;
   font-family: Helvetica, Arial, sans-serif;
-  gap: 10px;
+  gap: 12px;
   margin: 10px auto;
   padding-bottom: 15px;
   width: 95%;
@@ -149,21 +149,23 @@ export const SponsInfos = styled.div`
   align-items: center;
   margin: 20px auto;
   font-family: Helvetica, Arial, sans-serif;
-  width: 100%;
+  width: 85%;
 `;
 
 export const ContactInfos = styled.div`
   align-items: center;
-  margin: 30px auto;
+  margin: 10px auto;
   font-family: Helvetica, Arial, sans-serif;
 `;
 
-export const Sponsor = styled.div`
-  align-items: center;
-  display: flex;
+export const GroupInfos = styled.div`
   font-family: Helvetica, Arial, sans-serif;
-  gap: 20px;
-  justify-content: center;
+  margin: 10px auto;
+  width: 85%;
+`;
+
+export const Sponsor = styled.div`
+  font-family: Helvetica, Arial, sans-serif;
   margin: 20px auto;
   width: 80%;
 `;
@@ -171,14 +173,14 @@ export const Sponsor = styled.div`
 export const HeadIcon = styled.div`
   align-items: center;
   display: flex;
-  gap: 120px;
+  gap: 100px;
   justify-content: center;
   font-family: Helvetica, Arial, sans-serif;
 `;
 
 export const TrIcon = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   font-family: Helvetica, Arial, sans-serif;
 `;

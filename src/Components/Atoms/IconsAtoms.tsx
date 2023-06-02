@@ -14,6 +14,7 @@ import { MdOutlineHelp } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { GrLogout } from "react-icons/gr";
 import { SlOptions } from "react-icons/sl";
+import { FiPlus } from "react-icons/fi";
 
 export const SearchIcon = styled(GoSearch)`
   color: #67656b;
@@ -104,12 +105,17 @@ export const RightArrow = styled(AiOutlineRight)`
   font-size: 23px;
 `;
 
+export const PluSign = styled(FiPlus)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
 export const Call = styled(MdVideoCall)`
   border-radius: 50%;
   color: #67656b;
   cursor: pointer;
-  font-size: 25px;
-  padding: 3px;
+  font-size: 37px;
+  padding: 8px;
 
   &:hover {
     background-color: #e4e6eb;
@@ -120,8 +126,8 @@ export const SearchIcon1 = styled(HiOutlineSearch)`
   border-radius: 50%;
   color: #67656b;
   cursor: pointer;
-  font-size: 25px;
-  padding: 3px;
+  font-size: 35px;
+  padding: 8px;
 
   &:hover {
     background-color: #e4e6eb;
@@ -132,8 +138,8 @@ export const Options = styled(SlOptions)`
   border-radius: 50%;
   color: #67656b;
   cursor: pointer;
-  font-size: 25px;
-  padding: 3px;
+  font-size: 35px;
+  padding: 8px;
 
   &:hover {
     background-color: #e4e6eb;
