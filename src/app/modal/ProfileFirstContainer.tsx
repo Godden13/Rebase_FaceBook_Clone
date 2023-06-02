@@ -7,11 +7,11 @@ import {
   Suggesteddrop__friends,
 } from "@/Components/Atoms/IconAtoms";
 import Image from "next/image";
-import MainUser from "../../../assets/images/persons/8.jpeg";
+import MainUser from "../../assets/images/persons/8.jpeg";
 import MutualFriends from "../../../assets/images/persons/7.jpeg";
-import ProfileFriendsTage from "../../../assets/images/proffriends.png";
+import ProfileFriendsTage from "../../assets/images/proffriends.png";
 
-import Styles from "./ProfileFirstcontainer.module.css";
+import Styles from "../../assets/styles/ProfileFirstcontainer.module.css";
 
 const ProfileFirstcontainer = () => {
   return (
@@ -59,7 +59,7 @@ const ProfileFirstcontainer = () => {
           </div>
           <div className={Styles.prof__settingsecondcontainer}>
             <div className={Styles.secondsetting__left}>
-              <div>Posts</div>
+              <div className="">Posts</div>
               <div>About</div>
               <div>Friends</div>
               <div>Photos</div>
