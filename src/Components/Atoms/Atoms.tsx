@@ -424,8 +424,8 @@ export const ImageIcons = {
 export const MainPis = {
   borderRadius: "1%",
   width: "99%",
-  minHeight: "470px",
-  maxHeight: "300px",
+  height: "470px",
+  maxHeight: "400px",
   marginTop: "20px",
 };
 

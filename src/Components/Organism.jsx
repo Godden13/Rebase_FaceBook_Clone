@@ -184,6 +184,6 @@ export const FeedCards = styled.div`
   margin: 30px 0;
   @media (max-width: 400px) {
     width: 310px;
-    height: 66vh;
+    height: 69vh;
   }
 `;
