@@ -1,0 +1,214 @@
+.firstcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 3px 1px 5px -14px rgba(0,0,0,0.61);
+-webkit-box-shadow: 3px 1px 5px -14px rgba(0,0,0,0.61);
+-moz-box-shadow: 3px 1px 5px -14px rgba(0,0,0,0.61);
+}
+
+.first__containerWrapper {
+  width: 1256px !important;
+  height: 652px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.background__Prof {
+  width: 100%;
+  height: 435px;
+  background-image: url("../../assets/images/persons/8.jpeg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 9px;
+}
+
+.bottomdiv {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  background-color: rgba(80, 81, 79, 0.517);
+}
+
+.bottom___inner {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+  background-color: yellow;
+}
+
+.bottom___inner span {
+  width: 250px;
+  padding: 2.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600px;
+  border-radius: 8px;
+  gap: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: rgba(65, 65, 64, 0.681)
+}
+
+.change__profilesettings {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+
+.ProfSetting__firstcontainer {
+  width: 98%;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(132, 32, 32);
+}
+
+.profile__leftsetting {
+  height: 150px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  background-color: blue;
+}
+
+.profilpic__container {
+  width: 168px;
+  height: 168px;
+  /* background-color: white; */
+  position: relative;
+}
+
+.profileUserImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -35px;
+  border: 3px solid white;
+}
+
+.Profile__rightsetting {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: bisque ;
+}
+
+.addStoris {
+  height: 160px;
+  width: 650px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 12px;
+  gap: 2%;
+  background-color: yellow;
+}
+
+.prof__settingsecondcontainer {
+  width: 90%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8%;
+  border-top: 2px solid gray;
+  background-color: aquamarine;
+}
+
+.secondsetting__left {
+  width: 50%;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.8%;
+}
+
+
+.pro__Name_friends {
+  width: 300px;
+  height: 144px;
+}
+
+.pro__Name_friends h1 {
+  font-weight: 600;
+}
+
+.pro__Name_friends p {
+  color: rgb(171, 166, 166);
+  margin-bottom: 2%;
+}
+
+.Pro__Addstoriesbtn {
+  background-color: rgb(73, 73, 248);
+  color: white;
+  font-size: 18px;
+  width: 150px;
+  padding: 2.6%;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.Pro__editprobtn {
+  background-color: #d6d6ddb6;
+  color: black;
+  font-size: 18px;
+  width: 190px;
+  padding: 2.6%;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.Pro__sugestedFriends {
+  padding: 2.7%;
+  background-color: #d6d6ddb6;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -3,8 +3,6 @@ import ProfilePicture from "../assets/images/persons/5.jpeg";
 
 import Snoop from "../assets/images/persons/6.jpeg";
 
-import { Feed__multimedia, Multi__smallcontainers } from "@/Components/Molecules";
-
 import { ProfilePis } from "@/Components/Atoms/Atoms";
 
 interface feedProps {
@@ -24,6 +22,8 @@ import {
   FeedMainImg,
   FeedPost__bottom,
   PostBottom,
+  Feed__multimedia,
+  Multi__smallcontainers,
 } from "@/Components/Molecules";
 
 import Image from "next/image";
@@ -52,6 +52,7 @@ function FeedCard() {
                 alt="prof"
                 style={ProfilePis}
                 margin-rigth="22px"
+                border-radius="50%"
               />
             </PostImg>
             <div>
@@ -83,7 +84,8 @@ function FeedCard() {
         <Feed__multimedia>
           <Multi__smallcontainers>
             <p>
-              <LikedPost> </LikedPost>Like
+              <LikedPost/> 
+               Like
             </p>
           </Multi__smallcontainers>
           <Multi__smallcontainers>

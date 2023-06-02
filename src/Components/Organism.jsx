@@ -150,8 +150,8 @@ export const RightBar = styled("div")`
 `;
 
 export const PopForm = styled(PostForm)`
-  width: 498px;
-  height: 450px;
+  width: 500px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
@@ -160,8 +160,8 @@ export const PopForm = styled(PostForm)`
   }
 
   @media (max-width: 400px) {
-    width: 300px;
-    height: 400px;
+    width: 310px;
+    height: 420px;
   }
 `;
 
@@ -181,13 +181,13 @@ export const MainPop = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  border: 2px solid red;
+  border: none;
   background-color: white transparent;
 `;
 
 export const FeedCards = styled.div`
-  width: 618px;
-  height: 700px;
+  width: min(618px, 97vw);
+  height: 700px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,4 +197,9 @@ export const FeedCards = styled.div`
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   margin: 30px 0;
+
+  @media (max-width: 400px) {
+    width: 310px;
+    height: 69vh;
+  }
 `;
