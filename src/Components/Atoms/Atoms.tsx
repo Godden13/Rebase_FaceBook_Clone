@@ -424,9 +424,9 @@ export const ImageIcons = {
 export const MainPis = {
   borderRadius: "1%",
   width: "99%",
-  height: "470px",
+  minHeight: "470px",
+  maxHeight: "300px",
   marginTop: "20px",
-  /*  backgroundSize: "cover", */
 };
 
 export const Timer = styled.span`
@@ -436,6 +436,7 @@ export const Timer = styled.span`
 export const ProfilePis = {
   width: "50px",
   height: "50px",
+  borderRadius:"50%"
 };
 
 export const ImageStyles = {

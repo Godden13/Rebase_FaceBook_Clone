@@ -301,6 +301,10 @@ export const FeedPost__wrapper = styled("div")`
   justify-content: center;
   align-items: center;
   /* border: 2px solid red; */
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
 `;
 
 export const FeedPostTop = styled("div")`
@@ -331,6 +335,9 @@ export const PostTopLeft = styled.div`
   /* background-color: yellow; */
   line-height: 1.6;
   gap: 8px;
+  @media (max-width: 400px) {
+    width: 55%;
+  }
 `;
 
 export const FeedPost__action = styled("div")`
@@ -347,6 +354,10 @@ export const Feedpost__message = styled(FeedPost__action)`
   text-align: left;
   font-size: 18px;
   /* border: 1px solid aqua; */
+  @media (max-width: 440px) {
+    width: 100%;
+    font-size: 14px;
+  }
 `;
 
 export const FeedMainImg = styled.div`
@@ -400,4 +411,36 @@ export const Multi__smallcontainers = styled.div`
     border-radius: 6px;
     margin-bottom: 4px;
   }
+`;
+
+
+export const Multi__smallcontainer = styled.div`
+  width: 420px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  padding: 7px;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 0.5px;
+  gap: 0.4rem;
+  &:hover {
+    background: rgb(192, 192, 192);
+    transition: all 0.4s ease-in-out;
+    border-radius: 6px;
+    margin-bottom: 4px;
+  }
+`;
+
+export const Profile = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white !important;
 `;

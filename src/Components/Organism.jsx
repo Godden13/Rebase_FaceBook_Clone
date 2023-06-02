@@ -172,7 +172,7 @@ export const MainPop = styled.div`
 
 export const FeedCards = styled.div`
   width: min(618px, 97vw);
-  height: max(700px, fit-content);
+  height: 700px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,7 +182,8 @@ export const FeedCards = styled.div`
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   margin: 30px 0;
-  @media (max-width: 768px) {
-    width: 300x;
+  @media (max-width: 400px) {
+    width: 310px;
+    height: 66vh;
   }
 `;
