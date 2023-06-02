@@ -165,7 +165,10 @@ export const GroupInfos = styled.div`
 `;
 
 export const Sponsor = styled.div`
+  align-items: center;
+  display: flex;
   font-family: Helvetica, Arial, sans-serif;
+  gap: 10px;
   margin: 20px auto;
   width: 80%;
 `;
@@ -182,5 +185,9 @@ export const TrIcon = styled.div`
   display: flex;
   gap: 15px;
   justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+`;
+
+export const Texte = styled.div`
   font-family: Helvetica, Arial, sans-serif;
 `;

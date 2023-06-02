@@ -14,6 +14,7 @@ import {
   ProfilField1,
   SponsInfos,
   Sponsor,
+  Texte,
   TrIcon,
 } from "@/Components/Molecules";
 import { RightBar, RightSide } from "@/Components/Organism";
@@ -39,7 +40,7 @@ export default function page() {
     <RightSide>
       <RightBar>
         <SponsInfos>
-        <RightHeaders>Sponsored</RightHeaders>
+          <RightHeaders>Sponsored</RightHeaders>
           <Sponsor>
             <Image
               src={Card1}
@@ -48,8 +49,10 @@ export default function page() {
               width="100"
               style={{ borderRadius: "5px" }}
             />
-            <Describe>How I Got My Life Back</Describe>
-            <PageLink>hope.net</PageLink>
+            <Texte>
+              <Describe>How I Got My Life Back</Describe>
+              <PageLink>hope.net</PageLink>
+            </Texte>
           </Sponsor>
           <Sponsor>
             <Image
@@ -59,8 +62,10 @@ export default function page() {
               width="100"
               style={{ borderRadius: "5px" }}
             />
-            <Describe>Be proud of nature's life</Describe>
-            <PageLink>beautyofnature.com</PageLink>
+            <Texte>
+              <Describe>Be proud of nature's life</Describe>
+              <PageLink>beautyofnature.com</PageLink>
+            </Texte>
           </Sponsor>
         </SponsInfos>
         <ContactInfos>

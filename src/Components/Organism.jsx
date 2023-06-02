@@ -84,7 +84,6 @@ export const RightBar = styled("div")`
   height: 550px;
   display: flex;
   flex-direction: column;
-  padding: 0 auto;
   overflow-y: scroll;
   width: 380px;
 `;
