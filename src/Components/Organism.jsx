@@ -66,6 +66,17 @@ export const Foot = styled.footer`
   bottom: 0;
 `;
 
+export const Leftside = styled("div")`
+display: flex;
+flex-direction: column;
+padding:40px 0  0 5px ;
+align-items: center;
+width: 210px;
+border: 2px solid red;
+height: 100%;
+overflow-x: scroll;
+`;
+
 export const Nav = styled("div")`
   align-items: center;
   background-color: #fff;
@@ -88,19 +99,9 @@ export const PopUpBox = styled("div")`
   border-radius: 10px;
   display: flex;
   height: 460px;
-  justify: center;
+  justify-content: center;
   width: 380px;
   `
-export const Leftside = styled("div")`
-display: flex;
-flex-direction: column;
-padding:40px 0  0 5px ;
-align-items: center;
-width: 210px;
-border: 2px solid red;
-height: 100%;
-overflow-x: scroll;
-`;
 
 export const IconsHolder = styled.div`
   display: flex;

@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 
@@ -200,6 +202,7 @@ export const NavInput = styled("input")`
     background-color: #ddd;
   }
 `;
+        
 export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
@@ -257,6 +260,7 @@ export const Href = styled.a`
   }
 `;
 
+
 export const Circle = styled("span")`
   align-items: center;
   background-color: #e4e6eb;
@@ -291,7 +295,7 @@ export const Phrase = styled("p")`
   font-weight: 400;
 `;
 
-export const FootPhrase = styled.p`
+export const FootPhrase = styled("p")`
   color: #65676b;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
