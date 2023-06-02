@@ -1,5 +1,5 @@
 "use client";
-import { Paragraph } from "@/Components/Atoms/Atoms";
+import { Name1 } from "@/Components/Atoms/Atoms";
 import {
   BarChart,
   BookMark,
@@ -19,110 +19,113 @@ import {
   Heart,
   Game,
   Activity,
-  Dropdown
+  Dropdown,
 } from "@/Components/Atoms/IconAtoms";
-import { Bg ,  Leftside, IconsHolder} from "@/Components/Organism";
+import { Bg, Leftside, IconsHolder } from "@/Components/Organism";
 import { useState } from "react";
 
 export default function LeftSideBar() {
   const [slide, setSlide] = useState(false);
-  const [sliders, setSliders] = useState(true)
+  const [sliders, setSliders] = useState(true);
 
   function Longlist() {
-    setSlide(true)
-    setSliders(false)
+    setSlide(true);
+    setSliders(false);
   }
 
   function Shortlist() {
-    setSlide(false)
-    setSliders(true)
+    setSlide(false);
+    setSliders(true);
   }
 
-
   return (
-    <Bg>
+    <div style={{ position: "fixed" }}>
       <Leftside>
         <IconsHolder>
-          <Friends /> <Paragraph>Friends</Paragraph>
+          <Friends /> <Name1>Friends</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <Group /> <Paragraph>Groups</Paragraph>
+          <Group /> <Name1>Groups</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <House /> <Paragraph>Marketplace</Paragraph>
+          <House /> <Name1>Marketplace</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <Laptop /> <Paragraph>Watch</Paragraph>
+          <Laptop /> <Name1>Watch</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <WatchLater /> <Paragraph>Memories</Paragraph>
+          <WatchLater /> <Name1>Memories</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <BookMark /> <Paragraph>Saved</Paragraph>
+          <BookMark /> <Name1>Saved</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <Flag /> <Paragraph>Pages</Paragraph>
+          <Flag /> <Name1>Pages</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <Calender /> <Paragraph>Events</Paragraph>
+          <Calender /> <Name1>Events</Name1>
         </IconsHolder>
 
         <IconsHolder>
-          <BarChart /> <Paragraph>Add Manager</Paragraph>
+          <BarChart /> <Name1>Add Manager</Name1>
         </IconsHolder>
-        {sliders && <IconsHolder onClick={() => Longlist()}>
-          <Dropdown >
-            <DropdownIcon />
-          </Dropdown>
-          <Paragraph>See more</Paragraph>
-        </IconsHolder>}
+        {sliders && (
+          <IconsHolder onClick={() => Longlist()}>
+            <Dropdown>
+              <DropdownIcon />
+            </Dropdown>
+            <Name1>See more</Name1>
+          </IconsHolder>
+        )}
 
         {slide && (
-          <div>
+          <div style={{ marginLeft: -20 + "px" }}>
             <IconsHolder>
-              <Speaker /> <Paragraph>Ad center</Paragraph>
+              <Speaker /> <Name1>Ad center</Name1>
             </IconsHolder>
 
             <IconsHolder>
-              <Flower /> <Paragraph>Climate Science Center</Paragraph>
+              <Flower /> <Name1>Climate Science Center</Name1>
             </IconsHolder>
 
             <IconsHolder>
-              <Heart /> <Paragraph>Fundraisers</Paragraph>
+              <Heart /> <Name1>Fundraisers</Name1>
             </IconsHolder>
 
             <IconsHolder>
-              <Messenger /> <Paragraph>Messanger</Paragraph>
+              <Messenger /> <Name1>Messanger</Name1>
             </IconsHolder>
 
             <IconsHolder>
-              <Card /> <Paragraph> orders and Payments</Paragraph>
+              <Card /> <Name1> orders and Payments</Name1>
             </IconsHolder>
 
             <IconsHolder>
-              <Game /> <Paragraph> Play Games</Paragraph>
+              <Game /> <Name1> Play Games</Name1>
             </IconsHolder>
 
             <IconsHolder>
-              <Activity /> <Paragraph> Recent and Activity</Paragraph>
+              <Activity /> <Name1> Recent and Activity</Name1>
             </IconsHolder>
 
-            {!sliders && <IconsHolder onClick={() => Shortlist()}>
-              <Dropdown >
-                <DropupIcon />
-              </Dropdown>
-              <Paragraph>See Less</Paragraph>
-            </IconsHolder>}
+            {!sliders && (
+              <IconsHolder onClick={() => Shortlist()}>
+                <Dropdown>
+                  <DropupIcon />
+                </Dropdown>
+                <Name1>See Less</Name1>
+              </IconsHolder>
+            )}
           </div>
         )}
       </Leftside>
-    </Bg>
+    </div>
   );
 }

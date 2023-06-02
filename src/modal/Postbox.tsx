@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+"use client"
 import { PostForm, PostForm__innerContainer } from "@/Components/Organism";
 import Image from "next/image";
 import {
@@ -10,10 +10,10 @@ import {
 } from "@/Components/Molecules";
 
 import { Mind__input, Proimg } from "@/Components/Atoms/Atoms";
-import ProfilePicture  from "../../assets/images/persons/10.jpeg";
-import Live from "../../assets/images/icons/live.png";
-import Gallery from "../../assets/images/icons/gallerry.png";
-import Feel  from "../../assets/images/icons/smile.png";
+import ProfilePicture  from "../assets/images/persons/4.jpeg";
+import Live from "@/assets/images/icons/live.png";
+import Gallery from "@/assets/images/icons/gallerry.png";
+import Feel  from "@/assets/images/icons/smile.png";
 import PostPopForm from "./PostPopForm";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ const Postbox = () => {
             <Image
               src={ProfilePicture}
               alt="the user picture"
-              style={ImageStyle}
+               style={ImageStyle} 
             />
           </Proimg>
 

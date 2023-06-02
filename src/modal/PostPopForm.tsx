@@ -27,11 +27,11 @@ import { Whappy, Bac, Lock, Downarrow, Xmarker } from "@/Components/Atoms/IconAt
 import Image from "next/image";
 
 
- import Theme from "../../assets/images/icons/heme.png"; 
-import ThemeImoji2  from "../../assets/images/icons/smile.png";
-import GalleryImoji from "../../assets/images/icons/gallerry.png";
-import TagImoji from "../../assets/images/icons/tag.png";
-import GiftImoji from  "../../assets/images/gift.png";
+import Theme from "@/assets/images/icons/heme.png"; 
+import ThemeImoji2  from "@/assets/images/icons/smile.png";
+import GalleryImoji from "@/assets/images/icons/gallerry.png";
+import TagImoji from "@/assets/images/icons/tag.png";
+import GiftImoji from  "@/assets/images/gift.png";
 
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
@@ -46,10 +46,6 @@ const PostPopForm = ({ setOpen }: any) => {
   });
   const [imageUpload, setImageUpload] = useState(null)
   const { user } = useAuth()
-
-  const handleTextChange = (e: any) => {
-    setTextValue(e.target.value);
-  };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();

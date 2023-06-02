@@ -1,6 +1,6 @@
 "use client";
 import { Profile } from "@/Components/Molecules";
-import ProfileFirstcontainer from "@/app/modal/ProfileFirstContainer";
+import ProfileFirstcontainer from "@/modal/ProfileFirstContainer";
 
 const page = () => {
   return (
