@@ -46,7 +46,7 @@ export const FootHolder = styled(RightForm)`
   width: 50%;
   flex-wrap: wrap;
   max-width: 100% ;
-  background- color: transparent;
+  background-color: transparent;
   box-shadow: none;
   gap: 2px;
   justify-content: space-between;

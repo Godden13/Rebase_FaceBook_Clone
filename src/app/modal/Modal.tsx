@@ -24,28 +24,57 @@ import { Field, Heading2p,
 
 
 import { useState } from "react";
-import { initFirebase } from "@/firebase/config";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailLink,
-  signInWithPhoneNumber
-} from "@firebase/auth";
+import { getInfo, initFirebase } from "@/firebase/config";
 
-function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => void}) {
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { useAuth } from "@/context/AuthContext";
+
+function Register({
+  see,
+  setSee,
+}: {
+  see: Boolean;
+  setSee: (see: boolean) => void;
+}) {
   const [show, setShow] = useState(false);
-  const [data, setData] = useState({
-    FirstName: "",
-    LastName: "",
-    emailPhone: "",
-    Password: "",
+  const [dateInfo, setDateInfo] = useState({
+    day: "",
+    month: "",
+    year: "",
   });
-  const app = initFirebase();
+  const [custom, setCustom] = useState("")
+  const [data, setData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    gender: "",
+  });
+  const { signUp, confirmEmail } = useAuth();
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const user = await addDoc(collection(getInfo, "users"), {
+      id: serverTimestamp(),
+      firstName: data.firstName,
+      lastName: data.lastName,
+      email: data.email,
+      password: data.password,
+      dob: new Date(
+        `${dateInfo.month} ${dateInfo.day} ${dateInfo.year}`
+      ).toDateString(),
+      gender: data.gender,
+    });
+    await signUp(data.email, data.password)
+    await confirmEmail();
+    console.log(user);
+    setSee(!see);
+  };
 
   return (
     <>
       <Bg>
-        <RightForm2>
+        <RightForm2 onSubmit={handleSubmit}>
           <Xmark
             onClick={() => {
               setSee(!see);
@@ -62,13 +91,13 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
             <Input2
               placeholder="First name"
               onChange={(e) => {
-                setData((prev) => ({ ...prev, email: e.target.value }));
+                setData((prev) => ({ ...prev, firstName: e.target.value }));
               }}
             />
             <Input2
               placeholder="Last name"
               onChange={(e) => {
-                setData((prev) => ({ ...prev, email: e.target.value }));
+                setData((prev) => ({ ...prev, lastName: e.target.value }));
               }}
             />
           </FlexRow>
@@ -81,7 +110,7 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
           <Input1
             placeholder="New password"
             onChange={(e) => {
-              setData((prev) => ({ ...prev, email: e.target.value }));
+              setData((prev) => ({ ...prev, password: e.target.value }));
             }}
           />
 
@@ -90,22 +119,30 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
             <Round>?</Round>
           </Row>
           <FlexRow>
-            <Select>
-              <option>Jan</option>
-              <option>Feb</option>
-              <option>Mar</option>
-              <option>Apr</option>
-              <option>Mai</option>
-              <option>Jun</option>
-              <option>Jul</option>
-              <option>Aug</option>
-              <option>Sep</option>
-              <option>Oct</option>
-              <option>Nov</option>
-              <option>Dec</option>
+            <Select
+              onChange={(e) => {
+                setDateInfo((prev) => ({ ...prev, month: e.target.value }));
+              }}
+            >
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">Mai</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
             </Select>
 
-            <Select>
+            <Select
+              onChange={(e) => {
+                setDateInfo((prev) => ({ ...prev, day: e.target.value }));
+              }}
+            >
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -139,7 +176,11 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
               <option>31</option>
             </Select>
 
-            <Select>
+            <Select
+              onChange={(e) => {
+                setDateInfo((prev) => ({ ...prev, year: e.target.value }));
+              }}
+            >
               <option>2023</option>
               <option>2022</option>
               <option>2021</option>
@@ -162,17 +203,45 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
           <FlexRow>
             <Genders onClick={() => setShow(false)}>
               <label htmlFor="female">female</label>
-              <input type="radio" name="gender" id="female" />
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                onChange={(e) => {
+                  setData((prev) => ({ ...prev, gender: "female" }));
+                  console.log(e);
+                }}
+              />
             </Genders>
 
             <Genders onClick={() => setShow(false)}>
               <label htmlFor="male">male</label>
-              <input type="radio" name="gender" id="male" />
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                onChange={(e) => {
+                  setData((prev) => ({ ...prev, gender: "male" }));
+                  console.log(e);
+                }}
+              />
             </Genders>
 
             <Genders onClick={() => setShow(true)}>
               <label htmlFor="custom">custom</label>
-              <input type="radio" name="gender" id="custom" />
+              <input
+                type="radio"
+                name="gender"
+                id="custom"
+                onChange={async (e) => {
+                  await setData((prev) => ({
+                    ...prev,
+                    gender: custom,
+                  }));
+                }}
+              />
             </Genders>
           </FlexRow>
           {show && (
@@ -186,7 +255,12 @@ function Register({ see, setSee } : {see: Boolean, setSee: (see: boolean) => voi
 
               <SmallP2>Your gender is visible to everyone</SmallP2>
 
-              <Input1 placeholder="Gender (optional)" />
+              <Input1
+                placeholder="Gender (optional)"
+                onChange={(e) => {
+                  setCustom(e.target.value);
+                }}
+              />
             </>
           )}
 

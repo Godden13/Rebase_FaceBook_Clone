@@ -66,6 +66,17 @@ export const Foot = styled.footer`
   bottom: 0;
 `;
 
+export const Leftside = styled("div")`
+display: flex;
+flex-direction: column;
+padding:40px 0  0 5px ;
+align-items: center;
+width: 210px;
+border: 2px solid red;
+height: 100%;
+overflow-x: scroll;
+`;
+
 export const Nav = styled("div")`
   align-items: center;
   background-color: #fff;
@@ -88,19 +99,9 @@ export const PopUpBox = styled("div")`
   border-radius: 10px;
   display: flex;
   height: 460px;
-  justify: center;
+  justify-content: center;
   width: 380px;
   `
-export const Leftside = styled("div")`
-display: flex;
-flex-direction: column;
-padding:40px 0  0 5px ;
-align-items: center;
-width: 210px;
-border: 2px solid red;
-height: 100%;
-overflow-x: scroll;
-`;
 
 export const IconsHolder = styled.div`
   display: flex;
@@ -132,6 +133,20 @@ export const PostForm = styled("form")`
   @media (max-width: 400px) {
     width: 320px;
   }
+`;
+
+export const RightSide = styled("div")`
+  display: flex;
+  justify-content: right;
+  min-height: 100vh;
+  max-width: 100%;
+`;
+
+export const RightBar = styled("div")`
+  background-color: #fff;
+  height: 550px;
+  overflow-y: scroll;
+  width: 400px;
 `;
 
 export const PopForm = styled(PostForm)`
@@ -186,4 +201,5 @@ export const FeedCards = styled.div`
     width: 310px;
     height: 69vh;
   }
+`;
 `;

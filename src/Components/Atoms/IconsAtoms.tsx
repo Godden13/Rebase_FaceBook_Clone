@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { GoSearch } from "react-icons/go";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
-import { MdOndemandVideo } from "react-icons/md";
+import { MdOndemandVideo, MdVideoCall } from "react-icons/md";
 import { AiOutlineShop } from "react-icons/ai";
-import { HiUserGroup } from "react-icons/hi";
+import { HiUserGroup, HiOutlineSearch } from "react-icons/hi";
 import { BiCreditCard } from "react-icons/bi";
 import { CgMenuGridO } from "react-icons/cg";
 import { RiMessengerFill } from "react-icons/ri";
@@ -13,6 +13,7 @@ import { RiSettings5Fill, RiFeedbackFill } from "react-icons/ri";
 import { MdOutlineHelp } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { GrLogout } from "react-icons/gr";
+import { SlOptions } from "react-icons/sl";
 
 export const SearchIcon = styled(GoSearch)`
   color: #67656b;
@@ -101,4 +102,40 @@ export const LogOut = styled(GrLogout)`
 export const RightArrow = styled(AiOutlineRight)`
   cursor: pointer;
   font-size: 23px;
+`;
+
+export const Call = styled(MdVideoCall)`
+  border-radius: 50%;
+  color: #67656b;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 3px;
+
+  &:hover {
+    background-color: #e4e6eb;
+  }
+`;
+
+export const SearchIcon1 = styled(HiOutlineSearch)`
+  border-radius: 50%;
+  color: #67656b;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 3px;
+
+  &:hover {
+    background-color: #e4e6eb;
+  }
+`;
+
+export const Options = styled(SlOptions)`
+  border-radius: 50%;
+  color: #67656b;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 3px;
+
+  &:hover {
+    background-color: #e4e6eb;
+  }
 `;
