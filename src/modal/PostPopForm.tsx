@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { PopForm, MainPop } from "@/Components/Organism";
+import { PopForm, MainPop, Bg } from "@/Components/Organism";
 import {
   CreatePost__title,
   CreatePost__title__innerContianer,
@@ -27,11 +27,11 @@ import { Whappy, Bac, Lock, Downarrow, Xmarker } from "@/Components/Atoms/IconAt
 import Image from "next/image";
 
 
- import Theme from "../../assets/images/icons/heme.png"; 
-import ThemeImoji2  from "../../assets/images/icons/smile.png";
-import GalleryImoji from "../../assets/images/icons/gallerry.png";
-import TagImoji from "../../assets/images/icons/tag.png";
-import GiftImoji from  "../../assets/images/gift.png";
+import Theme from "@/assets/images/icons/heme.png"; 
+import ThemeImoji2  from "@/assets/images/icons/smile.png";
+import GalleryImoji from "@/assets/images/icons/gallerry.png";
+import TagImoji from "@/assets/images/icons/tag.png";
+import GiftImoji from  "@/assets/images/gift.png";
 
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
@@ -46,10 +46,6 @@ const PostPopForm = ({ setOpen }: any) => {
   });
   const [imageUpload, setImageUpload] = useState(null)
   const { user } = useAuth()
-
-  const handleTextChange = (e: any) => {
-    setTextValue(e.target.value);
-  };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -67,7 +63,7 @@ const PostPopForm = ({ setOpen }: any) => {
 
   return (
     <>
-      <MainPop>
+      <Bg>
         <PopForm>
           <CreatePost__title>
             <CreatePost__title__innerContianer>
@@ -75,7 +71,6 @@ const PostPopForm = ({ setOpen }: any) => {
                 <h2>Create Post </h2>
               </TittleCreate>
                <ClosepopUp onClick={() => setOpen(false)}> <Xmarker /> </ClosepopUp> 
-             {/* <Xmarker onClick={() => setOpen(false)} /> */}
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
@@ -103,7 +98,7 @@ const PostPopForm = ({ setOpen }: any) => {
             <Para>Add to your Post</Para>
             <List>
               <List__li>
-                <Image src={GalleryImoji} alt="alt" style={LiStyle}><input type="file" name="" id="" /></Image>
+                <Image src={GalleryImoji} alt="alt" style={LiStyle}/>
               </List__li>
               <List__li>
                 <Image src={TagImoji} alt="alt" style={LiStyle} />
@@ -127,7 +122,7 @@ const PostPopForm = ({ setOpen }: any) => {
             Post
           </Postsub__Button>
         </PopForm>
-      </MainPop>
+      </Bg>
     </>
   );
 };
