@@ -8,7 +8,7 @@ import {
   First__card,
 } from "@/Components/Molecules";
 
-import Man from  "../../assets/images/persons/man.jpeg"
+import Man from "../../assets/images/persons/man.jpeg";
 
 import { Read, Reels } from "../../Components/Atoms/IconAtoms";
 
@@ -18,16 +18,18 @@ import { Key, useState } from "react";
 import styled from "@emotion/styled";
 import image from "next/image";
 
-import { imageStyles } from "../../Components/Atoms/Atoms";
+import {
+  NextButton,
+  PrevButton,
+  imageStyles,
+} from "../../Components/Atoms/Atoms";
 
 interface ImageCarouselProps {
   images: any;
   alt: string;
 }
 
-
-const imagesC = [
-  ,
+export const ImagesC = [
   {
     title: "James Smith",
     src: Man,
@@ -86,13 +88,13 @@ const Stories = () => {
   const [trans, setTrans] = useState<number>(0);
 
   const scrollBack = () => {
-    setTrans((prev) => prev + 124.5 * 5);
+    setTrans((prev) => prev + 124.5 * 3);
 
     console.clear();
   };
 
   const scrollForward = () => {
-    setTrans((next) => next + 124.5 * -5);
+    setTrans((next) => next + 124.5 * -4);
 
     console.clear();
   };
@@ -110,18 +112,17 @@ const Stories = () => {
         </Reel__container>
       </Stories__1container>
       <Cardstories__container>
-        <button onClick={scrollBack}>&lt;</button>
+        <PrevButton onClick={scrollBack}>&lt;</PrevButton>
 
         <Carousel__stories>
-          {imagesC.map((image: any, index: Key) => (
+          {ImagesC.map((image: any, index: Key) => (
             <First__card key={index} trans={trans}>
               <>
-                {index}
+                {/* {index} */}
                 <Image
                   key={index}
                   src={image.src}
                   alt="kjk"
-                  object-fit
                   style={imageStyles}
                 />
               </>
@@ -129,7 +130,7 @@ const Stories = () => {
           ))}
         </Carousel__stories>
 
-        <button onClick={scrollForward}>&gt;</button>
+        <NextButton onClick={scrollForward}>&gt;</NextButton>
       </Cardstories__container>
     </Story>
   );

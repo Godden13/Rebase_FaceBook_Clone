@@ -19,9 +19,10 @@ import {
   WrtieMind__status,
   List__li,
   Postsub__Button,
+  Para,
 } from "@/Components/Atoms/Atoms";
 
-import { Whappy, Bac, Lock, Downarrow } from "@/Components/Atoms/IconAtoms";
+import { Whappy, Bac, Lock, Downarrow, Xmarker } from "@/Components/Atoms/IconAtoms";
 
 import Image from "next/image";
 
@@ -65,7 +66,8 @@ const PostPopForm = ({ setOpen }: any) => {
               <TittleCreate>
                 <h2>Create Post </h2>
               </TittleCreate>
-              <ClosepopUp onClick={() => setOpen(false)}>x</ClosepopUp>
+               <ClosepopUp onClick={() => setOpen(false)}> <Xmarker /> </ClosepopUp> 
+             {/* <Xmarker onClick={() => setOpen(false)} /> */}
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
@@ -91,7 +93,7 @@ const PostPopForm = ({ setOpen }: any) => {
             <Image src={ThemeImoji2} alt="smile" style={ThemeStyle1} />
           </Styled__backDiv>
           <PostDiv>
-            <p>Add to your Post</p>
+            <Para>Add to your Post</Para>
             <List>
               <List__li>
                 <Image src={GalleryImoji} alt="alt" style={LiStyle} />

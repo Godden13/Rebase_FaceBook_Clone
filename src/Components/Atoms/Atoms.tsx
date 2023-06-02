@@ -318,9 +318,9 @@ export const PageLink = styled.a`
 
 export const imageStyles = {
   width: "120px",
-  height: "80px",
+  height: "160px",
+  backgroundSize: "cover",
 };
-
 
 export const ClosepopUp = styled.span`
   width: 30px;
@@ -335,7 +335,8 @@ export const ClosepopUp = styled.span`
 `;
 
 export const LockedDiv = styled.div`
-  width: 100px;
+  width: 110px;
+  heigth: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,6 +344,7 @@ export const LockedDiv = styled.div`
   border-radius: 6px;
   font-size: 18px;
   gap: 2%;
+  margin-bottom: 10px;
 `;
 
 export const WrtieMind__status = styled.textarea`
@@ -357,13 +359,16 @@ export const WrtieMind__status = styled.textarea`
   font-size: 18px;
   margin-top: 30px;
   min-height: 100px;
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
 `;
 
 export const List__li = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style-type: none;
+  list-style-type: none; 40px
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -391,7 +396,6 @@ export const Postsub__Button = styled.button<styledprop>`
   background-color: ${({ active }) => (active ? "#4599ff" : "#dcdcdc")};
 `;
 
-
 export const ThemeStyle = {
   width: "40px",
   height: "40px",
@@ -409,8 +413,6 @@ export const LiStyle = {
   width: "23px",
   height: "23px",
 };
-
-
 
 export const Mind__input = styled.input`
   width: 585px;
@@ -430,7 +432,6 @@ export const Proimg = styled.div`
   border-radius: 50%;
 `;
 
-
 export const ImageStyle = {
   borderRadius: "50%",
   width: "40px",
@@ -447,17 +448,56 @@ export const MainPis = {
   borderRadius: "1%",
   width: "99%",
   height: "470px",
+  maxHeight: "400px",
   marginTop: "20px",
-  backgroundSize: "cover",
 };
 
 export const Timer = styled.span`
-color: gray;
-font-size: 12px;
-`
- export const ProfilePis = {
-  
+  color: gray;
+  font-size: 12px;
+`;
+export const ProfilePis = {
   width: "50px",
   height: "50px",
-  
+  borderRadius:"50%"
 };
+
+export const ImageStyles = {
+  width: "100%",
+  height: "auto",
+  flex: "0 0 auto",
+  scrollSnapAlign: "center",
+};
+
+export const PrevButton = styled.button`
+  width: 62px;
+  height: 54px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  background-color: white;
+`;
+
+
+export const NextButton = styled.button`
+  width: 62px;
+  height: 54px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  background-color: white;
+`;
+
+export const Para = styled.p `
+@media (max-width: 400PX) {
+  display: none;
+}
+`

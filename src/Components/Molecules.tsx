@@ -93,6 +93,7 @@ export const StoriesIcon__container = styled(Stories__1container)`
   height: 55px;
   border: none;
   gap: 3%;
+  border-bottom: 3.4px solid blue;
   &:hover {
     background: #f0f3f4;
     transition: all 0.4s ease-in-out;
@@ -139,7 +140,7 @@ export const Carousel__stories = styled.div`
 `;
 
 export const First__card = styled.div<StyledProps>`
-  height: 400px;
+  /* height: 400px; */
   height: 170px;
   display: flex;
   align-items: center;
@@ -163,12 +164,13 @@ export const CreatePost__title__innerContianer = styled.div`
 
 export const CreatePost__profile__prefence = styled.div`
   width: 97%;
-  height: 55px;
+  height: 65px;
   gap: 3%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: white;
+  margin-bottom: 14px;
 `;
 
 export const WriteStatus = styled(CreatePost__profile__prefence)`
@@ -213,6 +215,9 @@ export const PostDiv = styled(Styled__backDiv)`
   box-shadow: 5px 0px 5px -34px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 5px 0px 5px -34px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 5px 0px 5px -34px rgba(0, 0, 0, 0.19);
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 export const List = styled.ul`
@@ -296,6 +301,10 @@ export const FeedPost__wrapper = styled("div")`
   justify-content: center;
   align-items: center;
   /* border: 2px solid red; */
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
 `;
 
 export const FeedPostTop = styled("div")`
@@ -326,6 +335,9 @@ export const PostTopLeft = styled.div`
   /* background-color: yellow; */
   line-height: 1.6;
   gap: 8px;
+  @media (max-width: 400px) {
+    width: 55%;
+  }
 `;
 
 export const FeedPost__action = styled("div")`
@@ -342,6 +354,10 @@ export const Feedpost__message = styled(FeedPost__action)`
   text-align: left;
   font-size: 18px;
   /* border: 1px solid aqua; */
+  @media (max-width: 440px) {
+    width: 100%;
+    font-size: 14px;
+  }
 `;
 
 export const FeedMainImg = styled.div`
@@ -386,13 +402,45 @@ export const Multi__smallcontainers = styled.div`
   margin-top: 4px;
   padding: 7px;
   font-size: 17px;
-  color: 	black;
+  color: black;
   letter-spacing: 0.5px;
   gap: 0.4rem;
   &:hover {
-    background: 	rgb(192,192,192);
+    background: rgb(192, 192, 192);
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
     margin-bottom: 4px;
   }
+`;
+
+
+export const Multi__smallcontainer = styled.div`
+  width: 420px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  padding: 7px;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 0.5px;
+  gap: 0.4rem;
+  &:hover {
+    background: rgb(192, 192, 192);
+    transition: all 0.4s ease-in-out;
+    border-radius: 6px;
+    margin-bottom: 4px;
+  }
+`;
+
+export const Profile = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white !important;
 `;

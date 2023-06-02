@@ -2,7 +2,7 @@ import { FeedCards } from "@/Components/Organism";
 import ProfilePicture from "../../assets/images/persons/5.jpeg";
 import Snoop from "../../assets/images/persons/6.jpeg";
 
-import { Feed__multimedia, Multi__smallcontainers } from "@/Components/Molecules";
+import { Feed__multimedia, Multi__smallcontainer, Multi__smallcontainers } from "@/Components/Molecules";
 
 import { ProfilePis } from "@/Components/Atoms/Atoms";
 
@@ -51,6 +51,7 @@ function FeedCard() {
                 alt="prof"
                 style={ProfilePis}
                 margin-rigth="22px"
+                border-radius="50%"
               />
             </PostImg>
             <div>
@@ -80,11 +81,12 @@ function FeedCard() {
           <p>45 comments ...</p>
         </FeedPost__bottom>
         <Feed__multimedia>
-          <Multi__smallcontainers>
+          <Multi__smallcontainer>
             <p>
-              <LikedPost> </LikedPost>Like
+              <LikedPost/> 
+               Like
             </p>
-          </Multi__smallcontainers>
+          </Multi__smallcontainer>
           <Multi__smallcontainers>
             <Comments />
             <p>Comments</p>

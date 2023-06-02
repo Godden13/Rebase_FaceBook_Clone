@@ -6,10 +6,11 @@ import {
   FaCaretDown,
   FaLock,
   FaGlobeEurope,
+  FaChevronDown,
 } from "react-icons/fa";
-import { AiFillRead } from "react-icons/ai";
+import { AiFillRead, AiFillCamera } from "react-icons/ai";
 import { ImBookmark } from "react-icons/im";
-import { MdOndemandVideo } from "react-icons/md";
+import { MdOndemandVideo ,MdModeEdit } from "react-icons/md";
 import { FcGallery } from "react-icons/fc";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import {
@@ -17,7 +18,7 @@ import {
   BiLike,
   BiMessageDetail,
 } from "react-icons/bi";
-import { RiShareForwardLine } from "react-icons/ri";
+import { RiShareForwardLine, RiChatSmile3Fill } from "react-icons/ri";
 import {
   RiBarChart2Fill,
   RiArrowDropDownLine,
@@ -185,6 +186,30 @@ export const SharePost = styled(RiShareForwardLine)`
   font-size: small;
 `;
 export const Xmarker = styled(FiX)`
-font-size: 18px;
-color: black;
+  font-size: 18px;
+  color: black;
+`;
+
+export const EditSmile = styled(RiChatSmile3Fill)`
+  font-size: 25px;
+  color: lightGray;
+`;
+
+export const EditPhoto = styled(AiFillCamera)`
+  font-size: 25px;
+  color: lightGray;
+`;
+
+export const EditProf = styled(MdModeEdit)`
+font-size: 14px;
 `
+export const Suggesteddrop__friends = styled(FaChevronDown)`
+font-size: 14px;
+`
+export const Plike__container  = styled.div`
+width: 100px
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1%;
+` 
