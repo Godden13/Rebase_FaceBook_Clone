@@ -4,14 +4,17 @@ import {
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithPhoneNumber,
-  signInWithEmailLink,
+  sendSignInLinkToEmail,
   signOut,
+  sendEmailVerification,
+  User
 } from "firebase/auth";
+import { initFirebase } from "@/firebase/config";
 const AuthContext = createContext<any>({});
 
 export const useAuth = () => useContext(AuthContext);
-const auth = getAuth();
+const app = initFirebase()
+const auth = getAuth(app);
 
 export const AuthContextPRovider = ({
   children,
@@ -40,6 +43,19 @@ export const AuthContextPRovider = ({
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
+  const EmailLink = async (email: string) => {
+     await sendSignInLinkToEmail(auth, email, {
+      url: "https://rebase-face-book-clone.vercel.app/Pages/shop",
+      handleCodeInApp: true,
+    });
+  };
+
+  const confirmEmail = () => {
+    sendEmailVerification(auth.currentUser as User).then(() => {
+      console.log("Email sent successfully")
+    });
+  }
+
   const login = (email: string, password: string) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
@@ -50,7 +66,7 @@ export const AuthContextPRovider = ({
   };
 
   return (
-    <AuthContext.Provider value={{ user, signUp, login, logOut }}>
+    <AuthContext.Provider value={{ user, signUp, login, EmailLink, confirmEmail, logOut }}>
       {isLoading ? null : children}
     </AuthContext.Provider>
   );
