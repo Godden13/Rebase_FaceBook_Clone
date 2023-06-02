@@ -10,7 +10,7 @@ import {
 
 import Man from "../../assets/images/persons/man.jpeg";
 
-import { Read, Reels } from "../../Components/Atoms/IconAtoms";
+import { Read, Reels } from "../Components/Atoms/IconAtoms";
 
 import Image from "next/image";
 import { Key, useState } from "react";
@@ -18,11 +18,7 @@ import { Key, useState } from "react";
 import styled from "@emotion/styled";
 import image from "next/image";
 
-import {
-  NextButton,
-  PrevButton,
-  imageStyles,
-} from "../../Components/Atoms/Atoms";
+import { imageStyles, NextButton, PrevButton } from "../Components/Atoms/Atoms";
 
 interface ImageCarouselProps {
   images: any;

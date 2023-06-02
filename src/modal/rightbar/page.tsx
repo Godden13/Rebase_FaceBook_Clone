@@ -41,7 +41,7 @@ export default function page() {
               width="100"
               style={{ borderRadius: "5px" }}
             />
-            <Describe>Be proud of nature's life</Describe>
+            <Describe>Be proud of natures life</Describe>
             <PageLink>beautyofnature.com</PageLink>
           </Sponsor>
         </SponsInfos>

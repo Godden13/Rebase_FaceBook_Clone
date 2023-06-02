@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { PopForm, MainPop } from "@/Components/Organism";
 import {
   CreatePost__title,
@@ -36,11 +36,16 @@ import GiftImoji from  "../../assets/images/gift.png";
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
+import { useAuth } from "@/context/AuthContext";
 
 
 const PostPopForm = ({ setOpen }: any) => {
-  const [textValue, setTextValue] = useState("");
+  const [data, setData] = useState({
+    title: "",
+    fileUrl: "",  
+  });
   const [imageUpload, setImageUpload] = useState(null)
+  const { user } = useAuth()
 
   const handleTextChange = (e: any) => {
     setTextValue(e.target.value);
@@ -50,9 +55,12 @@ const PostPopForm = ({ setOpen }: any) => {
     e.preventDefault();
     const post = await addDoc(collection(getInfo, "posts"), {
       id: serverTimestamp(),
-      name:"Hello",
-      
-    })
+      title: data.title,
+      fileUrl: data.fileUrl,
+      createdBy: user.id,
+      doc: serverTimestamp(),
+      likes: 2,
+    });
   } 
 
 
@@ -84,8 +92,7 @@ const PostPopForm = ({ setOpen }: any) => {
           <WriteStatus>
             <WrtieMind__status
               placeholder="What is your mind, Bata?"
-              onChange={handleTextChange}
-              value={textValue}
+              onChange={(e)=>{setData((prev) => ({ ...prev, title: e.target.value }));}}
             />
           </WriteStatus>
           <Styled__backDiv>
@@ -96,7 +103,7 @@ const PostPopForm = ({ setOpen }: any) => {
             <Para>Add to your Post</Para>
             <List>
               <List__li>
-                <Image src={GalleryImoji} alt="alt" style={LiStyle} />
+                <Image src={GalleryImoji} alt="alt" style={LiStyle}><input type="file" name="" id="" /></Image>
               </List__li>
               <List__li>
                 <Image src={TagImoji} alt="alt" style={LiStyle} />
@@ -116,7 +123,7 @@ const PostPopForm = ({ setOpen }: any) => {
             </List>
           </PostDiv>
 
-          <Postsub__Button type="submit" active={!!textValue}>
+          <Postsub__Button type="submit" active={!user}>
             Post
           </Postsub__Button>
         </PopForm>

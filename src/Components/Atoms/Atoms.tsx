@@ -23,7 +23,7 @@ export const Ptag2 = styled(Ptag)`
   font-size: 12px;
 `;
 
-export const Xmark = styled.button`
+export const Xmark = styled("button")`
   font-size: 28px;
   background-color: #fff;
   border: none;
@@ -73,7 +73,7 @@ export const Minor = styled(SmallP)`
   margin: 0;
 `;
 
-export const Round = styled.button`
+export const Round = styled("button")`
   border-radius: 50%;
   width: 10px;
   font-size: 10px;
@@ -95,7 +95,7 @@ export const Heading2 = styled("h2")`
   max-width: 400px;
 `;
 
-export const Attribute = styled.div`
+export const Attribute = styled("div")`
   font-size: 30px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -108,7 +108,7 @@ export const Heading2p = styled(Heading2)`
   font-size: 26px;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled("h1")`
   font-size: 56px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -116,7 +116,7 @@ export const Heading = styled.h1`
   color: #0968e3;
 `;
 
-export const LogInButton = styled.button`
+export const LogInButton = styled("button")`
   background-color: #1877f2;
   color: #fff;
   margin: 0 0 8px 0;
@@ -142,7 +142,7 @@ export const SignUpButton = styled("button")`
   }
 `;
 
-export const FootButton = styled.span`
+export const FootButton = styled("span")`
   background-color: #f5f6f7;
   border: 1px solid #ccd0d5;
   cursor: pointer;
@@ -153,7 +153,7 @@ export const FootButton = styled.span`
   padding: 2px 7px;
 `;
 
-export const LogInput = styled.button`
+export const LogInput = styled("button")`
   font-size: 17px;
   padding: 14px 16px;
   width: 85%;
@@ -244,14 +244,14 @@ export const Select2 = styled(Select)`
   font-size: 12px;
 `;
 
-export const Field = styled.div`
+export const Field = styled("div")`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 `;
 
-export const Href = styled.a`
+export const Href = styled("a")`
   color: #385898;
   cursor: pointer;
 
@@ -280,7 +280,7 @@ export const Name1 = styled("p")`
   font-size: 15px;
 `;
 
-export const Detail = styled.p`
+export const Detail = styled("p")`
   color: #1876f2;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
@@ -305,12 +305,12 @@ export const RightHeaders = styled("h3")`
   font-family: Helvetica, Arial, sans-serif;
 `;
 
-export const Describe = styled.p`
+export const Describe = styled("p")`
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
 `;
 
-export const PageLink = styled.a`
+export const PageLink = styled("a")`
   color: grey;
   font-size: 13px;
   font-style: italic;
@@ -322,7 +322,8 @@ export const imageStyles = {
   backgroundSize: "cover",
 };
 
-export const ClosepopUp = styled.span`
+
+export const ClosepopUp = styled("span")`
   width: 30px;
   height: 30px;
   display: flex;
@@ -334,9 +335,8 @@ export const ClosepopUp = styled.span`
   background-color: rgb(220, 220, 220);
 `;
 
-export const LockedDiv = styled.div`
-  width: 110px;
-  heigth: 30px;
+export const LockedDiv = styled("div")`
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,7 +347,7 @@ export const LockedDiv = styled.div`
   margin-bottom: 10px;
 `;
 
-export const WrtieMind__status = styled.textarea`
+export const WrtieMind__status = styled("textarea")`
   width: 100%;
   min-height: 100px;
   font-size: 23px;
@@ -364,11 +364,11 @@ export const WrtieMind__status = styled.textarea`
   }
 `;
 
-export const List__li = styled.li`
+export const List__li = styled("li")`
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style-type: none; 40px
+  list-style-type: none; 
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -381,7 +381,7 @@ interface styledprop {
   active?: Boolean;
 }
 
-export const Postsub__Button = styled.button<styledprop>`
+export const Postsub__Button = styled("button")<styledprop>`
   color: white;
   width: 95%;
   height: 51px;
@@ -414,7 +414,9 @@ export const LiStyle = {
   height: "23px",
 };
 
-export const Mind__input = styled.input`
+
+
+export const Mind__input = styled("input")`
   width: 585px;
   text-align: left;
   font-size: 16px;
@@ -426,7 +428,7 @@ export const Mind__input = styled.input`
   background-color: rgb(237, 237, 237);
 `;
 
-export const Proimg = styled.div`
+export const Proimg = styled("div")`
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -452,11 +454,12 @@ export const MainPis = {
   marginTop: "20px",
 };
 
-export const Timer = styled.span`
-  color: gray;
-  font-size: 12px;
-`;
-export const ProfilePis = {
+export const Timer = styled("span")`
+color: gray;
+font-size: 12px;
+`
+ export const ProfilePis = {
+  
   width: "50px",
   height: "50px",
   borderRadius:"50%"

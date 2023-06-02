@@ -4,80 +4,6 @@ interface StyledProps {
   trans?: any;
 }
 
-export const LeftHolder = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  justify-content: center;
-  margin-top: -100px;
-`;
-
-export const RightHolder = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  justify-content: center;
-`;
-
-export const RightForm = styled("form")`
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  gap: 10px;
-  justify-content: center;
-  /* max-width: 400px; */
-  width: 390px;
-  padding: 15px 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  @media only screen and (max-width: 375px) {
-    width: 318px;
-  }
-`;
-
-export const RightForm2 = styled(RightForm)`
-  width: 360px;
-  position: relative;
-`;
-
-export const FootHolder = styled(RightForm)`
-  width: 50%;
-  flex-wrap: wrap;
-  max-width: 100% ;
-  background-color: transparent;
-  box-shadow: none;
-  gap: 2px;
-  justify-content: space-between;
-  padding: 15px 0;
-  border-radius: 0;
-    @media only screen and (max-width: 768px) {
-    width: 80%;
-  }
-    @media only screen and (max-width: 425px) {
-    width: 100%;
-  }
-`;
-
-export const FlexRow = styled("div")`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 10px;
-`;
-
-export const Genders = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 35px;
-  align-items: center;
-  border-radius: 4px;
-  padding: 0 5px;
-  width: 100%;
-  border: 1px solid grey;
-`;
-
 export const Stories__1container = styled("div")`
   width: 90%;
   height: 60px;
@@ -115,7 +41,7 @@ export const Reel__container = styled("div")`
   }
 `;
 
-export const Cardstories__container = styled.div`
+export const Cardstories__container = styled("div")`
   width: 97%;
   height: 238px;
   display: flex;
@@ -125,7 +51,7 @@ export const Cardstories__container = styled.div`
   padding: 2%;
 `;
 
-export const Carousel__stories = styled.div`
+export const Carousel__stories = styled("div")`
   width: 100%;
   height: 199px;
   display: flex;
@@ -139,8 +65,8 @@ export const Carousel__stories = styled.div`
   /* background-color: aqua; */
 `;
 
-export const First__card = styled.div<StyledProps>`
-  /* height: 400px; */
+export const First__card = styled("div")<StyledProps>`
+  height: 400px;
   height: 170px;
   display: flex;
   align-items: center;
@@ -153,7 +79,7 @@ export const First__card = styled.div<StyledProps>`
   transition: 0.5s;
 `;
 
-export const CreatePost__title__innerContianer = styled.div`
+export const CreatePost__title__innerContianer = styled("div")`
   width: 99%;
   gap: 10%;
   display: flex;
@@ -162,7 +88,7 @@ export const CreatePost__title__innerContianer = styled.div`
   background-color: white;
 `;
 
-export const CreatePost__profile__prefence = styled.div`
+export const CreatePost__profile__prefence = styled("div")`
   width: 97%;
   height: 65px;
   gap: 3%;
@@ -179,13 +105,23 @@ export const WriteStatus = styled(CreatePost__profile__prefence)`
   justify-content: center;
 `;
 
-export const Profile__holder = styled.div`
+export const Profile__holder = styled("div")`
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: red;
 `;
-export const StatusPreference = styled.div`
+
+export const Profile = styled("div")`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white !important;
+`;
+
+export const StatusPreference = styled("div")`
   width: 150px;
   height: 50px;
   line-height: 1.4;
@@ -220,28 +156,28 @@ export const PostDiv = styled(Styled__backDiv)`
   }
 `;
 
-export const List = styled.ul`
+export const List = styled("ul")`
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 `;
 
-export const CreatePost__title = styled.div`
+export const CreatePost__title = styled("div")`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ccc;
 `;
-export const TittleCreate = styled.div`
+export const TittleCreate = styled("div")`
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const Onyourmind = styled.div`
+export const Onyourmind = styled("div")`
   width: 100%;
   height: 50px;
   display: flex;
@@ -249,7 +185,7 @@ export const Onyourmind = styled.div`
   justify-content: space-between;
 `;
 
-export const Multi__media = styled.div`
+export const Multi__media = styled("div")`
   width: 100%;
   height: 50px;
   display: flex;
@@ -257,7 +193,7 @@ export const Multi__media = styled.div`
   justify-content: center;
   border-top: 1px solid rgb(211, 211, 211);
 `;
-export const Multi__media_innercontainer = styled.div`
+export const Multi__media_innercontainer = styled("div")`
   width: 80%;
   height: 50px;
   display: flex;
@@ -270,7 +206,7 @@ export const Multi__media_innercontainer = styled.div`
   }
 `;
 
-export const Icons__container = styled.div`
+export const Icons__container = styled("div")`
   width: 200px;
   height: 30px;
   display: flex;
@@ -279,7 +215,7 @@ export const Icons__container = styled.div`
   gap: 4%;
 `;
 
-export const Icons__containers = styled.div`
+export const Icons__containers = styled("div")`
   width: 200px;
   height: 30px;
   display: flex;
@@ -328,7 +264,7 @@ export const PostImg = styled(FeedPostTop)`
   background-size: cover;
 `;
 
-export const PostTopLeft = styled.div`
+export const PostTopLeft = styled("div")`
   width: 30%;
   display: flex;
   align-items: center;
@@ -360,14 +296,14 @@ export const Feedpost__message = styled(FeedPost__action)`
   }
 `;
 
-export const FeedMainImg = styled.div`
+export const FeedMainImg = styled("div")`
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-export const FeedPost__bottom = styled.div`
+export const FeedPost__bottom = styled("div")`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -391,7 +327,7 @@ export const Feed__multimedia = styled(PostBottom)`
   border-top: 1px solid rgb(211, 211, 211);
 `;
 
-export const Multi__smallcontainers = styled.div`
+export const Multi__smallcontainers = styled("div")`
   width: 400px;
   height: 27px;
   display: flex;
@@ -413,34 +349,185 @@ export const Multi__smallcontainers = styled.div`
   }
 `;
 
-
-export const Multi__smallcontainer = styled.div`
-  width: 420px;
-  height: 27px;
+export const LeftHolder = styled("div")`
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
   justify-content: center;
+  margin-top: -100px;
+`;
+
+export const RightHolder = styled("div")`
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  border-radius: 3px;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  padding: 7px;
-  font-size: 17px;
-  color: black;
-  letter-spacing: 0.5px;
-  gap: 0.4rem;
-  &:hover {
-    background: rgb(192, 192, 192);
-    transition: all 0.4s ease-in-out;
-    border-radius: 6px;
-    margin-bottom: 4px;
+  gap: 25px;
+  justify-content: center;
+`;
+
+export const RightForm = styled("form")`
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 10px;
+  justify-content: center;
+  /* max-width: 400px; */
+  width: 390px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  @media only screen and (max-width: 375px) {
+    width: 318px;
   }
 `;
 
-export const Profile = styled.div`
-  width: 100%;
+export const RightForm2 = styled(RightForm)`
+  width: 360px;
+  position: relative;
+`;
+
+export const FootHolder = styled(RightForm)`
+  width: 50%;
+  flex-wrap: wrap;
+  max-width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  gap: 2px;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-radius: 0;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 425px) {
+    width: 100%;
+  }
+`;
+
+export const FlexRow = styled("div")`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+`;
+
+export const Genders = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
   align-items: center;
-  flex-direction: column;
-  background-color: white !important;
+  border-radius: 4px;
+  padding: 0 5px;
+  width: 100%;
+  border: 1px solid grey;
+`;
+
+export const LeftAttr = styled("div")`
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: left;
+  margin-left: 15px;
+`;
+
+export const MiddleAttr = styled("div")`
+  display: flex;
+  gap: 85px;
+`;
+
+export const RightAttr = styled("div")`
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-right: 15px;
+`;
+
+export const InnerField = styled("div")`
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  height: 125px;
+  margin: 15px auto;
+  width: 350px;
+`;
+
+export const ProfilField = styled("div")`
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  gap: 10px;
+  justify-content: left;
+  margin: 20px auto;
+  padding-bottom: 15px;
+  width: 90%;
+`;
+
+export const ProfilField1 = styled("div")`
+  align-items: center;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  gap: 10px;
+  margin: 10px auto;
+  padding-bottom: 15px;
+  width: 95%;
+`;
+
+export const SectionIcons = styled("div")`
+  margin: 40px auto;
+  width: 98%;
+`;
+
+export const IconField = styled("div")`
+  align-items: center;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  justify-content: space-between;
+  margin: 15px auto;
+`;
+
+export const MenuInfos = styled("div")`
+  align-items: center;
+  display: flex;
+  gap: 10px;
+`;
+
+export const SponsInfos = styled("div")`
+  align-items: center;
+  margin: 20px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+`;
+
+export const ContactInfos = styled("div")`
+  align-items: center;
+  margin: 30px auto;
+  font-family: Helvetica, Arial, sans-serif;
+`;
+
+export const Sponsor = styled("div")`
+  align-items: center;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  width: 80%;
+`;
+
+export const HeadIcon = styled("div")`
+  align-items: center;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+`;
+
+export const TrIcon = styled("div")`
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
 `;

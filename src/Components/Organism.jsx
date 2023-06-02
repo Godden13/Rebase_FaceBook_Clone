@@ -191,7 +191,7 @@ export const FeedCards = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-i  tems: center;
+  align-items: center;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -203,6 +203,3 @@ export const FeedCards = styled.div`
     height: 69vh;
   }
 `;
-
-`;
-

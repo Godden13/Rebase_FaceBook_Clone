@@ -1,8 +1,7 @@
 import { FeedCards } from "@/Components/Organism";
-import ProfilePicture from "../../assets/images/persons/5.jpeg";
-import Snoop from "../../assets/images/persons/6.jpeg";
+import ProfilePicture from "../assets/images/persons/5.jpeg";
 
-import { Feed__multimedia, Multi__smallcontainer, Multi__smallcontainers } from "@/Components/Molecules";
+import Snoop from "../assets/images/persons/6.jpeg";
 
 import { ProfilePis } from "@/Components/Atoms/Atoms";
 
@@ -23,14 +22,16 @@ import {
   FeedMainImg,
   FeedPost__bottom,
   PostBottom,
+  Feed__multimedia,
+  Multi__smallcontainers,
 } from "@/Components/Molecules";
 
 import Image from "next/image";
 
 import { Globe, Dots, LikedPost, Comments, SharePost, Xmarker } from "@/Components/Atoms/IconAtoms";
 
-import Liked from "../../assets/images/like.png";
-import Loved from "../../assets/images/heart.png";
+import Liked from "../assets/images/like.png";
+import Loved from "../assets/images/heart.png";
 import { CSSProperties } from "react";
 
 interface ImgProps {
@@ -81,12 +82,12 @@ function FeedCard() {
           <p>45 comments ...</p>
         </FeedPost__bottom>
         <Feed__multimedia>
-          <Multi__smallcontainer>
+          <Multi__smallcontainers>
             <p>
               <LikedPost/> 
                Like
             </p>
-          </Multi__smallcontainer>
+          </Multi__smallcontainers>
           <Multi__smallcontainers>
             <Comments />
             <p>Comments</p>

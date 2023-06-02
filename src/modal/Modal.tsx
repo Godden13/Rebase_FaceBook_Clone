@@ -59,7 +59,6 @@ function Register({
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
-      password: data.password,
       dob: new Date(
         `${dateInfo.month} ${dateInfo.day} ${dateInfo.year}`
       ).toDateString(),
@@ -102,12 +101,14 @@ function Register({
             />
           </FlexRow>
           <Input1
+          type="email"
             placeholder="Mobile number or email"
             onChange={(e) => {
               setData((prev) => ({ ...prev, email: e.target.value }));
             }}
           />
           <Input1
+          type="password"
             placeholder="New password"
             onChange={(e) => {
               setData((prev) => ({ ...prev, password: e.target.value }));
