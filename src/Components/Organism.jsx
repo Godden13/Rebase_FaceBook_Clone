@@ -10,7 +10,7 @@ export const Main = styled("div")`
 `;
 
 
-export const Story = styled.div`
+export const Story = styled('div')`
   width: 687px;
   height: 303px;
   display: flex;
@@ -37,7 +37,7 @@ export const Bg = styled(Main)`
   z-index: 1;
 `;
 
-export const Middle = styled.div`
+export const Middle = styled('div')`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +54,7 @@ export const Middle = styled.div`
   }
 `;
 
-export const Foot = styled.footer`
+export const Foot = styled('footer')`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +86,10 @@ export const Nav = styled("div")`
   justify-content: space-between;
 `;
 
+export const ForgotNav = styled(Nav)`
+  height: 60px;
+`
+
 export const ProfilPopUp = styled("div")`
   align-items: center;
   display: flex;
@@ -103,7 +107,7 @@ export const PopUpBox = styled("div")`
   width: 380px;
   `
 
-export const IconsHolder = styled.div`
+export const IconsHolder = styled('div')`
   display: flex;
   align-items: center;
   width: 100%;
@@ -165,7 +169,15 @@ export const PopForm = styled(PostForm)`
   }
 `;
 
-export const PostForm__innerContainer = styled.div`
+export const ForgotTemplate = styled(PopForm)`
+  height: 250px;
+  width: 500px;
+  margin: 6rem auto;
+  padding: 20px;
+`;
+
+
+export const PostForm__innerContainer = styled('div')`
   width: 93%;
   display: flex;
   flex-direction: column;
@@ -173,7 +185,7 @@ export const PostForm__innerContainer = styled.div`
   align-items: center;
 `;
 
-export const MainPop = styled.div`
+export const MainPop = styled('div')`
   height: 100vh;
   width: 100%;
   display: flex;
@@ -185,7 +197,7 @@ export const MainPop = styled.div`
   background-color: white transparent;
 `;
 
-export const FeedCards = styled.div`
+export const FeedCards = styled('div')`
   width: min(618px, 97vw);
   height: 700px ;
   display: flex;

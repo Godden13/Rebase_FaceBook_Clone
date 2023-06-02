@@ -103,6 +103,17 @@ export const Attribute = styled("div")`
   color: #1877f2;
 `;
 
+ export const ForgotAccount = styled('div')`
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  color: #1877f2;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 15px;
+`
+
 export const Heading2p = styled(Heading2)`
   margin-bottom: -10px;
   font-size: 26px;
@@ -113,8 +124,13 @@ export const Heading = styled("h1")`
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 32px;
-  color: #0968e3;
+  color: #177bf2;
 `;
+
+export const SmallHeading = styled(Heading)`
+  font-weight: 900;
+  font-size: 30px;
+`
 
 export const LogInButton = styled("button")`
   background-color: #1877f2;
@@ -126,6 +142,15 @@ export const LogInButton = styled("button")`
   padding: 8px 16px;
   width: 100%;
   cursor: pointer;
+`;
+
+export const SmallLoginButton = styled(LogInButton)`
+  padding: 5px 15px;
+  height: 45px;
+  white-space: nowrap;
+  width: fit-content;
+  font-size: 16px;
+  margin: 10px;
 `;
 
 export const SignUpButton = styled("button")`
@@ -172,6 +197,11 @@ export const Input = styled("input")`
   border: 1px solid #dddfe2;
   border-radius: 5px;
   width: 100%;
+`;
+
+export const NewInput = styled(Input)`
+  padding: 5px 12px;
+  border: 1.5px solid #dddfe2;
 `;
 
 export const Input1 = styled(Input)`

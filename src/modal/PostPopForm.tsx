@@ -47,10 +47,6 @@ const PostPopForm = ({ setOpen }: any) => {
   const [imageUpload, setImageUpload] = useState(null)
   const { user } = useAuth()
 
-  const handleTextChange = (e: any) => {
-    setTextValue(e.target.value);
-  };
-
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const post = await addDoc(collection(getInfo, "posts"), {
