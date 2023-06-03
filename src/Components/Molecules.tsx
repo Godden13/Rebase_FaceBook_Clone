@@ -565,3 +565,64 @@ export const GroupInfos = styled.div`
   margin: 10px auto;
   width: 85%;
 `;
+
+
+export const CloseUpload = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+`;
+
+export const CloseUpload__inne = styled.div`
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  cursor: pointer;
+  margi-top: 5px;
+  background-color: rgb(245, 255, 250);
+  &:hover {
+    background-color: grey;
+  }
+`;
+export const UploadFile__cont = styled.div`
+  width: 98%;
+  height: 60px;
+  margin-top: 1.3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e8e8f07e;
+`;
+export const PostPage = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+export const PopupHiddenContent = styled.div`
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+`;
+
+export const Popse = styled.div`
+  width: 58%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: none;
+  background-color: grey transparent;
+`;

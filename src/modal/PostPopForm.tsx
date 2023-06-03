@@ -22,30 +22,37 @@ import {
   Para,
 } from "@/Components/Atoms/Atoms";
 
-import { Whappy, Bac, Lock, Downarrow, Xmarker } from "@/Components/Atoms/IconAtoms";
+import {
+  Whappy,
+  Bac,
+  Lock,
+  Downarrow,
+  Xmarker,
+} from "@/Components/Atoms/IconAtoms";
+import Postpopupse from "./Postpopupse";
 
 import Image from "next/image";
 
-
-import Theme from "@/assets/images/icons/heme.png"; 
-import ThemeImoji2  from "@/assets/images/icons/smile.png";
+import Theme from "@/assets/images/icons/heme.png";
+import ThemeImoji2 from "@/assets/images/icons/smile.png";
 import GalleryImoji from "@/assets/images/icons/gallerry.png";
 import TagImoji from "@/assets/images/icons/tag.png";
-import GiftImoji from  "@/assets/images/gift.png";
+import GiftImoji from "@/assets/images/gift.png";
 
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
 
-
 const PostPopForm = ({ setOpen }: any) => {
   const [data, setData] = useState({
     title: "",
-    fileUrl: "",  
+    fileUrl: "",
   });
-  const [imageUpload, setImageUpload] = useState(null)
-  const { user } = useAuth()
+  const [isOpen, setIsOpen] = useState(false);
+  const [imageUpload, setImageUpload] = useState(null);
+  const [textValue, setTextValue] = useState("");
+  const { user } = useAuth();
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -57,9 +64,12 @@ const PostPopForm = ({ setOpen }: any) => {
       doc: serverTimestamp(),
       likes: 2,
     });
-  } 
+  };
 
-
+  const handleTextChange = (e: any) => {
+    setTextValue(e.target.value);
+    setData((prev) => ({ ...prev, title: e.target.value }));
+  };
 
   return (
     <>
@@ -70,7 +80,9 @@ const PostPopForm = ({ setOpen }: any) => {
               <TittleCreate>
                 <h2>Create Post </h2>
               </TittleCreate>
-               <ClosepopUp onClick={() => setOpen(false)}> <Xmarker /> </ClosepopUp> 
+              <ClosepopUp onClick={() => setOpen(false)}>
+                <Xmarker />
+              </ClosepopUp>
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
@@ -87,8 +99,9 @@ const PostPopForm = ({ setOpen }: any) => {
           <WriteStatus>
             <WrtieMind__status
               placeholder="What is your mind, Bata?"
-              onChange={(e)=>{setData((prev) => ({ ...prev, title: e.target.value }));}}
+              onChange={handleTextChange}
             />
+            {isOpen && <Postpopupse setIsOpen={setIsOpen} />}
           </WriteStatus>
           <Styled__backDiv>
             <Image src={Theme} alt="the user" style={ThemeStyle} />
@@ -98,7 +111,12 @@ const PostPopForm = ({ setOpen }: any) => {
             <Para>Add to your Post</Para>
             <List>
               <List__li>
-                <Image src={GalleryImoji} alt="alt" style={LiStyle}/>
+                <Image
+                  src={GalleryImoji}
+                  alt="alt"
+                  style={LiStyle}
+                  onClick={() => setIsOpen(true)}
+                />
               </List__li>
               <List__li>
                 <Image src={TagImoji} alt="alt" style={LiStyle} />
@@ -118,7 +136,7 @@ const PostPopForm = ({ setOpen }: any) => {
             </List>
           </PostDiv>
 
-          <Postsub__Button type="submit" active={!user}>
+          <Postsub__Button type="submit" active={!!textValue}>
             Post
           </Postsub__Button>
         </PopForm>
