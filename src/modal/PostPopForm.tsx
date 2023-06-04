@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PopForm, MainPop } from "@/Components/Organism";
 import {
   CreatePost__title,
@@ -21,31 +21,58 @@ import {
   Postsub__Button,
   Para,
 } from "@/Components/Atoms/Atoms";
-
-import { Whappy, Bac, Lock, Downarrow, Xmarker } from "@/Components/Atoms/IconAtoms";
-
+import {
+  Whappy,
+  Bac,
+  Lock,
+  Downarrow,
+  Xmarker,
+} from "@/Components/Atoms/IconAtoms";
 import Image from "next/image";
-
-
- import Theme from "../../assets/images/icons/heme.png"; 
-import ThemeImoji2  from "../../assets/images/icons/smile.png";
+import { storage } from "@/firebase/config";
+import Theme from "../../assets/images/icons/heme.png";
+import ThemeImoji2 from "../../assets/images/icons/smile.png";
 import GalleryImoji from "../../assets/images/icons/gallerry.png";
 import TagImoji from "../../assets/images/icons/tag.png";
-import GiftImoji from  "../../assets/images/gift.png";
-
+import GiftImoji from "../../assets/images/gift.png";
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
-
+import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
+import { v4 } from "uuid";
 
 const PostPopForm = ({ setOpen }: any) => {
   const [data, setData] = useState({
     title: "",
-    fileUrl: "",  
+    fileUrl: "",
   });
-  const [imageUpload, setImageUpload] = useState(null)
-  const { user } = useAuth()
+  const [imageUpload, setImageUpload] = useState(null);
+  const [imageList, setImageList] = useState([]);
+
+  const { user } = useAuth();
+
+  const imageListRef = ref(storage, "posts/");
+  const uploadImage = () => {
+    if (imageUpload == null) return;
+    const imageRef = ref(storage, `posts/${imageUpload.name + v4()}`);
+    uploadBytes(imageRef, imageUpload).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((url) => {
+        setImageList((prev) => [...prev, url]);
+      });
+      console.log("Image uploaded");
+    });
+  };
+
+  useEffect(() => {
+    listAll(imageListRef).then((res) => {
+      res.items.forEach((item) => {
+        getDownloadURL(item).then((url) => {
+          setImageList((prev) => [...prev, url]);
+        });
+      });
+    });
+  }, [imageListRef]);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -57,9 +84,7 @@ const PostPopForm = ({ setOpen }: any) => {
       doc: serverTimestamp(),
       likes: 2,
     });
-  } 
-
-
+  };
 
   return (
     <>
@@ -70,8 +95,11 @@ const PostPopForm = ({ setOpen }: any) => {
               <TittleCreate>
                 <h2>Create Post </h2>
               </TittleCreate>
-               <ClosepopUp onClick={() => setOpen(false)}> <Xmarker /> </ClosepopUp> 
-             {/* <Xmarker onClick={() => setOpen(false)} /> */}
+              <ClosepopUp onClick={() => setOpen(false)}>
+                {" "}
+                <Xmarker />{" "}
+              </ClosepopUp>
+              {/* <Xmarker onClick={() => setOpen(false)} /> */}
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
@@ -88,7 +116,9 @@ const PostPopForm = ({ setOpen }: any) => {
           <WriteStatus>
             <WrtieMind__status
               placeholder="What is your mind, Bata?"
-              onChange={(e)=>{setData((prev) => ({ ...prev, title: e.target.value }));}}
+              onChange={(e) => {
+                setData((prev) => ({ ...prev, title: e.target.value }));
+              }}
             />
           </WriteStatus>
           <Styled__backDiv>
@@ -99,7 +129,9 @@ const PostPopForm = ({ setOpen }: any) => {
             <Para>Add to your Post</Para>
             <List>
               <List__li>
-                <Image src={GalleryImoji} alt="alt" style={LiStyle}><input type="file" name="" id="" /></Image>
+                <Image src={GalleryImoji} alt="alt" style={LiStyle}>
+                  <input type="file" name="" id="" />
+                </Image>
               </List__li>
               <List__li>
                 <Image src={TagImoji} alt="alt" style={LiStyle} />
