@@ -13,6 +13,7 @@ import { RiSettings5Fill, RiFeedbackFill } from "react-icons/ri";
 import { MdOutlineHelp } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { GrLogout } from "react-icons/gr";
+import { FiPlus } from "react-icons/fi";
 import { SlOptions } from "react-icons/sl";
 
 export const SearchIcon = styled(GoSearch)`
@@ -99,6 +100,11 @@ export const LogOut = styled(GrLogout)`
   font-size: 20px;
 `;
 
+export const PluSign = styled(FiPlus)`
+  cursor: pointer;
+  font-size: 23px;
+`;
+
 export const RightArrow = styled(AiOutlineRight)`
   cursor: pointer;
   font-size: 23px;
@@ -139,3 +145,4 @@ export const Options = styled(SlOptions)`
     background-color: #e4e6eb;
   }
 `;
+

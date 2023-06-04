@@ -7,11 +7,11 @@ import {
   Suggesteddrop__friends,
 } from "@/Components/Atoms/IconAtoms";
 import Image from "next/image";
-import MainUser from "../../assets/images/persons/8.jpeg";
-import MutualFriends from "../../../assets/images/persons/7.jpeg";
-import ProfileFriendsTage from "../../assets/images/proffriends.png";
+import MainUser from "@/assets/images/persons/8.jpeg";
+import MutualFriends from "@/assets/images/persons/7.jpeg";
+import ProfileFriendsTage from "@/assets/images/proffriends.png";
 
-import Styles from "../../assets/styles/ProfileFirstcontainer.module.css";
+import Styles from "@/assets/styles/ProfileFirstcontainer.module.css";
 
 const ProfileFirstcontainer = () => {
   return (

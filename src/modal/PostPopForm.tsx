@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { PopForm, MainPop } from "@/Components/Organism";
+import { PopForm, MainPop, Bg } from "@/Components/Organism";
 import {
   CreatePost__title,
   CreatePost__title__innerContianer,
@@ -28,6 +28,8 @@ import {
   Downarrow,
   Xmarker,
 } from "@/Components/Atoms/IconAtoms";
+import Postpopupse from "./Postpopupse";
+
 import Image from "next/image";
 import { storage } from "@/firebase/config";
 import Theme from "../../assets/images/icons/heme.png";
@@ -39,30 +41,31 @@ import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
-import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
-import { v4 } from "uuid";
+import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
+import { v4 } from "uuid"
 
 const PostPopForm = ({ setOpen }: any) => {
   const [data, setData] = useState({
     title: "",
     fileUrl: "",
   });
+  const [isOpen, setIsOpen] = useState(false);
   const [imageUpload, setImageUpload] = useState(null);
+  const [textValue, setTextValue] = useState("");
   const [imageList, setImageList] = useState([]);
-
   const { user } = useAuth();
 
-  const imageListRef = ref(storage, "posts/");
-  const uploadImage = () => {
-    if (imageUpload == null) return;
-    const imageRef = ref(storage, `posts/${imageUpload.name + v4()}`);
-    uploadBytes(imageRef, imageUpload).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then((url) => {
-        setImageList((prev) => [...prev, url]);
-      });
-      console.log("Image uploaded");
-    });
-  };
+   const imageListRef = ref(storage, "posts/");
+   const uploadImage = () => {
+     if (imageUpload == null) return;
+     const imageRef = ref(storage, `posts/${imageUpload.name + v4()}`);
+     uploadBytes(imageRef, imageUpload).then((snapshot) => {
+       getDownloadURL(snapshot.ref).then((url) => {
+         setImageList((prev) => [...prev, url]);
+       });
+       console.log("Image uploaded");
+     });
+   };
 
   useEffect(() => {
     listAll(imageListRef).then((res) => {
@@ -86,9 +89,14 @@ const PostPopForm = ({ setOpen }: any) => {
     });
   };
 
+  const handleTextChange = (e: any) => {
+    setTextValue(e.target.value);
+    setData((prev) => ({ ...prev, title: e.target.value }));
+  };
+
   return (
     <>
-      <MainPop>
+      <Bg>
         <PopForm>
           <CreatePost__title>
             <CreatePost__title__innerContianer>
@@ -96,10 +104,8 @@ const PostPopForm = ({ setOpen }: any) => {
                 <h2>Create Post </h2>
               </TittleCreate>
               <ClosepopUp onClick={() => setOpen(false)}>
-                {" "}
-                <Xmarker />{" "}
+                <Xmarker />
               </ClosepopUp>
-              {/* <Xmarker onClick={() => setOpen(false)} /> */}
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
@@ -116,10 +122,9 @@ const PostPopForm = ({ setOpen }: any) => {
           <WriteStatus>
             <WrtieMind__status
               placeholder="What is your mind, Bata?"
-              onChange={(e) => {
-                setData((prev) => ({ ...prev, title: e.target.value }));
-              }}
+              onChange={handleTextChange}
             />
+            {isOpen && <Postpopupse setIsOpen={setIsOpen} />}
           </WriteStatus>
           <Styled__backDiv>
             <Image src={Theme} alt="the user" style={ThemeStyle} />
@@ -129,9 +134,12 @@ const PostPopForm = ({ setOpen }: any) => {
             <Para>Add to your Post</Para>
             <List>
               <List__li>
-                <Image src={GalleryImoji} alt="alt" style={LiStyle}>
-                  <input type="file" name="" id="" />
-                </Image>
+                <Image
+                  src={GalleryImoji}
+                  alt="alt"
+                  style={LiStyle}
+                  onClick={() => setIsOpen(true)}
+                />
               </List__li>
               <List__li>
                 <Image src={TagImoji} alt="alt" style={LiStyle} />
@@ -151,11 +159,11 @@ const PostPopForm = ({ setOpen }: any) => {
             </List>
           </PostDiv>
 
-          <Postsub__Button type="submit" active={!user}>
+          <Postsub__Button type="submit" active={!!textValue}>
             Post
           </Postsub__Button>
         </PopForm>
-      </MainPop>
+      </Bg>
     </>
   );
 };
