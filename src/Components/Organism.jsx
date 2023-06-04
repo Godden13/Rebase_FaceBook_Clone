@@ -21,12 +21,10 @@ export const Story = styled.div`
   border: 1px solid rgb(211, 211, 211);
   background-color: #fff;
   @media (max-width: 768px) {
-    width: 500px;
+    width: 98vw;
+    margin-inline: auto;
   }
 
-  @media (max-width: 400px) {
-    width: 320px;
-  }
 `;
 
 export const Bg = styled(Main)`
@@ -76,6 +74,10 @@ width: 210px;
 left: 0;
 margin-top: 50px;
 overflow-y: scroll;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Nav = styled("div")`
@@ -132,21 +134,22 @@ export const PostForm = styled("form")`
   border: 1px solid rgb(211, 211, 211);
   background-color: #fff;
   @media (max-width: 768px) {
-    width: 500px;
+    width: 98vw;
+    margin-inline: auto;
   }
 
-  @media (max-width: 400px) {
-    width: 320px;
-  }
 `;
 
 export const RightSide = styled("div")`
   display: flex;
-  justify-content: right;
   height: 95vh;
   max-width: 100%;
   position: fixed;
   right: 0;
+
+ @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const RightBar = styled("div")`
@@ -204,9 +207,9 @@ export const FeedCards = styled.div`
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   margin: 5px 0;
 
-  @media (max-width: 400px) {
-    width: 310px;
-    height: 69vh;
+  @media (max-width: 768px) {
+    width: 98vw;
+    /* height: 69vh; */
   }
 `;
 
@@ -227,7 +230,7 @@ justify-content: center;
 export const PostHolder = styled.div`
 display: flex;
 flex-direction: column;
-margin-left: -60px;
+/* margin-left: -60px; */
 gap: 7px;
 justify-content: center;
 align-items: center;   

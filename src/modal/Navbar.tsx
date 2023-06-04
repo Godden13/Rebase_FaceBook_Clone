@@ -22,8 +22,10 @@ export default function Navbar() {
     <Nav>
       <LeftAttr>
         <Facebook />
+        <div style={{position: "relative"}}>
         <SearchIcon />
         <NavInput placeholder="Search Facebook" />
+        </div>
       </LeftAttr>
       <MiddleAttr>
         <Home />

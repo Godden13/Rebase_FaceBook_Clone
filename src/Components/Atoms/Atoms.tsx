@@ -415,7 +415,7 @@ export const LiStyle = {
 };
 
 export const Mind__input = styled.input`
-  width: 585px;
+  width: 100%;
   text-align: left;
   font-size: 16px;
   border-radius: 78px;
@@ -455,6 +455,8 @@ export const MainPis = {
 export const Timer = styled.span`
   color: gray;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 `;
 export const ProfilePis = {
   width: "50px",

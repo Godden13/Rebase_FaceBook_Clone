@@ -13,7 +13,7 @@ function Feed() {
   return (
     <div>
       <FeetContent>
-        <Navbar />
+         <Navbar /> 
         <LeftSideBar />
         <FeetContainer>
           <PostHolder>
@@ -21,8 +21,8 @@ function Feed() {
             <Postbox />
             <FeedCard />
           </PostHolder>
+          <RightSidebar />
         </FeetContainer>
-        <RightSidebar />
       </FeetContent>
     </div>
   );

@@ -246,7 +246,7 @@ export const Onyourmind = styled.div`
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
 `;
 
 export const Multi__media = styled.div`
@@ -287,7 +287,7 @@ export const Icons__containers = styled.div`
   justify-content: center;
   gap: 4%;
 
-  @media (max-width: 400px) {
+  @media (max-width: 425px) {
     display: none;
   }
 `;
@@ -329,10 +329,8 @@ export const PostImg = styled(FeedPostTop)`
 `;
 
 export const PostTopLeft = styled.div`
-  width: 30%;
   display: flex;
   align-items: center;
-  /* background-color: yellow; */
   line-height: 1.6;
   gap: 8px;
   @media (max-width: 400px) {
@@ -362,7 +360,8 @@ export const Feedpost__message = styled(FeedPost__action)`
 
 export const FeedMainImg = styled.div`
   width: 100%;
-  height: 500px;
+ /*  height: 500px; */
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,13 +450,12 @@ export const LeftAttr = styled.div`
   display: flex;
   gap: 8px;
   justify-content: left;
-  margin-left: 15px;
+  margin:5px 0 5px 15px;
 `;
 
 export const MiddleAttr = styled.div`
   display: flex;
   gap: 85px;
-  margin-left: -120px;
 `;
 
 export const RightAttr = styled.div`

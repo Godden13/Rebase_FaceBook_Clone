@@ -21,6 +21,7 @@ export const SearchIcon = styled(GoSearch)`
   font-size: 15px;
   left: 5%;
   position: absolute;
+  margin: 12px 0 0 -5px;
 `;
 
 export const Facebook = styled(BsFacebook)`
