@@ -15,17 +15,24 @@ import { FaMoon } from "react-icons/fa";
 import { GrLogout } from "react-icons/gr";
 import { FiPlus } from "react-icons/fi";
 import { SlOptions } from "react-icons/sl";
+import {RiSendPlane2Fill} from "react-icons/ri"
+
 
 export const SearchIcon = styled(GoSearch)`
   color: #67656b;
   font-size: 15px;
   left: 5%;
   position: absolute;
+  margin: 12px 0 0 -5px;
+
+    @media (max-width: 1024px) {
+      margin-left: 8px;
+  }
 `;
 
 export const Facebook = styled(BsFacebook)`
   color: #1877f2;
-  font-size: 45px;
+  font-size: 40px;
 `;
 
 export const Home = styled(AiFillHome)`
@@ -146,3 +153,10 @@ export const Options = styled(SlOptions)`
   }
 `;
 
+export const Submit__comments = styled(RiSendPlane2Fill)`
+font-size: small,
+color: black,
+&:hover {
+  cursor: pointer,
+}
+`

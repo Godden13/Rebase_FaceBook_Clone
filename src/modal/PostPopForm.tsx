@@ -20,6 +20,8 @@ import {
   List__li,
   Postsub__Button,
   Para,
+  ProfilePise,
+  ProfilePises,
 } from "@/Components/Atoms/Atoms";
 import {
   Whappy,
@@ -40,6 +42,7 @@ import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
+import ProfilePicture from "../assets/images/lady.png"
 
 const PostPopForm = ({ setOpen }: any) => {
   const [imageList, setImageList] = useState<any>([]);
@@ -87,9 +90,18 @@ const PostPopForm = ({ setOpen }: any) => {
             </CreatePost__title__innerContianer>
           </CreatePost__title>
           <CreatePost__profile__prefence>
-            <Profile__holder></Profile__holder>
+            <Profile__holder>
+            <Image
+              src={ProfilePicture}
+              alt="prof"
+              style={ProfilePises}
+              margin-rigth="10px"
+              border-radius="50%"
+            />
+
+            </Profile__holder>
             <StatusPreference>
-              <p>{user.displayName}</p>
+              <p>{user?.displayName}</p>
               <LockedDiv>
                 <Lock />
                 only me
@@ -99,7 +111,7 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder={`What is your mind, Bata?`}
+              placeholder={`What is your mind, ${user?.displayName}?`}
               onChange={handleTextChange}
             />
             {isOpen && (

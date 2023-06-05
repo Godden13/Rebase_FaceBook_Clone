@@ -3,7 +3,12 @@ import ProfilePicture from "../assets/images/persons/5.jpeg";
 
 import Snoop from "../assets/images/persons/6.jpeg";
 
-import { ProfilePis } from "@/Components/Atoms/Atoms";
+import {
+  CommentInput,
+  ProfilePis,
+  ProfilePise,
+  Submit__commentsbtn,
+} from "@/Components/Atoms/Atoms";
 
 interface feedProps {
   width: string;
@@ -24,23 +29,50 @@ import {
   PostBottom,
   Feed__multimedia,
   Multi__smallcontainers,
+  Comment__set,
+  CommentWrapper,
 } from "@/Components/Molecules";
 
 import Image from "next/image";
 
-import { Globe, Dots, LikedPost, Comments, SharePost, Xmarker } from "@/Components/Atoms/IconAtoms";
+import {
+  Globe,
+  Dots,
+  LikedPost,
+  Comments,
+  SharePost,
+  Xmarker,
+  Whappy,
+  Whappys,
+} from "@/Components/Atoms/IconAtoms";
 
 import Liked from "../assets/images/like.png";
 import Loved from "../assets/images/heart.png";
-import { CSSProperties } from "react";
+import { CSSProperties, useRef, useState } from "react";
+import { Submit__comments } from "@/Components/Atoms/IconsAtoms";
 
 interface ImgProps {
   width: any;
   height: any;
-  style?: CSSProperties ;
+  style?: CSSProperties;
 }
 FeedMainImg;
 function FeedCard() {
+  const [comment, setComment] = useState(false);
+  const [vals, setVals] = useState("");
+  const inputRef = useRef();
+  const handleClick = () => {
+    setComment((prev) => !prev);
+  };
+
+  const closeComment = () => {
+    setComment(false);
+  };
+
+  const SubmitHandler = (e: any) => {
+    e.prevenDefault();
+  };
+
   return (
     <FeedCards>
       <FeedPost__wrapper>
@@ -84,19 +116,41 @@ function FeedCard() {
         <Feed__multimedia>
           <Multi__smallcontainers>
             <p>
-              <LikedPost/> 
-               Like
+              <LikedPost />
+              Like
             </p>
           </Multi__smallcontainers>
           <Multi__smallcontainers>
-            <Comments />
-            <p>Comments</p>
+            <Comments onClick={handleClick} />
+            <p onClick={handleClick}>Comments</p>
           </Multi__smallcontainers>
           <Multi__smallcontainers>
             <SharePost />
             <p>Share</p>
           </Multi__smallcontainers>
         </Feed__multimedia>
+        {comment && (
+          <Comment__set>
+            <Image
+              src={ProfilePicture}
+              alt="prof"
+              style={ProfilePise}
+              margin-rigth="22px"
+              border-radius="50%"
+            />
+
+            <CommentWrapper>
+              <Whappys />
+              <CommentInput
+                type="text"
+                placeholder="Write a public here comment" 
+              />
+            </CommentWrapper>
+            <Submit__commentsbtn type="submit">
+              <Submit__comments />
+            </Submit__commentsbtn>
+          </Comment__set>
+        )}
       </FeedPost__wrapper>
     </FeedCards>
   );

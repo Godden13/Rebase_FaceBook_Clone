@@ -154,6 +154,13 @@ export const Whappy = styled(HiOutlineEmojiHappy)`
   font-size: small;
 `;
 
+export const Whappys = styled(HiOutlineEmojiHappy)`
+  font-size: small;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+`;
+
 export const LikedPost = styled(BiLike)`
   font-size: small;
   color: gray;
