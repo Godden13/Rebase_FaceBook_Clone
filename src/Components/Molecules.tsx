@@ -187,12 +187,15 @@ export const Profile__holder = styled.div`
   align-items: center;
 `;
 export const StatusPreference = styled.div`
-  width: 150px;
+  width: 100px;
   height: 50px;
   line-height: 1.4;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
+  /* background-color: red; */
 `;
 
 export const Styled__backDiv = styled("div")`
