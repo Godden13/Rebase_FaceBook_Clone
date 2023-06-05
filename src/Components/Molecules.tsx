@@ -180,10 +180,11 @@ export const WriteStatus = styled(CreatePost__profile__prefence)`
 `;
 
 export const Profile__holder = styled.div`
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: red;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const StatusPreference = styled.div`
   width: 150px;
@@ -598,7 +599,7 @@ export const CloseUpload__inne = styled.div`
   cursor: pointer;
   margi-top: 5px;
   background-color: rgb(245, 255, 250);
-  &:hover {
+  &:hover {Comment__set
     background-color: grey;
   }
 `;
@@ -638,3 +639,17 @@ export const Popse = styled.div`
   border: none;
   background-color: grey transparent;
 `;
+
+export const Comment__set  = styled.div`
+width: 99%;
+min-height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-color: rgba(249, 242, 242, 0.53);
+border-radius: 8px; */
+`
+export const CommentWrapper = styled.div`
+width: 90%;
+position: relative;
+`

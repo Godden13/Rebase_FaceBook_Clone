@@ -1,23 +1,22 @@
 .firstcontainer {
-  width: 100%;
+  width: 1261px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  box-shadow: 3px 1px 5px -14px rgba(0,0,0,0.61);
--webkit-box-shadow: 3px 1px 5px -14px rgba(0,0,0,0.61);
--moz-box-shadow: 3px 1px 5px -14px rgba(0,0,0,0.61);
+  box-shadow: 3px 1px 5px -14px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 3px 1px 5px -14px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 3px 1px 5px -14px rgba(0, 0, 0, 0.61);
 }
 
 .first__containerWrapper {
-  width: 1256px !important;
-  height: 652px;
+  width: 100%;
+  height: 662px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .background__Prof {
@@ -54,7 +53,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 2%;
-  background-color: yellow;
+  /*   background-color: yellow; */
 }
 
 .bottom___inner span {
@@ -70,17 +69,17 @@
   gap: 2.5%;
   margin-top: 2%;
   margin-bottom: 2%;
-  background-color: rgba(65, 65, 64, 0.681)
+  background-color: rgba(65, 65, 64, 0.681);
 }
 
 .change__profilesettings {
   width: 100%;
-  height: 230px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  /*   background-color: green; */
 }
 
 .ProfSetting__firstcontainer {
@@ -89,7 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(132, 32, 32);
+  /*  background-color: rgb(132, 32, 32) */
 }
 
 .profile__leftsetting {
@@ -99,7 +98,7 @@
   align-items: center;
   justify-content: center;
   gap: 5%;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .profilpic__container {
@@ -126,7 +125,7 @@
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  background-color: bisque ;
+  /*   background-color: bisque; */
 }
 
 .addStoris {
@@ -137,7 +136,7 @@
   align-items: center;
   padding-right: 12px;
   gap: 2%;
-  background-color: yellow;
+  /*   background-color: yellow; */
 }
 
 .prof__settingsecondcontainer {
@@ -147,19 +146,18 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 0.8%;
-  border-top: 2px solid gray;
-  background-color: aquamarine;
+  border-top: 2px solid rgba(128, 128, 128, 0.419);
+  /*   background-color: aquamarine; */
 }
 
 .secondsetting__left {
-  width: 50%;
+  width: 60%;
   height: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3.8%;
 }
-
 
 .pro__Name_friends {
   width: 300px;
@@ -179,8 +177,8 @@
   background-color: rgb(73, 73, 248);
   color: white;
   font-size: 18px;
-  width: 150px;
-  padding: 2.6%;
+  width: 130px;
+  padding: 1.6%;
   text-align: center;
   border: none;
   outline: none;
@@ -193,7 +191,7 @@
   color: black;
   font-size: 18px;
   width: 190px;
-  padding: 2.6%;
+  padding: 1.6%;
   text-align: center;
   border: none;
   outline: none;
@@ -202,7 +200,7 @@
 }
 
 .Pro__sugestedFriends {
-  padding: 2.7%;
+  padding: 1.7%;
   background-color: #d6d6ddb6;
   border: none;
   outline: none;
@@ -211,4 +209,203 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.uniquediv {
+  height: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  border-bottom: 4px solid blue;
+  cursor: pointer;
+}
+
+.about,
+.friends,
+.photos,
+.videos,
+.more {
+  width: 145px;
+  padding: 1.8%;
+  border-radius: 4px;
+}
+
+.more:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.781);
+}
+
+.photos:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.781);
+}
+
+.friends:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.781);
+}
+
+.about:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.781);
+}
+
+.videos:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.781);
+}
+
+.doty {
+  width: 50px;
+  height: 30px;
+  padding: 1.4%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgba(211, 211, 211, 0.942);
+}
+
+.check {
+  width: 200px;
+  padding: 1.8%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.check:hover {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.783);
+}
+
+@media (max-width: 768px) {
+  .firstcontainer {
+    width: 750px;
+    height: 100vh;
+    /* background-color: purple; */
+  }
+
+  .first__containerWrapper {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .spanp {
+    display: none;
+  }
+
+  .bottom___inner span {
+    width: 50px;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bottomdiv {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: rgba(80, 81, 79, 0); */
+  }
+
+  .ProfSetting__firstcontainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: rgb(132, 32, 32); */
+  }
+
+  .profile__leftsetting {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    /* background-color: blue; */
+  }
+
+  .background__Prof {
+    width: 100%;
+    height: 400px;
+  }
+
+  .profilpic__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileUserImg {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -112px;
+  }
+
+  .pro__Name_friends {
+    margin-top: 4%;
+  }
+
+  .Profile__rightsetting {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+  }
+
+  .change__profilesettings {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /*  background-color: green; */
+  }
+
+  .addStoris {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prof__settingsecondcontainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .change__profilesettings {
+    height: 426px;
+  }
+  .secondsetting__left {
+    width: 85%;
+  }
+}
+
+@media(max-width: 600px) {
+  .firstcontainer {
+    width: 750px;
+    height: 88vh;
+  }
+
+  .change__profilesettings {
+    color: #e8e8f07e;
+  }
 }

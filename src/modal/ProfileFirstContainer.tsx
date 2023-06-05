@@ -7,11 +7,11 @@ import {
   Suggesteddrop__friends,
 } from "@/Components/Atoms/IconAtoms";
 import Image from "next/image";
-import MainUser from "@/assets/images/persons/8.jpeg";
-import MutualFriends from "@/assets/images/persons/7.jpeg";
-import ProfileFriendsTage from "@/assets/images/proffriends.png";
+import MainUser from "../assets/images/persons/8.jpeg";
+import MutualFriends from "../../../assets/images/persons/7.jpeg";
+import ProfileFriendsTage from "../assets/images/proffriends.png"
 
-import Styles from "@/assets/styles/ProfileFirstcontainer.module.css";
+import Styles from "../assets/styles/ProfileFirstcontainer.module.css";
 
 const ProfileFirstcontainer = () => {
   return (
@@ -21,10 +21,10 @@ const ProfileFirstcontainer = () => {
           <div className={Styles.bottomdiv}>
             <div className={Styles.bottom___inner}>
               <span>
-                <EditSmile /> Create with avatar
+                <EditSmile /> <p className={Styles.spanp}>Create with avatar</p>
               </span>
               <span>
-                <EditPhoto /> Edit cover photo
+                <EditPhoto /> <p className={Styles.spanp}>Edit cover photo</p>
               </span>
             </div>
           </div>
@@ -47,7 +47,9 @@ const ProfileFirstcontainer = () => {
             </div>
             <div className={Styles.Profile__rightsetting}>
               <div className={Styles.addStoris}>
-                <button type="submit" className={Styles.Pro__Addstoriesbtn}> + Add story</button>
+                <button type="submit" className={Styles.Pro__Addstoriesbtn}>
+                  + Add story
+                </button>
                 <button type="submit" className={Styles.Pro__editprobtn}>
                   <EditProf /> Edit Profile story
                 </button>
@@ -59,16 +61,18 @@ const ProfileFirstcontainer = () => {
           </div>
           <div className={Styles.prof__settingsecondcontainer}>
             <div className={Styles.secondsetting__left}>
-              <div className="">Posts</div>
-              <div>About</div>
-              <div>Friends</div>
-              <div>Photos</div>
-              <div>Vidoes</div>
-              <div>Chec-ins</div>
-              <div>More</div>
+              <div className={Styles.uniquediv}>Posts</div>
+              <div className={Styles.about}>About</div>
+              <div className={Styles.friends}>Friends</div>
+              <div className={Styles.photos}>Photos</div>
+              <div className={Styles.videos}>Videos</div>
+              <div className={Styles.check}>Chec-ins</div>
+              <div className={Styles.more}>More</div>
             </div>
             <div className="profsecondc__left">
-              <Dots />
+              <div className={Styles.doty}>
+                <p>...</p>
+              </div>
             </div>
           </div>
         </div>
