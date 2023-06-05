@@ -71,6 +71,7 @@ function FeedCard() {
 
   const handleInputChange = (event: any) => {
     setInputValue(event.target.value);
+    console.log(inputValue)
   };
 
   return (
@@ -129,7 +130,9 @@ function FeedCard() {
             <p>Share</p>
           </Multi__smallcontainers>
         </Feed__multimedia>
+        
         {comment && (
+          
           <Comment__set>
             <Image
               src={ProfilePicture}
@@ -138,7 +141,7 @@ function FeedCard() {
               margin-rigth="22px"
               border-radius="50%"
             />
-            <p>{inputValue}</p>
+            
             <CommentWrapper>
               <Whappys />
               <CommentInput
@@ -148,7 +151,7 @@ function FeedCard() {
                 onChange={handleInputChange}
               />
             </CommentWrapper>
-            <Submit__commentsbtn type="submit">
+            <Submit__commentsbtn type="submit" onClick={handleInputChange}>
               <Submit__comments />
             </Submit__commentsbtn>
           </Comment__set>
