@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PopForm, MainPop, Bg } from "@/Components/Organism";
 import {
   CreatePost__title,
@@ -21,7 +21,6 @@ import {
   Postsub__Button,
   Para,
 } from "@/Components/Atoms/Atoms";
-
 import {
   Whappy,
   Bac,
@@ -32,27 +31,27 @@ import {
 import Postpopupse from "./Postpopupse";
 
 import Image from "next/image";
-
-import Theme from "@/assets/images/icons/heme.png";
-import ThemeImoji2 from "@/assets/images/icons/smile.png";
-import GalleryImoji from "@/assets/images/icons/gallerry.png";
-import TagImoji from "@/assets/images/icons/tag.png";
-import GiftImoji from "@/assets/images/gift.png";
-
+import Theme from "../assets/images/icons/heme.png";
+import ThemeImoji2 from "../assets/images/icons/smile.png";
+import GalleryImoji from "../assets/images/icons/gallerry.png";
+import TagImoji from "../assets/images/icons/tag.png";
+import GiftImoji from "../assets/images/icons/gift.png";
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
 
 const PostPopForm = ({ setOpen }: any) => {
+  const [imageList, setImageList] = useState<any>([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [imageUpload, setImageUpload] = useState();
+  const [textValue, setTextValue] = useState("");
   const [data, setData] = useState({
     title: "",
-    fileUrl: "",
+    fileUrl: imageList,
   });
-  const [isOpen, setIsOpen] = useState(false);
-  const [imageUpload, setImageUpload] = useState(null);
-  const [textValue, setTextValue] = useState("");
   const { user } = useAuth();
+
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -74,7 +73,7 @@ const PostPopForm = ({ setOpen }: any) => {
   return (
     <>
       <Bg>
-        <PopForm>
+        <PopForm onSubmit={handleSubmit}>
           <CreatePost__title>
             <CreatePost__title__innerContianer>
               <TittleCreate>
@@ -88,7 +87,7 @@ const PostPopForm = ({ setOpen }: any) => {
           <CreatePost__profile__prefence>
             <Profile__holder></Profile__holder>
             <StatusPreference>
-              <p>Bata humphrey</p>
+              <p>{user.displayName}</p>
               <LockedDiv>
                 <Lock />
                 only me
@@ -98,10 +97,17 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder="What is your mind, Bata?"
+              placeholder={`What is your mind, ${user.displayName}?`}
               onChange={handleTextChange}
             />
-            {isOpen && <Postpopupse setIsOpen={setIsOpen} />}
+            {isOpen && (
+              <Postpopupse
+                setIsOpen={setIsOpen}
+                setImageUpload={setImageUpload}
+                imageUpload={imageUpload}
+                setImageList={setImageList}
+              />
+            )}
           </WriteStatus>
           <Styled__backDiv>
             <Image src={Theme} alt="the user" style={ThemeStyle} />

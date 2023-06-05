@@ -92,7 +92,13 @@ export default function Home() {
           />
           <LogInButton type="submit">Log in</LogInButton>
           <Field>
-            <Ptag>forgot password?</Ptag>
+            <Link2
+              onClick={() => {
+                router.push("/Pages/forgotpass");
+              }}
+            >
+              Forgot Account?
+            </Link2>
           </Field>
           <Line />
           <Field>

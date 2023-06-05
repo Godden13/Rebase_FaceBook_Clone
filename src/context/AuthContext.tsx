@@ -7,7 +7,8 @@ import {
   sendSignInLinkToEmail,
   signOut,
   sendEmailVerification,
-  User
+  User,
+  sendPasswordResetEmail
 } from "firebase/auth";
 import { initFirebase } from "@/firebase/config";
 const AuthContext = createContext<any>({});
@@ -61,13 +62,35 @@ export const AuthContextPRovider = ({
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  const resetPassword = (email: string) => {
+    return sendPasswordResetEmail(auth, email)
+      .then(() => {
+        console.log("Password reset email sent!");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+  }
+
   const logOut = async () => {
     setUser(null);
     await signOut(auth);
   };
 
   return (
-    <AuthContext.Provider value={{ user, signUp, login, EmailLink, confirmEmail, logOut }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        signUp,
+        login,
+        EmailLink,
+        confirmEmail,
+        logOut,
+        resetPassword,
+      }}
+    >
       {isLoading ? null : children}
     </AuthContext.Provider>
   );

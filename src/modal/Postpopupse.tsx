@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { AddButton, ClosepopUp } from "@/Components/Atoms/Atoms";
@@ -15,8 +16,40 @@ import {
   UploadFile__cont,
 } from "@/Components/Molecules";
 import { PopupHiddenCont } from "@/Components/Organism";
+import { storage } from "@/firebase/config";
+import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
+import { useEffect } from "react";
+import { v4 } from "uuid";
 
-const Postpopupse = ({ setIsOpen }: any) => {
+const Postpopupse = ({
+  setIsOpen,
+  setImageUpload,
+  imageUpload,
+  setImageList,
+}: any) => {
+  const imageListRef = ref(storage, "posts/");
+  const uploadImage = (e:any) => {
+    e.preventDefault()
+    if (imageUpload == null) return;
+    const imageRef = ref(storage, `posts/${imageUpload + v4()}`);
+    uploadBytes(imageRef, imageUpload).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((url) => {
+        setImageList((prev: []) => [...prev, url]);
+      });
+      console.log("Image uploaded");
+    });
+  };
+
+  useEffect(() => {
+    listAll(imageListRef).then((res) => {
+      res.items.forEach((item) => {
+        getDownloadURL(item).then((url) => {
+          setImageList((prev: []) => [...prev, url]);
+        });
+      });
+    });
+  }, [imageListRef]);
+
   return (
     <Popse>
       <PopupHiddenCont>
@@ -28,7 +61,12 @@ const Postpopupse = ({ setIsOpen }: any) => {
           </CloseUpload>
           <CloseUpload__inne>
             <UploadIcon />
-            <input type="file" />
+            <input
+              type="file"
+              onChange={(e) => {
+                setImageUpload(e.target.value);
+              }}
+            />
 
             <p>Add Photo/Videos</p>
             <span>or drag and drop</span>
@@ -38,7 +76,7 @@ const Postpopupse = ({ setIsOpen }: any) => {
               <UploadFile__phone />
             </div>
             <div>Add photos and videos from your mobile device.</div>
-            <AddButton>add</AddButton>
+            <AddButton onClick={uploadImage}>add</AddButton>
           </UploadFile__cont>
         </PopupHiddenContent>
       </PopupHiddenCont>
