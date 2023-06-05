@@ -15,6 +15,8 @@ import { FaMoon } from "react-icons/fa";
 import { GrLogout } from "react-icons/gr";
 import { FiPlus } from "react-icons/fi";
 import { SlOptions } from "react-icons/sl";
+import {RiSendPlane2Fill} from "react-icons/ri"
+
 
 export const SearchIcon = styled(GoSearch)`
   color: #67656b;
@@ -146,3 +148,10 @@ export const Options = styled(SlOptions)`
   }
 `;
 
+export const Submit__comments = styled(RiSendPlane2Fill)`
+font-size: small,
+color: black,
+&:hover {
+  cursor: pointer,
+}
+`

@@ -201,7 +201,7 @@ export const NavInput = styled("input")`
     background-color: #ddd;
   }
 `;
-        
+
 export const Row = styled("div")`
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +258,6 @@ export const Href = styled.a`
     text-decoration: underline;
   }
 `;
-
 
 export const Circle = styled("span")`
   align-items: center;
@@ -459,7 +458,14 @@ export const Timer = styled.span`
 export const ProfilePis = {
   width: "50px",
   height: "50px",
-  borderRadius:"50%"
+  borderRadius: "50%",
+};
+
+export const ProfilePise = {
+  width: "50px",
+  height: "50px",
+  borderRadius: "50%",
+  marginLeft: "12px",
 };
 
 export const ImageStyles = {
@@ -477,11 +483,10 @@ export const PrevButton = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid rgb(220,220,220);
+  border: 2px solid rgb(220, 220, 220);
   outline: none;
   background-color: white;
 `;
-
 
 export const NextButton = styled.button`
   width: 62px;
@@ -491,19 +496,39 @@ export const NextButton = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid rgb(220,220,220);
+  border: 2px solid rgb(220, 220, 220);
   outline: none;
   background-color: white;
 `;
 
-export const Para = styled.p `
-@media (max-width: 400PX) {
-  display: none;
-}
-`
+export const Para = styled.p`
+  @media (max-width: 400px) {
+    display: none;
+  }
+`;
 export const AddButton = styled.button`
-width: 52px;
-height: 32px;
-border: none !important;
-background: grey;
-`
+  width: 52px;
+  height: 32px;
+  border: none !important;
+  background: grey;
+`;
+
+export const CommentInput = styled.input`
+  width: 92%;
+  outline: none !important;
+  border: 3px solid lightgrey;
+  padding: 2.4%;
+  border-radius: 12px;
+  height: 50px;
+  background: lightgrey;
+  margin-left: 10px;
+`;
+
+export const Submit__commentsbtn = styled.button`
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

@@ -191,7 +191,7 @@ export const MainPop = styled.div`
 
 export const FeedCards = styled.div`
   width: min(682px, 97vw);
-  height: 700px ;
+  min-height: 650px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
