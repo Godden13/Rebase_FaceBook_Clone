@@ -386,7 +386,7 @@ export const Postsub__Button = styled.button<styledprop>`
   height: 51px;
   border: none;
   outline: none;
-  cursor: no-drop;
+  cursor: pointer;
   font-size: 21px;
   font-weight: 500;
   border-radius: 7px;
@@ -464,6 +464,13 @@ export const ProfilePis = {
 export const ProfilePise = {
   width: "50px",
   height: "50px",
+  borderRadius: "50%",
+  marginLeft: "12px",
+};
+
+export const ProfilePises = {
+  width: "50px",
+  height: "38px",
   borderRadius: "50%",
   marginLeft: "12px",
 };

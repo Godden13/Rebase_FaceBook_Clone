@@ -180,10 +180,11 @@ export const WriteStatus = styled(CreatePost__profile__prefence)`
 `;
 
 export const Profile__holder = styled.div`
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: red;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const StatusPreference = styled.div`
   width: 150px;
