@@ -149,7 +149,7 @@ const PostPopForm = ({ setOpen }: any) => {
             </List>
           </PostDiv>
 
-          <Postsub__Button type="submit" active={!!textValue} onClick={handleSubmit}>
+          <Postsub__Button  active={!!textValue} onClick={handleSubmit}>
             Post
           </Postsub__Button>
         </PopForm>
