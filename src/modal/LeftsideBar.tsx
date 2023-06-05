@@ -51,7 +51,7 @@ export default function LeftSideBar() {
               width="25"
               style={{ borderRadius: "50px" }}
             />
-          <Name1>Danilo Laflame</Name1>
+          <Name1><b>Danilo Laflame</b></Name1>
         </IconsHolder>
 
         <IconsHolder>
