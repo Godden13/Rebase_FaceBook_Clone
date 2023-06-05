@@ -36,6 +36,7 @@ const Postpopupse = ({
       getDownloadURL(snapshot.ref).then((url) => {
         setImageList((prev: []) => [...prev, url]);
       });
+      setIsOpen(false);
       console.log("Image uploaded");
     });
   };
