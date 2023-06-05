@@ -28,7 +28,8 @@ const Postpopupse = ({
   setImageList,
 }: any) => {
   const imageListRef = ref(storage, "posts/");
-  const uploadImage = () => {
+  const uploadImage = (e:any) => {
+    e.preventDefault()
     if (imageUpload == null) return;
     const imageRef = ref(storage, `posts/${imageUpload + v4()}`);
     uploadBytes(imageRef, imageUpload).then((snapshot) => {
