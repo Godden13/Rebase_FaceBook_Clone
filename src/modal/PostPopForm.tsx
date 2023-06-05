@@ -64,6 +64,7 @@ const PostPopForm = ({ setOpen }: any) => {
       likes: 2,
     });
     console.log(post)
+    setOpen(false);
   };
 
   const handleTextChange = (e: any) => {
@@ -98,7 +99,7 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder={`What is your mind, ${user.displayName}?`}
+              placeholder={`What is your mind, Bata?`}
               onChange={handleTextChange}
             />
             {isOpen && (

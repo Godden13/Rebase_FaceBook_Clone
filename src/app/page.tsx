@@ -79,12 +79,14 @@ export default function Home() {
         </LeftHolder>
         <RightForm onSubmit={handleLogin}>
           <Input
+          type="email"
             placeholder="Email or phone number"
             onChange={(e) => {
               setData((prev) => ({ ...prev, email: e.target.value }));
             }}
           />
           <Input
+          type="password"
             placeholder="Password"
             onChange={(e) => {
               setData((prev) => ({ ...prev, password: e.target.value }));
