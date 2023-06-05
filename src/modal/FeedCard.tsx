@@ -151,7 +151,7 @@ function FeedCard() {
                 onChange={handleInputChange}
               />
             </CommentWrapper>
-            <Submit__commentsbtn type="submit" onClick={handleInputChange}>
+            <Submit__commentsbtn  onClick={handleInputChange}>
               <Submit__comments />
             </Submit__commentsbtn>
           </Comment__set>
