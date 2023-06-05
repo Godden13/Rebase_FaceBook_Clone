@@ -56,7 +56,7 @@ export default function Home() {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        router.push("/Pages/shop");
+        router.push("/Pages/feet");
         // ...
       })
       .catch((error) => {

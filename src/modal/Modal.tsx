@@ -28,6 +28,8 @@ import { getInfo, initFirebase } from "@/firebase/config";
 
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useAuth } from "@/context/AuthContext";
+import Router from "next/router";
+import { useRouter } from "next/navigation";
 
 function Register({
   see,
@@ -50,6 +52,7 @@ function Register({
     password: "",
     gender: "",
   });
+   const router = useRouter()
   const { signUp, confirmEmail } = useAuth();
 
   const handleSubmit = async (e: any) => {
@@ -65,6 +68,7 @@ function Register({
       gender: data.gender,
     });
     await signUp(data.email, data.password)
+    router.push("/Pages/feet");
     await confirmEmail();
     console.log(user);
     setSee(!see);
