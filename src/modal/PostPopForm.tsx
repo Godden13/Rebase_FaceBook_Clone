@@ -72,6 +72,7 @@ const PostPopForm = ({ setOpen }: any) => {
   const handleTextChange = (e: any) => {
     setTextValue(e.target.value);
     setData((prev) => ({ ...prev, title: e.target.value }));
+    e.preventDefault();
   };
 
   return (
@@ -155,7 +156,7 @@ const PostPopForm = ({ setOpen }: any) => {
             </List>
           </PostDiv>
 
-          <Postsub__Button type="submit" active={!!textValue}>
+          <Postsub__Button  active={!!textValue} onClick={handleSubmit}>
             Post
           </Postsub__Button>
         </PopForm>
