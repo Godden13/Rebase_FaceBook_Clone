@@ -31,18 +31,15 @@ import {
 import Postpopupse from "./Postpopupse";
 
 import Image from "next/image";
-import { storage } from "@/firebase/config";
-import Theme from "../../assets/images/icons/heme.png";
-import ThemeImoji2 from "../../assets/images/icons/smile.png";
-import GalleryImoji from "../../assets/images/icons/gallerry.png";
-import TagImoji from "../../assets/images/icons/tag.png";
-import GiftImoji from "../../assets/images/gift.png";
+import Theme from "../assets/images/icons/heme.png";
+import ThemeImoji2 from "../assets/images/icons/smile.png";
+import GalleryImoji from "../assets/images/icons/gallerry.png";
+import TagImoji from "../assets/images/icons/tag.png";
+import GiftImoji from "../assets/images/icons/gift.png";
 import { ThemeStyle, ThemeStyle1, LiStyle } from "@/Components/Atoms/Atoms";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
-import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
-import { v4 } from "uuid";
 
 const PostPopForm = ({ setOpen }: any) => {
   const [imageList, setImageList] = useState<any>([]);
