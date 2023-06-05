@@ -48,7 +48,7 @@ import {
 
 import Liked from "../assets/images/like.png";
 import Loved from "../assets/images/heart.png";
-import { CSSProperties, useState } from "react";
+import { CSSProperties, useRef, useState } from "react";
 import { Submit__comments } from "@/Components/Atoms/IconsAtoms";
 
 interface ImgProps {
@@ -59,12 +59,18 @@ interface ImgProps {
 FeedMainImg;
 function FeedCard() {
   const [comment, setComment] = useState(false);
+  const [vals, setVals] = useState("");
+  const inputRef = useRef();
   const handleClick = () => {
     setComment((prev) => !prev);
   };
 
   const closeComment = () => {
     setComment(false);
+  };
+
+  const SubmitHandler = (e: any) => {
+    e.prevenDefault();
   };
 
   return (
@@ -137,7 +143,7 @@ function FeedCard() {
               <Whappys />
               <CommentInput
                 type="text"
-                placeholder="Write a public here comment"
+                placeholder="Write a public here comment" 
               />
             </CommentWrapper>
             <Submit__commentsbtn type="submit">
