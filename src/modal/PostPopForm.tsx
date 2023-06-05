@@ -88,7 +88,7 @@ const PostPopForm = ({ setOpen }: any) => {
           <CreatePost__profile__prefence>
             <Profile__holder></Profile__holder>
             <StatusPreference>
-              <p>{user.displayName}</p>
+              <p>{user?.displayName}</p>
               <LockedDiv>
                 <Lock />
                 only me
@@ -98,7 +98,7 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder={`What is your mind, ${user.displayName}?`}
+              placeholder={`What is your mind, ${user?.displayName}?`}
               onChange={handleTextChange}
             />
             {isOpen && (
