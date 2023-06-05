@@ -20,12 +20,10 @@ export const Story = styled.div`
   border: 1px solid rgb(211, 211, 211);
   background-color: #fff;
   @media (max-width: 768px) {
-    width: 500px;
+    width: 98vw;
+    margin-inline: auto;
   }
 
-  @media (max-width: 400px) {
-    width: 320px;
-  }
 `;
 
 export const Bg = styled(Main)`
@@ -66,6 +64,21 @@ export const Foot = styled.footer`
 `;
 
 export const Leftside = styled("div")`
+display: flex;
+flex-direction: column;
+padding:40px 0  0 5px ;
+align-items: center;
+max-height: 90vh;
+width: 300px;
+left: 0;
+margin-top: 50px;
+overflow-y: scroll;
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+
+
   display: flex;
   flex-direction: column;
   padding: 40px 0 0 5px;
@@ -130,27 +143,32 @@ export const PostForm = styled("form")`
   border: 1px solid rgb(211, 211, 211);
   background-color: #fff;
   @media (max-width: 768px) {
-    width: 500px;
+    width: 98vw;
+    margin-inline: auto;
   }
 
-  @media (max-width: 400px) {
-    width: 320px;
-  }
 `;
 
 export const RightSide = styled("div")`
   display: flex;
-  justify-content: right;
   height: 95vh;
   max-width: 100%;
   position: fixed;
   right: 0;
+
+ @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const RightBar = styled("div")`
   overflow-y: scroll;
   width: 400px;
   margin-top: 50px;
+
+   @media only screen and (max-width: 1024px) {
+    width: 280px;
+  }
 `;
 
 export const PopForm = styled(PostForm)`
@@ -202,9 +220,9 @@ export const FeedCards = styled.div`
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   margin: 5px 0;
 
-  @media (max-width: 400px) {
-    width: 310px;
-    height: 69vh;
+  @media (max-width: 768px) {
+    width: 98vw;
+    /* height: 69vh; */
   }
 `;
 
@@ -217,21 +235,37 @@ export const FeetContent = styled.div`
 `;
 
 export const FeetContainer = styled.div`
-  display: flex;
-  width: 100vw;
+display: flex;
+width: 100vw;
+justify-content: center;
+
+  @media (max-width: 1024px) {
+  justify-content: flex-start;
+  }
+
+    @media (max-width: 768px) {
   justify-content: center;
-`;
+  }
+
+`
 
 export const PostHolder = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: -60px;
-  gap: 7px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-`;
+display: flex;
+flex-direction: column;
+gap: 7px;
+justify-content: center;
+align-items: center;   
+margin-top: 70px;
+margin-left: -70px;
 
+  @media (max-width: 1024px) {
+  margin-left: 30px;
+  }
+
+  @media (max-width: 768px) {
+  margin-left: 0;
+  } 
+`
 export const PopupHiddenCont = styled.div`
   width: 470px;
   height: 264px;

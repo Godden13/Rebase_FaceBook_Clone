@@ -246,7 +246,7 @@ export const Onyourmind = styled.div`
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
 `;
 
 export const Multi__media = styled.div`
@@ -287,7 +287,7 @@ export const Icons__containers = styled.div`
   justify-content: center;
   gap: 4%;
 
-  @media (max-width: 400px) {
+  @media (max-width: 425px) {
     display: none;
   }
 `;
@@ -309,7 +309,6 @@ export const FeedPost__wrapper = styled("div")`
 
 export const FeedPostTop = styled("div")`
   width: 100%;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -329,10 +328,8 @@ export const PostImg = styled(FeedPostTop)`
 `;
 
 export const PostTopLeft = styled.div`
-  width: 30%;
   display: flex;
   align-items: center;
-  /* background-color: yellow; */
   line-height: 1.6;
   gap: 8px;
   @media (max-width: 400px) {
@@ -362,7 +359,8 @@ export const Feedpost__message = styled(FeedPost__action)`
 
 export const FeedMainImg = styled.div`
   width: 100%;
-  height: 500px;
+ /*  height: 500px; */
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,15 +447,29 @@ export const Profile = styled.div`
 export const LeftAttr = styled.div`
   align-items: center;
   display: flex;
+  height: 85%;
   gap: 8px;
   justify-content: left;
-  margin-left: 15px;
+  margin:auto 0 auto 15px;
 `;
 
 export const MiddleAttr = styled.div`
   display: flex;
-  gap: 85px;
+  gap: 130px;
   margin-left: -120px;
+
+  @media only screen and (max-width: 1024px) {
+    gap: 85px;
+    margin-left: 0;
+  }
+
+   @media only screen and (max-width: 768px) {
+    gap: 50px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const RightAttr = styled.div`
@@ -543,9 +555,9 @@ export const Sponsor = styled.div`
 
 export const HeadIcon = styled.div`
   align-items: center;
+  width: 100%;
   display: flex;
-  gap: 120px;
-  justify-content: center;
+  justify-content: space-between;
   font-family: Helvetica, Arial, sans-serif;
 `;
 

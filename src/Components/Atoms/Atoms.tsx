@@ -200,6 +200,11 @@ export const NavInput = styled("input")`
   &:hover {
     background-color: #ddd;
   }
+
+  @media(max-width: 1024px) {
+    padding: 14px 18px;
+    width: 10px;
+  }
 `;
         
 export const Row = styled("div")`
@@ -279,6 +284,7 @@ export const Name1 = styled("p")`
   font-size: 15px;
   font-family: Helvetica, Arial, sans-serif;
 `;
+
 
 export const Detail = styled.p`
   color: #1876f2;
@@ -415,7 +421,7 @@ export const LiStyle = {
 };
 
 export const Mind__input = styled.input`
-  width: 585px;
+  width: 100%;
   text-align: left;
   font-size: 16px;
   border-radius: 78px;
@@ -455,6 +461,8 @@ export const MainPis = {
 export const Timer = styled.span`
   color: gray;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 `;
 export const ProfilePis = {
   width: "50px",
