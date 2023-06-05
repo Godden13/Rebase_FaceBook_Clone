@@ -187,7 +187,7 @@ export const Profile__holder = styled.div`
   align-items: center;
 `;
 export const StatusPreference = styled.div`
-  width: 100px;
+  width: 130px;
   height: 50px;
   line-height: 1.4;
   display: flex;
