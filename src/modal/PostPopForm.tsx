@@ -63,6 +63,7 @@ const PostPopForm = ({ setOpen }: any) => {
       doc: serverTimestamp(),
       likes: 2,
     });
+    console.log(post)
   };
 
   const handleTextChange = (e: any) => {
