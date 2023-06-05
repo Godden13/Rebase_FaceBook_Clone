@@ -379,7 +379,6 @@ export const LockedDiv = styled.div`
   border-radius: 6px;
   font-size: 18px;
   gap: 2%;
-  margin-bottom: 10px;
 `;
 
 export const WrtieMind__status = styled.textarea`
