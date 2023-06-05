@@ -42,40 +42,19 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
 import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
-import { v4 } from "uuid"
+import { v4 } from "uuid";
 
 const PostPopForm = ({ setOpen }: any) => {
+  const [imageList, setImageList] = useState<any>([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [imageUpload, setImageUpload] = useState();
+  const [textValue, setTextValue] = useState("");
   const [data, setData] = useState({
     title: "",
-    fileUrl: "",
+    fileUrl: imageList,
   });
-  const [isOpen, setIsOpen] = useState(false);
-  const [imageUpload, setImageUpload] = useState(null);
-  const [textValue, setTextValue] = useState("");
-  const [imageList, setImageList] = useState([]);
   const { user } = useAuth();
 
-   const imageListRef = ref(storage, "posts/");
-   const uploadImage = () => {
-     if (imageUpload == null) return;
-     const imageRef = ref(storage, `posts/${imageUpload.name + v4()}`);
-     uploadBytes(imageRef, imageUpload).then((snapshot) => {
-       getDownloadURL(snapshot.ref).then((url) => {
-         setImageList((prev) => [...prev, url]);
-       });
-       console.log("Image uploaded");
-     });
-   };
-
-  useEffect(() => {
-    listAll(imageListRef).then((res) => {
-      res.items.forEach((item) => {
-        getDownloadURL(item).then((url) => {
-          setImageList((prev) => [...prev, url]);
-        });
-      });
-    });
-  }, [imageListRef]);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -97,7 +76,7 @@ const PostPopForm = ({ setOpen }: any) => {
   return (
     <>
       <Bg>
-        <PopForm>
+        <PopForm onSubmit={handleSubmit}>
           <CreatePost__title>
             <CreatePost__title__innerContianer>
               <TittleCreate>
@@ -111,7 +90,7 @@ const PostPopForm = ({ setOpen }: any) => {
           <CreatePost__profile__prefence>
             <Profile__holder></Profile__holder>
             <StatusPreference>
-              <p>Bata humphrey</p>
+              <p>{user.displayName}</p>
               <LockedDiv>
                 <Lock />
                 only me
@@ -121,10 +100,17 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder="What is your mind, Bata?"
+              placeholder={`What is your mind, ${user.displayName}?`}
               onChange={handleTextChange}
             />
-            {isOpen && <Postpopupse setIsOpen={setIsOpen} />}
+            {isOpen && (
+              <Postpopupse
+                setIsOpen={setIsOpen}
+                setImageUpload={setImageUpload}
+                imageUpload={imageUpload}
+                setImageList={setImageList}
+              />
+            )}
           </WriteStatus>
           <Styled__backDiv>
             <Image src={Theme} alt="the user" style={ThemeStyle} />
