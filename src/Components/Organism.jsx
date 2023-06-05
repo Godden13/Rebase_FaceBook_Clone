@@ -9,7 +9,6 @@ export const Main = styled("div")`
   background-color: #f0f2f5;
 `;
 
-
 export const Story = styled.div`
   width: 687px;
   height: 303px;
@@ -79,6 +78,16 @@ overflow-y: scroll;
     display: none;
   }
 
+
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0 5px;
+  align-items: center;
+  max-height: 90vh;
+  width: 210px;
+  left: 0;
+  margin-top: 50px;
+  overflow-y: scroll;
 `;
 
 export const Nav = styled("div")`
@@ -109,20 +118,19 @@ export const PopUpBox = styled("div")`
   height: 460px;
   justify-content: center;
   width: 380px;
-  `
+`;
 
 export const IconsHolder = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding: 8px 0 8px 2px; 
+  padding: 8px 0 8px 2px;
   border-radius: 2px;
   &:hover {
     background-color: #bfbbbb5e;
   }
 `;
-
 
 export const PostForm = styled("form")`
   width: 687px;
@@ -219,12 +227,12 @@ export const FeedCards = styled.div`
 `;
 
 export const FeetContent = styled.div`
-display: flex;
-width: 100vw;
-justify-content: space-between;
-position: relative;
-flex-direction: column;
-`
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+`;
 
 export const FeetContainer = styled.div`
 display: flex;
@@ -257,6 +265,12 @@ margin-left: -70px;
   @media (max-width: 768px) {
   margin-left: 0;
   } 
-
 `
-
+export const PopupHiddenCont = styled.div`
+  width: 470px;
+  height: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+`;

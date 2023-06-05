@@ -10,13 +10,13 @@ import {
 } from "react-icons/fa";
 import { AiFillRead, AiFillCamera } from "react-icons/ai";
 import { ImBookmark } from "react-icons/im";
-import { MdOndemandVideo ,MdModeEdit } from "react-icons/md";
+import { MdOndemandVideo, MdModeEdit } from "react-icons/md";
 import { FcGallery } from "react-icons/fc";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import {
   BiDotsHorizontalRounded,
   BiLike,
-  BiMessageDetail,
+  BiMessageDetail,BiCloudUpload,
 } from "react-icons/bi";
 import { RiShareForwardLine, RiChatSmile3Fill } from "react-icons/ri";
 import {
@@ -24,7 +24,12 @@ import {
   RiArrowDropDownLine,
   RiArrowDropUpLine,
 } from "react-icons/ri";
-import { MdFlag, MdGroups2, MdOutlineWatchLater } from "react-icons/md";
+import {
+  MdFlag,
+  MdGroups2,
+  MdOutlineWatchLater,
+  MdSmartphone,
+} from "react-icons/md";
 import { GiDogHouse } from "react-icons/gi";
 import { GrPower } from "react-icons/gr";
 import { CgGames } from "react-icons/cg";
@@ -201,15 +206,24 @@ export const EditPhoto = styled(AiFillCamera)`
 `;
 
 export const EditProf = styled(MdModeEdit)`
-font-size: 14px;
-`
+  font-size: 14px;
+`;
 export const Suggesteddrop__friends = styled(FaChevronDown)`
-font-size: 14px;
-`
-export const Plike__container  = styled.div`
+  font-size: 14px;
+`;
+export const Plike__container = styled.div`
 width: 100px
 display: flex;
 align-items: center;
 justify-content: center;
 gap: 1%;
-` 
+`;
+
+export const UploadFile__phone = styled(MdSmartphone)`
+  font-size: 13px;
+  color: black;
+`;
+
+export const UploadIcon = styled(BiCloudUpload)`
+  font-size: 22px;
+`;

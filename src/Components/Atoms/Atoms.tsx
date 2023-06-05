@@ -509,3 +509,9 @@ export const Para = styled.p `
   display: none;
 }
 `
+export const AddButton = styled.button`
+width: 52px;
+height: 32px;
+border: none !important;
+background: grey;
+`
