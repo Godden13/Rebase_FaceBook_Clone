@@ -70,14 +70,15 @@ flex-direction: column;
 padding:40px 0  0 5px ;
 align-items: center;
 max-height: 90vh;
-width: 210px;
+width: 300px;
 left: 0;
 margin-top: 50px;
 overflow-y: scroll;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
+
 `;
 
 export const Nav = styled("div")`
@@ -156,6 +157,10 @@ export const RightBar = styled("div")`
   overflow-y: scroll;
   width: 400px;
   margin-top: 50px;
+
+   @media only screen and (max-width: 1024px) {
+    width: 280px;
+  }
 `;
 
 export const PopForm = styled(PostForm)`
@@ -225,15 +230,33 @@ export const FeetContainer = styled.div`
 display: flex;
 width: 100vw;
 justify-content: center;
+
+  @media (max-width: 1024px) {
+  justify-content: flex-start;
+  }
+
+    @media (max-width: 768px) {
+  justify-content: center;
+  }
+
 `
 
 export const PostHolder = styled.div`
 display: flex;
 flex-direction: column;
-/* margin-left: -60px; */
 gap: 7px;
 justify-content: center;
 align-items: center;   
-margin-top: 50px;
+margin-top: 70px;
+margin-left: -70px;
+
+  @media (max-width: 1024px) {
+  margin-left: 30px;
+  }
+
+  @media (max-width: 768px) {
+  margin-left: 0;
+  } 
+
 `
 

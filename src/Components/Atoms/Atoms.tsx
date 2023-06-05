@@ -200,6 +200,11 @@ export const NavInput = styled("input")`
   &:hover {
     background-color: #ddd;
   }
+
+  @media(max-width: 1024px) {
+    padding: 14px 18px;
+    width: 10px;
+  }
 `;
         
 export const Row = styled("div")`
@@ -279,6 +284,7 @@ export const Name1 = styled("p")`
   font-size: 15px;
   font-family: Helvetica, Arial, sans-serif;
 `;
+
 
 export const Detail = styled.p`
   color: #1876f2;

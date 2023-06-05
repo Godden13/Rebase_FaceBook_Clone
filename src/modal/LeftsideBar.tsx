@@ -21,7 +21,9 @@ import {
   Activity,
   Dropdown,
 } from "@/Components/Atoms/IconAtoms";
-import { Bg, Leftside, IconsHolder } from "@/Components/Organism";
+import { Leftside, IconsHolder } from "@/Components/Organism";
+import Logo from "@/assets/images/car.jpg";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function LeftSideBar() {
@@ -42,9 +44,19 @@ export default function LeftSideBar() {
     <div style={{ position: "fixed" }}>
       <Leftside>
         <IconsHolder>
-          <Friends /> <Name1>Friends</Name1>
+        <Image
+              src={Logo}
+              alt="logo"
+              height="25"
+              width="25"
+              style={{ borderRadius: "50px" }}
+            />
+          <Name1>Danilo Laflame</Name1>
         </IconsHolder>
 
+        <IconsHolder>
+          <Friends /> <Name1>Friends</Name1>
+        </IconsHolder>
         <IconsHolder>
           <Group /> <Name1>Groups</Name1>
         </IconsHolder>
@@ -86,7 +98,7 @@ export default function LeftSideBar() {
         )}
 
         {slide && (
-          <div style={{ marginLeft: -20 + "px" }}>
+          <div style={{ width: 100 + "%" }}>
             <IconsHolder>
               <Speaker /> <Name1>Ad center</Name1>
             </IconsHolder>

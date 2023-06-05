@@ -22,11 +22,15 @@ export const SearchIcon = styled(GoSearch)`
   left: 5%;
   position: absolute;
   margin: 12px 0 0 -5px;
+
+    @media (max-width: 1024px) {
+      margin-left: 8px;
+  }
 `;
 
 export const Facebook = styled(BsFacebook)`
   color: #1877f2;
-  font-size: 45px;
+  font-size: 40px;
 `;
 
 export const Home = styled(AiFillHome)`

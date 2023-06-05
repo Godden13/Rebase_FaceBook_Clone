@@ -309,7 +309,6 @@ export const FeedPost__wrapper = styled("div")`
 
 export const FeedPostTop = styled("div")`
   width: 100%;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -448,14 +447,29 @@ export const Profile = styled.div`
 export const LeftAttr = styled.div`
   align-items: center;
   display: flex;
+  height: 85%;
   gap: 8px;
   justify-content: left;
-  margin:5px 0 5px 15px;
+  margin:auto 0 auto 15px;
 `;
 
 export const MiddleAttr = styled.div`
   display: flex;
-  gap: 85px;
+  gap: 130px;
+  margin-left: -120px;
+
+  @media only screen and (max-width: 1024px) {
+    gap: 85px;
+    margin-left: 0;
+  }
+
+   @media only screen and (max-width: 768px) {
+    gap: 50px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const RightAttr = styled.div`
@@ -541,9 +555,9 @@ export const Sponsor = styled.div`
 
 export const HeadIcon = styled.div`
   align-items: center;
+  width: 100%;
   display: flex;
-  gap: 120px;
-  justify-content: center;
+  justify-content: space-between;
   font-family: Helvetica, Arial, sans-serif;
 `;
 
