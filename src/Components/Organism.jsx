@@ -78,16 +78,6 @@ overflow-y: scroll;
     display: none;
   }
 
-
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0 0 5px;
-  align-items: center;
-  max-height: 90vh;
-  width: 210px;
-  left: 0;
-  margin-top: 50px;
-  overflow-y: scroll;
 `;
 
 export const Nav = styled("div")`
@@ -222,7 +212,6 @@ export const FeedCards = styled.div`
 
   @media (max-width: 768px) {
     width: 98vw;
-    /* height: 69vh; */
   }
 `;
 
