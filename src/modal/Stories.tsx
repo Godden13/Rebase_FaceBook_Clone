@@ -15,8 +15,6 @@ import { Read, Reels } from "@/Components/Atoms/IconAtoms";
 import Image from "next/image";
 import { Key, useState } from "react";
 
-import styled from "@emotion/styled";
-import image from "next/image";
 
 import { imageStyles, NextButton, PrevButton } from "../Components/Atoms/Atoms";
 

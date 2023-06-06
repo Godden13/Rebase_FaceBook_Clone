@@ -1,5 +1,6 @@
 import { FeedCards } from "@/Components/Organism";
 import ProfilePicture from "../assets/images/persons/5.jpeg";
+/* import { Post } from "../assets/Dommydata"; */
 
 import Snoop from "../assets/images/persons/6.jpeg";
 
@@ -57,7 +58,12 @@ interface ImgProps {
   style?: CSSProperties;
 }
 FeedMainImg;
-function FeedCard() {
+function FeedCard({}) {
+
+  const[like, setLike] = useState(1)
+  const[isLike, setIslike] = useState(false)
+   const[liked, setLiked]= useState(false) 
+
   const [comment, setComment] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef();
@@ -73,6 +79,12 @@ function FeedCard() {
     setInputValue(event.target.value);
     console.log(inputValue)
   };
+
+  const handlelike = () => {
+    setLike( isLike ? like-1: like+1)
+    setIslike(!isLike)
+    setLiked(prev => !prev)
+  }
 
   return (
     <FeedCards>
@@ -110,14 +122,14 @@ function FeedCard() {
           <PostBottom>
             <Image src={Liked} alt="gh" height={30} width={30} />
             <Image src={Loved} alt="gh" height={30} width={30} />
-            <span>145</span>
+            <span>{like}</span>
           </PostBottom>
           <p>45 comments ...</p>
         </FeedPost__bottom>
         <Feed__multimedia>
-          <Multi__smallcontainers>
+          <Multi__smallcontainers onClick={() => handlelike()}>
             <p>
-              <LikedPost />
+              <LikedPost liked={liked}/>
               Like
             </p>
           </Multi__smallcontainers>
@@ -147,8 +159,6 @@ function FeedCard() {
               <CommentInput
                 type="text"
                 placeholder="Write a public here comment"
-                value={inputValue}
-                onChange={handleInputChange}
               />
             </CommentWrapper>
             <Submit__commentsbtn  onClick={handleInputChange}>
