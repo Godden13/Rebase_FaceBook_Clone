@@ -16,7 +16,8 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 import {
   BiDotsHorizontalRounded,
   BiLike,
-  BiMessageDetail,BiCloudUpload,
+  BiMessageDetail,
+  BiCloudUpload,
 } from "react-icons/bi";
 import { RiShareForwardLine, RiChatSmile3Fill } from "react-icons/ri";
 import {
@@ -161,9 +162,9 @@ export const Whappys = styled(HiOutlineEmojiHappy)`
   top: 20px;
 `;
 
-export const LikedPost = styled(BiLike)`
+export const LikedPost = styled(BiLike)<{ liked?: boolean }>`
   font-size: small;
-  color: gray;
+  color: ${({ liked }) => (liked ? "#00b2ff" : "gray")};
 `;
 
 export const Bac = styled(FcGallery)`
