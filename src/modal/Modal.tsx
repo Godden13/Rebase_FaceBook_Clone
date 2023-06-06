@@ -44,6 +44,8 @@ function Register({
     month: "",
     year: "",
   });
+  const {user} = useAuth()
+  console.log(user)
   const [custom, setCustom] = useState("")
   const [data, setData] = useState({
     firstName: "",
@@ -57,8 +59,7 @@ function Register({
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const user = await addDoc(collection(getInfo, "users"), {
-      id: serverTimestamp(),
+    const user = await addDoc(collection(getInfo, `users`), {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,

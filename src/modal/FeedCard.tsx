@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FeedCards } from "@/Components/Organism";
 import ProfilePicture from "../assets/images/persons/5.jpeg";
 
@@ -57,9 +58,9 @@ interface ImgProps {
   style?: CSSProperties;
 }
 FeedMainImg;
-function FeedCard() {
+function FeedCard({ getPosts }: any) {
   const [comment, setComment] = useState(false);
-  const [vals, setVals] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const inputRef = useRef();
   const handleClick = () => {
     setComment((prev) => !prev);
@@ -69,8 +70,9 @@ function FeedCard() {
     setComment(false);
   };
 
-  const SubmitHandler = (e: any) => {
-    e.prevenDefault();
+  const handleInputChange = (event: any) => {
+    setInputValue(event.target.value);
+    console.log(inputValue);
   };
 
   return (
@@ -103,7 +105,7 @@ function FeedCard() {
           <p>Every moment is a fresh beginning.</p>
         </Feedpost__message>
         <FeedMainImg>
-          <Image src={Snoop} alt="snoop" style={MainPis} />
+          <img src={getPosts[1]?.data()?.fileUrl} alt="snoop" style={MainPis} width={50} height={50} />
         </FeedMainImg>
         <FeedPost__bottom>
           <PostBottom>
@@ -129,6 +131,7 @@ function FeedCard() {
             <p>Share</p>
           </Multi__smallcontainers>
         </Feed__multimedia>
+
         {comment && (
           <Comment__set>
             <Image
@@ -143,10 +146,12 @@ function FeedCard() {
               <Whappys />
               <CommentInput
                 type="text"
-                placeholder="Write a public here comment" 
+                placeholder="Write a public here comment"
+                value={inputValue}
+                onChange={handleInputChange}
               />
             </CommentWrapper>
-            <Submit__commentsbtn type="submit">
+            <Submit__commentsbtn onClick={handleInputChange}>
               <Submit__comments />
             </Submit__commentsbtn>
           </Comment__set>
