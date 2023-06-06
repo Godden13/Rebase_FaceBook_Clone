@@ -49,6 +49,7 @@ export default function Navbar() {
           height="35"
           width="35"
           style={{ borderRadius: "50%", cursor: "pointer" }}
+          
         />
       </RightAttr>
     </Nav>

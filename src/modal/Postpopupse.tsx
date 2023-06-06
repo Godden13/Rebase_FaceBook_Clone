@@ -17,6 +17,7 @@ import {
 } from "@/Components/Molecules";
 import { PopupHiddenCont } from "@/Components/Organism";
 import { storage } from "@/firebase/config";
+import AuthGaurd from "@/HOC/AuthGuard";
 import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
 import { useEffect } from "react";
 import { v4 } from "uuid";
@@ -26,14 +27,17 @@ const Postpopupse = ({
   setImageUpload,
   imageUpload,
   setImageList,
+  setImgUrl,
+  userInfo
 }: any) => {
   const imageListRef = ref(storage, "posts/");
-  const uploadImage = (e:any) => {
-    e.preventDefault()
+  const uploadImage = (e: any) => {
+    e.preventDefault();
     if (imageUpload == null) return;
-    const imageRef = ref(storage, `posts/${imageUpload + v4()}`);
+    const imageRef = ref(storage, `posts/${userInfo?.uid}/${v4()}`);
     uploadBytes(imageRef, imageUpload).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {
+        setImgUrl(url);
         setImageList((prev: []) => [...prev, url]);
       });
       setIsOpen(false);
@@ -85,4 +89,4 @@ const Postpopupse = ({
   );
 };
 
-export default Postpopupse;
+export default AuthGaurd(Postpopupse);

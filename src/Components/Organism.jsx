@@ -126,7 +126,7 @@ export const IconsHolder = styled('div')`
   }
 `;
 
-export const PostForm = styled("form")`
+export const PostForm = styled("div")`
   width: 687px;
   height: 123px;
   display: flex;

@@ -65,7 +65,7 @@ function FeedCard({}) {
    const[liked, setLiked]= useState(false) 
 
   const [comment, setComment] = useState(false);
-  const [vals, setVals] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const inputRef = useRef();
   const handleClick = () => {
     setComment((prev) => !prev);
@@ -75,8 +75,9 @@ function FeedCard({}) {
     setComment(false);
   };
 
-  const SubmitHandler = (e: any) => {
-    e.prevenDefault();
+  const handleInputChange = (event: any) => {
+    setInputValue(event.target.value);
+    console.log(inputValue)
   };
 
   const handlelike = () => {
@@ -141,7 +142,9 @@ function FeedCard({}) {
             <p>Share</p>
           </Multi__smallcontainers>
         </Feed__multimedia>
+        
         {comment && (
+          
           <Comment__set>
             <Image
               src={ProfilePicture}
@@ -150,7 +153,7 @@ function FeedCard({}) {
               margin-rigth="22px"
               border-radius="50%"
             />
-
+            
             <CommentWrapper>
               <Whappys />
               <CommentInput
@@ -158,7 +161,7 @@ function FeedCard({}) {
                 placeholder="Write a public here comment"
               />
             </CommentWrapper>
-            <Submit__commentsbtn type="submit">
+            <Submit__commentsbtn  onClick={handleInputChange}>
               <Submit__comments />
             </Submit__commentsbtn>
           </Comment__set>
