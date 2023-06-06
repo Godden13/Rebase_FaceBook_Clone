@@ -43,30 +43,31 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { getInfo, initFirebase } from "@/firebase/config";
 import { useAuth } from "@/context/AuthContext";
 import ProfilePicture from "../assets/images/lady.png"
+import AuthGaurd from "@/HOC/AuthGuard";
 
-const PostPopForm = ({ setOpen }: any) => {
+const PostPopForm = ({ setOpen, userInfo }: any) => {
   const [imageList, setImageList] = useState<any>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [imageUpload, setImageUpload] = useState();
   const [textValue, setTextValue] = useState("");
+  const [imgUrl, setImgUrl] = useState("")
   const [data, setData] = useState({
     title: "",
     fileUrl: imageList,
   });
-  const { user } = useAuth();
 
+    console.log(userInfo);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const post = await addDoc(collection(getInfo, "posts"), {
       id: serverTimestamp(),
       title: data.title,
-      fileUrl: data.fileUrl,
-      createdBy: user.id,
+      fileUrl: imgUrl,
       doc: serverTimestamp(),
+      postedBy: userInfo?.uid,
       likes: 2,
     });
-    console.log(post)
   };
 
   const handleTextChange = (e: any) => {
@@ -78,7 +79,7 @@ const PostPopForm = ({ setOpen }: any) => {
   return (
     <>
       <Bg>
-        <PopForm onSubmit={handleSubmit}>
+        <PopForm>
           <CreatePost__title>
             <CreatePost__title__innerContianer>
               <TittleCreate>
@@ -91,17 +92,16 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__title>
           <CreatePost__profile__prefence>
             <Profile__holder>
-            <Image
-              src={ProfilePicture}
-              alt="prof"
-              style={ProfilePises}
-              margin-rigth="10px"
-              border-radius="50%"
-            />
-
+              <Image
+                src={ProfilePicture}
+                alt="prof"
+                style={ProfilePises}
+                margin-rigth="10px"
+                border-radius="50%"
+              />
             </Profile__holder>
             <StatusPreference>
-              <p>{user?.displayName}</p>
+              <p>{userInfo?.displayName}</p>
               <LockedDiv>
                 <Lock />
                 only me
@@ -111,7 +111,7 @@ const PostPopForm = ({ setOpen }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder={`What is your mind, ${user?.displayName}?`}
+              placeholder={`What is your mind, ${userInfo?.displayName}?`}
               onChange={handleTextChange}
             />
             {isOpen && (
@@ -120,6 +120,7 @@ const PostPopForm = ({ setOpen }: any) => {
                 setImageUpload={setImageUpload}
                 imageUpload={imageUpload}
                 setImageList={setImageList}
+                setImgUrl={setImgUrl}
               />
             )}
           </WriteStatus>
@@ -156,7 +157,7 @@ const PostPopForm = ({ setOpen }: any) => {
             </List>
           </PostDiv>
 
-          <Postsub__Button  active={!!textValue} onClick={handleSubmit}>
+          <Postsub__Button active={!!textValue} onClick={handleSubmit}>
             Post
           </Postsub__Button>
         </PopForm>
