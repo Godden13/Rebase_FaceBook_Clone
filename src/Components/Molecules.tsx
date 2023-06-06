@@ -509,6 +509,10 @@ export const ProfilField1 = styled.div`
   margin: 10px auto;
   padding-bottom: 15px;
   width: 95%;
+
+  &:hover {
+    background-color: #eee;
+  }
 `;
 
 export const SectionIcons = styled.div`

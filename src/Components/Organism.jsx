@@ -163,12 +163,12 @@ export const RightSide = styled("div")`
 
 export const RightBar = styled("div")`
   overflow-y: scroll;
-  width: 400px;
+  width: 26vw;
   margin-top: 50px;
 
-   @media only screen and (max-width: 1024px) {
+/*    @media only screen and (max-width: 1024px) {
     width: 280px;
-  }
+  } */
 `;
 
 export const PopForm = styled(PostForm)`

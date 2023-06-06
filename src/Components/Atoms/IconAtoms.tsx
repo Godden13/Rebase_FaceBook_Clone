@@ -155,8 +155,9 @@ export const Whappy = styled(HiOutlineEmojiHappy)`
 `;
 
 export const LikedPost = styled(BiLike)`
-  font-size: small;
+  font-size: 23px;
   color: gray;
+  cursor: pointer;
 `;
 
 export const Bac = styled(FcGallery)`

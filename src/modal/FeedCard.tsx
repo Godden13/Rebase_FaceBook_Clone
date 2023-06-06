@@ -1,10 +1,11 @@
 import { FeedCards } from "@/Components/Organism";
+import { Users } from "@/modal/Dummydata";
 import ProfilePicture from "../assets/images/persons/5.jpeg";
 
 import Snoop from "../assets/images/persons/6.jpeg";
 
 import { ProfilePis } from "@/Components/Atoms/Atoms";
-
+import { useState } from "react";
 interface feedProps {
   width: string;
   height: string;
@@ -28,7 +29,14 @@ import {
 
 import Image from "next/image";
 
-import { Globe, Dots, LikedPost, Comments, SharePost, Xmarker } from "@/Components/Atoms/IconAtoms";
+import {
+  Globe,
+  Dots,
+  LikedPost,
+  Comments,
+  SharePost,
+  Xmarker,
+} from "@/Components/Atoms/IconAtoms";
 
 import Liked from "../assets/images/like.png";
 import Loved from "../assets/images/heart.png";
@@ -37,10 +45,22 @@ import { CSSProperties } from "react";
 interface ImgProps {
   width: any;
   height: any;
-  style?: CSSProperties ;
+  style?: CSSProperties;
 }
-FeedMainImg;
-function FeedCard() {
+
+// FeedMainImg;
+function FeedCard({ Posts } :any) {
+  const [likes, setLikes] = useState(Posts?.like);
+  const [hasLiked, setHasLiked] = useState(false);
+  // const user = Users.filter((u) => u.id === 1);
+  // console.log(user);
+
+  const likeClick = () => {
+    setLikes(hasLiked ? likes - 1 : likes + 1);
+    console.log(setLikes)
+    setHasLiked(!hasLiked);
+    console.log(setHasLiked)
+  };
   return (
     <FeedCards>
       <FeedPost__wrapper>
@@ -84,8 +104,8 @@ function FeedCard() {
         <Feed__multimedia>
           <Multi__smallcontainers>
             <p>
-              <LikedPost/> 
-               Like
+              <LikedPost onClick={likeClick} />{likes}
+              Like
             </p>
           </Multi__smallcontainers>
           <Multi__smallcontainers>
