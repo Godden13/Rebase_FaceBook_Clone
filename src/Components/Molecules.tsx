@@ -637,10 +637,26 @@ min-height: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
 /* background-color: rgba(249, 242, 242, 0.53);
 border-radius: 8px; */
 `
 export const CommentWrapper = styled.div`
 width: 90%;
 position: relative;
+`
+export const Comment__inerr = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+export const Commented__post = styled.div`
+width: 100%;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 12px;
+flex-direction: column;
 `

@@ -31,6 +31,8 @@ import {
   Multi__smallcontainers,
   Comment__set,
   CommentWrapper,
+  Comment__inerr,
+  Commented__post,
 } from "@/Components/Molecules";
 
 import Image from "next/image";
@@ -56,10 +58,17 @@ interface ImgProps {
   height: any;
   style?: CSSProperties;
 }
-FeedMainImg;
+
+interface Todo {
+  id: number;
+  text: string;
+}
+
 function FeedCard() {
   const [comment, setComment] = useState(false);
+  const [todos, setTodos] = useState<Todo[]>([]);
   const [inputValue, setInputValue] = useState("");
+
   const inputRef = useRef();
   const handleClick = () => {
     setComment((prev) => !prev);
@@ -69,9 +78,24 @@ function FeedCard() {
     setComment(false);
   };
 
-  const handleInputChange = (event: any) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
-    console.log(inputValue)
+  };
+
+  const handleAddTodo = () => {
+    if (inputValue.trim() !== "") {
+      const newTodo: Todo = {
+        id: Date.now(),
+        text: inputValue.trim(),
+      };
+      setTodos([...todos, newTodo]);
+      setInputValue("");
+    }
+  };
+
+  const handleRemoveTodo = (id: number) => {
+    const newTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(newTodos);
   };
 
   return (
@@ -130,30 +154,39 @@ function FeedCard() {
             <p>Share</p>
           </Multi__smallcontainers>
         </Feed__multimedia>
-        
+
         {comment && (
-          
           <Comment__set>
-            <Image
-              src={ProfilePicture}
-              alt="prof"
-              style={ProfilePise}
-              margin-rigth="22px"
-              border-radius="50%"
-            />
-            
-            <CommentWrapper>
-              <Whappys />
-              <CommentInput
-                type="text"
-                placeholder="Write a public here comment"
-                value={inputValue}
-                onChange={handleInputChange}
+            <Comment__inerr>
+              <Image
+                src={ProfilePicture}
+                alt="prof"
+                style={ProfilePise}
+                margin-rigth="22px"
+                border-radius="50%"
               />
-            </CommentWrapper>
-            <Submit__commentsbtn  onClick={handleInputChange}>
-              <Submit__comments />
-            </Submit__commentsbtn>
+
+              <CommentWrapper>
+                <Whappys />
+                <CommentInput
+                  type="text"
+                  placeholder="Write a public here comment"
+                  value={inputValue}
+                  onChange={handleInputChange}
+                />
+              </CommentWrapper>
+              <Submit__commentsbtn onClick={handleAddTodo}>
+                <Submit__comments />
+              </Submit__commentsbtn>
+            </Comment__inerr>
+            <Commented__post>
+              {todos.map((todo) => (
+                <p key={todo.id}>
+                  {todo.text}
+                  <button onClick={() => handleRemoveTodo(todo.id)}>x</button>
+                </p>
+              ))}
+            </Commented__post>
           </Comment__set>
         )}
       </FeedPost__wrapper>
