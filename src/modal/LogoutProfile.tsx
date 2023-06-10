@@ -8,8 +8,9 @@ import {
   SectionIcons,
 } from "@/Components/Molecules";
 import { PopUpBox, ProfilPopUp } from "@/Components/Organism";
-import Logo from "../../../assets/images/car.jpg";
+import Logo from "@/assets/images/car.jpg";
 import Image from "next/image";
+import { LogOut } from '@/Components/Atoms/IconsAtoms';
 import {
   Circle,
   Detail,
@@ -23,12 +24,10 @@ import {
   Support,
   Display,
   FeedBack,
-  LogOut,
 } from "@/Components/Atoms/IconsAtoms";
 
-export default function page() {
+export default function LogoutProfile() {
   return (
-    <ProfilPopUp>
       <PopUpBox>
         <InnerField>
           <ProfilField>
@@ -93,6 +92,5 @@ export default function page() {
           </SectionIcons>
         </InnerField>
       </PopUpBox>
-    </ProfilPopUp>
   );
 }
