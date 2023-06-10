@@ -45,17 +45,17 @@ import { useAuth } from "@/context/AuthContext";
 import ProfilePicture from "../assets/images/lady.png"
 import AuthGaurd from "@/HOC/AuthGuard";
 
-const PostPopForm = ({ setOpen, userInfo }: any) => {
+const PostPopForm = ({ setOpen, currentUserInfo }: any) => {
   const [imageList, setImageList] = useState<any>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [textValue, setTextValue] = useState("");
-  const [imgUrl, setImgUrl] = useState<any>(null)
+  const [imgUrl, setImgUrl] = useState<any>(null);
   const [data, setData] = useState({
     title: "",
     fileUrl: imageList,
   });
 
-    console.log(userInfo);
+  console.log(currentUserInfo);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -64,7 +64,7 @@ const PostPopForm = ({ setOpen, userInfo }: any) => {
       title: data.title,
       fileUrl: imgUrl,
       doc: serverTimestamp(),
-      postedBy: userInfo?.uid,
+      postedBy: currentUserInfo?.uid,
       likes: 2,
     });
   };
@@ -153,10 +153,10 @@ const PostPopForm = ({ setOpen, userInfo }: any) => {
               </List__li>
             </List>
           </PostDiv>
-
           <Postsub__Button active={!!textValue} onClick={handleSubmit}>
             Post
           </Postsub__Button>
+          https://www.youtube.com/watch?v=k4mjF4sPITE&pp=ygUYY2hhdCBhcHAgbmV4dGpzIGZpcmViYXNl
         </PopForm>
       </Bg>
     </>

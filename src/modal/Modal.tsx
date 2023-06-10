@@ -44,8 +44,6 @@ function Register({
     month: "",
     year: "",
   });
-  const {user} = useAuth()
-  console.log(user)
   const [custom, setCustom] = useState("")
   const [data, setData] = useState({
     firstName: "",
@@ -55,11 +53,13 @@ function Register({
     gender: "",
   });
    const router = useRouter()
-  const { signUp, confirmEmail } = useAuth();
+  const { signUp, confirmEmail, user } = useAuth();
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const user = await addDoc(collection(getInfo, `users`), {
+    await signUp(data.email, data.password);
+    const userInfo = await addDoc(collection(getInfo, `users/${user?.uid}`), {
+      id: user?.uid,
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
@@ -68,9 +68,8 @@ function Register({
       ).toDateString(),
       gender: data.gender,
     });
-    await signUp(data.email, data.password)
     router.push("/Pages/feet");
-    await confirmEmail();
+    await confirmEmail()
     console.log(user);
     setSee(!see);
   };

@@ -9,11 +9,12 @@ import Navbar from "@/modal/Navbar";
 import Postbox from "@/modal/Postbox";
 import RightSidebar from "@/modal/RightSidebar";
 import Stories from "@/modal/Stories";
-import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
+import { collection, onSnapshot, orderBy, query, where } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 
 function Feed({ userInfo }: any) {
   const [getPosts, setGetPosts] = useState<any>([]);
+  const [currentUserInfo, setCurrentUserInfo] = useState<any>(null)
   useEffect(() => {
     return onSnapshot(
       query(collection(getInfo, "posts"), orderBy("id", "desc")),
@@ -22,6 +23,15 @@ function Feed({ userInfo }: any) {
       }
     );
   }, []);
+
+  useEffect(()=>{
+    return onSnapshot(
+      query(collection(getInfo, `users/${userInfo?.uid}`)),
+      (snapshot)=> {
+        setCurrentUserInfo(snapshot.docs)
+      }
+    );
+  }, [userInfo])
 
   console.log(getPosts);
   return (
@@ -32,8 +42,12 @@ function Feed({ userInfo }: any) {
         <FeetContainer>
           <PostHolder>
             <Stories />
-            <Postbox userInfo={userInfo} getPosts={getPosts} />
-            <FeedCard getPosts={getPosts} />
+            <Postbox
+              userInfo={userInfo}
+              getPosts={getPosts}
+              currentUserInfo={currentUserInfo}
+            />
+            <FeedCard getPosts={getPosts} currentUserInfo={currentUserInfo} />
           </PostHolder>
           <RightSidebar />
         </FeetContainer>

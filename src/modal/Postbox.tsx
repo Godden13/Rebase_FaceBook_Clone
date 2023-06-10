@@ -19,7 +19,7 @@ import { useState } from "react";
 
 import { ImageStyle, ImageIcons } from "@/Components/Atoms/Atoms";
 
-const Postbox = ({ userInfo, getPosts }: any) => {
+const Postbox = ({ userInfo, getPosts, currentUserInfo }: any) => {
   const [open, setOpen] = useState(false);
   const handlesub = (e: any) => {
     e.preventDefault();
@@ -27,7 +27,9 @@ const Postbox = ({ userInfo, getPosts }: any) => {
 
   return (
     <PostForm>
-      {open && <PostPopForm setOpen={setOpen} userInfo={userInfo} />}
+      {open && (
+        <PostPopForm setOpen={setOpen} currentUserInfo={currentUserInfo} />
+      )}
 
       <PostForm__innerContainer>
         <Onyourmind>
@@ -42,7 +44,7 @@ const Postbox = ({ userInfo, getPosts }: any) => {
           <Mind__input
             onClick={() => setOpen(true)}
             type="text"
-            placeholder="What is your mind, Bata?"
+            placeholder={`What is your mind, ${currentUserInfo?.firstName}?`}
           />
         </Onyourmind>
         <Multi__media>
