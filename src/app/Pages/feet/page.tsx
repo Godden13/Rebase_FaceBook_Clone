@@ -5,6 +5,7 @@ import { getInfo } from "@/firebase/config";
 import AuthGaurd from "@/HOC/AuthGuard";
 import FeedCard from "@/modal/FeedCard";
 import LeftSideBar from "@/modal/LeftsideBar";
+import LogoutProfile from "@/modal/LogoutProfile";
 import Navbar from "@/modal/Navbar";
 import Postbox from "@/modal/Postbox";
 import RightSidebar from "@/modal/RightSidebar";
@@ -13,6 +14,7 @@ import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 
 function Feed({ userInfo }: any) {
+  const [logout, setLogout] = useState(true);
   const [getPost, setGetPost] = useState<any>([]);
   useEffect(() => {
     return onSnapshot(
@@ -27,7 +29,8 @@ function Feed({ userInfo }: any) {
   return (
     <div>
       <FeetContent>
-        <Navbar />
+        <Navbar setLogout={setLogout} />
+        {logout && <LogoutProfile />}
         <LeftSideBar />
         <FeetContainer>
           <PostHolder>

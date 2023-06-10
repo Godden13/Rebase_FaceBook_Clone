@@ -3,8 +3,9 @@
 import { Bg, Main } from "@/Components/Organism";
 import { FlexRow, Genders, RightForm2 } from "@/Components/Molecules";
 
-
-import { Field, Heading2p,
+import {
+  Field,
+  Heading2p,
   Href,
   Input1,
   Input2,
@@ -19,9 +20,8 @@ import { Field, Heading2p,
   Select2,
   SignUpButton,
   SmallP2,
-  Xmark, } from "@/Components/Atoms/Atoms";
-
-
+  Xmark,
+} from "@/Components/Atoms/Atoms";
 
 import { useState } from "react";
 import { getInfo, initFirebase } from "@/firebase/config";
@@ -44,10 +44,10 @@ function Register({
     month: "",
     year: "",
   });
-  const {user} = useAuth()
-  const id = user?.uid
-  console.log(user)
-  const [custom, setCustom] = useState("")
+  const { user } = useAuth();
+  const id = user?.uid;
+  console.log(user);
+  const [custom, setCustom] = useState("");
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -55,7 +55,7 @@ function Register({
     password: "",
     gender: "",
   });
-   const router = useRouter()
+  const router = useRouter();
   const { signUp, confirmEmail } = useAuth();
 
   const handleSubmit = async (e: any) => {
@@ -70,7 +70,7 @@ function Register({
       ).toDateString(),
       gender: data.gender,
     });
-    await signUp(data.email, data.password)
+    await signUp(data.email, data.password);
     router.push("/Pages/feet");
     await confirmEmail();
     console.log(user);
@@ -108,14 +108,14 @@ function Register({
             />
           </FlexRow>
           <Input1
-          type="email"
+            type="email"
             placeholder="Mobile number or email"
             onChange={(e) => {
               setData((prev) => ({ ...prev, email: e.target.value }));
             }}
           />
           <Input1
-          type="password"
+            type="password"
             placeholder="New password"
             onChange={(e) => {
               setData((prev) => ({ ...prev, password: e.target.value }));
