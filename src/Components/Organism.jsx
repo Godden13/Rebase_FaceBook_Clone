@@ -23,7 +23,6 @@ export const Story = styled.div`
     width: 98vw;
     margin-inline: auto;
   }
-
 `;
 
 export const Bg = styled(Main)`
@@ -34,7 +33,7 @@ export const Bg = styled(Main)`
   z-index: 1;
 `;
 
-export const Middle = styled('div')`
+export const Middle = styled("div")`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +50,7 @@ export const Middle = styled('div')`
   }
 `;
 
-export const Foot = styled('footer')`
+export const Foot = styled("footer")`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,20 +63,19 @@ export const Foot = styled('footer')`
 `;
 
 export const Leftside = styled("div")`
-display: flex;
-flex-direction: column;
-padding:40px 0  0 5px ;
-align-items: center;
-max-height: 90vh;
-width: 300px;
-left: 0;
-margin-top: 50px;
-overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0 5px;
+  align-items: center;
+  max-height: 90vh;
+  width: 300px;
+  left: 0;
+  margin-top: 50px;
+  overflow-y: scroll;
 
   @media only screen and (max-width: 1024px) {
     display: none;
   }
-
 `;
 
 export const Nav = styled("div")`
@@ -95,7 +93,7 @@ export const Nav = styled("div")`
 
 export const ForgotNav = styled(Nav)`
   height: 60px;
-`
+`;
 
 export const ProfilPopUp = styled("div")`
   align-items: center;
@@ -103,6 +101,7 @@ export const ProfilPopUp = styled("div")`
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+  border: 2px solid red;
 `;
 
 export const PopUpBox = styled("div")`
@@ -112,9 +111,14 @@ export const PopUpBox = styled("div")`
   height: 460px;
   justify-content: center;
   width: 380px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: 50px 15px 0 0;
 `;
 
-export const IconsHolder = styled('div')`
+export const IconsHolder = styled("div")`
   display: flex;
   align-items: center;
   width: 100%;
@@ -140,7 +144,6 @@ export const PostForm = styled("div")`
     width: 98vw;
     margin-inline: auto;
   }
-
 `;
 
 export const RightSide = styled("div")`
@@ -150,7 +153,7 @@ export const RightSide = styled("div")`
   position: fixed;
   right: 0;
 
- @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -184,8 +187,7 @@ export const ForgotTemplate = styled(PopForm)`
   padding: 20px;
 `;
 
-
-export const PostForm__innerContainer = styled('div')`
+export const PostForm__innerContainer = styled("div")`
   width: 93%;
   display: flex;
   flex-direction: column;
@@ -193,7 +195,7 @@ export const PostForm__innerContainer = styled('div')`
   align-items: center;
 `;
 
-export const MainPop = styled('div')`
+export const MainPop = styled("div")`
   height: 100vh;
   width: 100%;
   display: flex;
@@ -207,7 +209,7 @@ export const MainPop = styled('div')`
 
 export const FeedCards = styled.div`
   width: min(682px, 97vw);
-  min-height: 650px ;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,37 +234,36 @@ export const FeetContent = styled.div`
 `;
 
 export const FeetContainer = styled.div`
-display: flex;
-width: 100vw;
-justify-content: center;
-
-  @media (max-width: 1024px) {
-  justify-content: flex-start;
-  }
-
-    @media (max-width: 768px) {
+  display: flex;
+  width: 100vw;
   justify-content: center;
-  }
-
-`
-
-export const PostHolder = styled.div`
-display: flex;
-flex-direction: column;
-gap: 7px;
-justify-content: center;
-align-items: center;   
-margin-top: 70px;
-margin-left: -70px;
 
   @media (max-width: 1024px) {
-  margin-left: 30px;
+    justify-content: flex-start;
   }
 
   @media (max-width: 768px) {
-  margin-left: 0;
-  } 
-`
+    justify-content: center;
+  }
+`;
+
+export const PostHolder = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: -70px;
+
+  @media (max-width: 1024px) {
+    margin-left: 30px;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+`;
 export const PopupHiddenCont = styled.div`
   width: 470px;
   height: 264px;

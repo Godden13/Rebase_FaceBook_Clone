@@ -3,8 +3,9 @@
 import { Bg, Main } from "@/Components/Organism";
 import { FlexRow, Genders, RightForm2 } from "@/Components/Molecules";
 
-
-import { Field, Heading2p,
+import {
+  Field,
+  Heading2p,
   Href,
   Input1,
   Input2,
@@ -19,9 +20,8 @@ import { Field, Heading2p,
   Select2,
   SignUpButton,
   SmallP2,
-  Xmark, } from "@/Components/Atoms/Atoms";
-
-
+  Xmark,
+} from "@/Components/Atoms/Atoms";
 
 import { useState } from "react";
 import { getInfo, initFirebase } from "@/firebase/config";
@@ -44,7 +44,14 @@ function Register({
     month: "",
     year: "",
   });
+<<<<<<< HEAD
   const [custom, setCustom] = useState("")
+=======
+  const { user } = useAuth();
+  const id = user?.uid;
+  console.log(user);
+  const [custom, setCustom] = useState("");
+>>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -52,8 +59,13 @@ function Register({
     password: "",
     gender: "",
   });
+<<<<<<< HEAD
    const router = useRouter()
   const { signUp, confirmEmail, user } = useAuth();
+=======
+  const router = useRouter();
+  const { signUp, confirmEmail } = useAuth();
+>>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -68,6 +80,10 @@ function Register({
       ).toDateString(),
       gender: data.gender,
     });
+<<<<<<< HEAD
+=======
+    await signUp(data.email, data.password);
+>>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
     router.push("/Pages/feet");
     await confirmEmail()
     console.log(user);
@@ -105,14 +121,14 @@ function Register({
             />
           </FlexRow>
           <Input1
-          type="email"
+            type="email"
             placeholder="Mobile number or email"
             onChange={(e) => {
               setData((prev) => ({ ...prev, email: e.target.value }));
             }}
           />
           <Input1
-          type="password"
+            type="password"
             placeholder="New password"
             onChange={(e) => {
               setData((prev) => ({ ...prev, password: e.target.value }));
