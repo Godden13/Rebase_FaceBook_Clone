@@ -44,10 +44,14 @@ function Register({
     month: "",
     year: "",
   });
+<<<<<<< HEAD
+  const [custom, setCustom] = useState("")
+=======
   const { user } = useAuth();
   const id = user?.uid;
   console.log(user);
   const [custom, setCustom] = useState("");
+>>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -55,13 +59,19 @@ function Register({
     password: "",
     gender: "",
   });
+<<<<<<< HEAD
+   const router = useRouter()
+  const { signUp, confirmEmail, user } = useAuth();
+=======
   const router = useRouter();
   const { signUp, confirmEmail } = useAuth();
+>>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const user = await addDoc(collection(getInfo, `users/${id}`), {
-      id: id,
+    await signUp(data.email, data.password);
+    const userInfo = await addDoc(collection(getInfo, `users/${user?.uid}`), {
+      id: user?.uid,
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
@@ -70,9 +80,12 @@ function Register({
       ).toDateString(),
       gender: data.gender,
     });
+<<<<<<< HEAD
+=======
     await signUp(data.email, data.password);
+>>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
     router.push("/Pages/feet");
-    await confirmEmail();
+    await confirmEmail()
     console.log(user);
     setSee(!see);
   };

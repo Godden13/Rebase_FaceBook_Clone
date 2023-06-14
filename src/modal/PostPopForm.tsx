@@ -45,18 +45,17 @@ import { useAuth } from "@/context/AuthContext";
 import ProfilePicture from "../assets/images/lady.png"
 import AuthGaurd from "@/HOC/AuthGuard";
 
-const PostPopForm = ({ setOpen, userInfo }: any) => {
+const PostPopForm = ({ setOpen, currentUserInfo }: any) => {
   const [imageList, setImageList] = useState<any>([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [imageUpload, setImageUpload] = useState();
   const [textValue, setTextValue] = useState("");
-  const [imgUrl, setImgUrl] = useState("")
+  const [imgUrl, setImgUrl] = useState<any>(null);
   const [data, setData] = useState({
     title: "",
     fileUrl: imageList,
   });
 
-    console.log(userInfo);
+  console.log(currentUserInfo);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -65,7 +64,7 @@ const PostPopForm = ({ setOpen, userInfo }: any) => {
       title: data.title,
       fileUrl: imgUrl,
       doc: serverTimestamp(),
-      postedBy: userInfo?.uid,
+      postedBy: currentUserInfo?.uid,
       likes: 2,
     });
   };
@@ -101,7 +100,7 @@ const PostPopForm = ({ setOpen, userInfo }: any) => {
               />
             </Profile__holder>
             <StatusPreference>
-              <p>{userInfo?.displayName}</p>
+              <p>{currentUserInfo?.displayName}</p>
               <LockedDiv>
                 <Lock />
                 only me
@@ -111,14 +110,12 @@ const PostPopForm = ({ setOpen, userInfo }: any) => {
           </CreatePost__profile__prefence>
           <WriteStatus>
             <WrtieMind__status
-              placeholder={`What is your mind, ${userInfo?.displayName}?`}
+              placeholder={`What is your mind, ${currentUserInfo?.displayName}?`}
               onChange={handleTextChange}
             />
             {isOpen && (
               <Postpopupse
                 setIsOpen={setIsOpen}
-                setImageUpload={setImageUpload}
-                imageUpload={imageUpload}
                 setImageList={setImageList}
                 setImgUrl={setImgUrl}
               />
@@ -156,10 +153,10 @@ const PostPopForm = ({ setOpen, userInfo }: any) => {
               </List__li>
             </List>
           </PostDiv>
-
           <Postsub__Button active={!!textValue} onClick={handleSubmit}>
             Post
-          </Postsub__Button>https://www.youtube.com/watch?v=k4mjF4sPITE&pp=ygUYY2hhdCBhcHAgbmV4dGpzIGZpcmViYXNl
+          </Postsub__Button>
+          https://www.youtube.com/watch?v=k4mjF4sPITE&pp=ygUYY2hhdCBhcHAgbmV4dGpzIGZpcmViYXNl
         </PopForm>
       </Bg>
     </>

@@ -16,44 +16,54 @@ import {
   UploadFile__cont,
 } from "@/Components/Molecules";
 import { PopupHiddenCont } from "@/Components/Organism";
-import { storage } from "@/firebase/config";
+import { getInfo, storage } from "@/firebase/config";
 import AuthGaurd from "@/HOC/AuthGuard";
-import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
-import { useEffect } from "react";
+import { doc, updateDoc } from "firebase/firestore";
+import {
+  getDownloadURL,
+  listAll,
+  ref,
+  uploadBytes,
+  uploadString,
+} from "firebase/storage";
+import { useEffect, useState } from "react";
 import { v4 } from "uuid";
 
-const Postpopupse = ({
-  setIsOpen,
-  setImageUpload,
-  imageUpload,
-  setImageList,
-  setImgUrl,
-  userInfo
-}: any) => {
+const Postpopupse = ({ setIsOpen, setImageList, userInfo }: any) => {
   const imageListRef = ref(storage, "posts/");
-  const uploadImage = (e: any) => {
+  const [imageUpload, setImageUpload] = useState<any>(null);
+  const uploadImage = async (e: any) => {
     e.preventDefault();
-    if (imageUpload == null) return;
-    const imageRef = ref(storage, `posts/${userInfo?.uid}/${v4()}`);
-    uploadBytes(imageRef, imageUpload).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then((url) => {
-        setImgUrl(url);
-        setImageList((prev: []) => [...prev, url]);
-      });
-      setIsOpen(false);
-      console.log("Image uploaded");
-    });
-  };
-
-  useEffect(() => {
-    listAll(imageListRef).then((res) => {
-      res.items.forEach((item) => {
-        getDownloadURL(item).then((url) => {
-          setImageList((prev: []) => [...prev, url]);
+    const imageRef = ref(storage, `posts/${userInfo?.uid}/image`);
+    if (imageUpload) {
+      await uploadString(imageRef, imageUpload, "data_url").then(async () => {
+        const downloadUrl = await getDownloadURL(imageRef);
+        await updateDoc(doc(getInfo, "post", userInfo?.uid), {
+          image: downloadUrl,
         });
       });
-    });
-  }, [imageListRef]);
+    }
+  };
+
+  const addImageToPost = (e: any) => {
+    const reader = new FileReader();
+    if (e.target.files[0]) {
+      reader.readAsDataURL(e.target.files[0]);
+    }
+    reader.onload = (readerEvent: any) => {
+      setImageUpload(readerEvent.target.result);
+    };
+  };
+
+  // useEffect(() => {
+  //   listAll(imageListRef).then((res) => {
+  //     res.items.forEach((item) => {
+  //       getDownloadURL(item).then((url) => {
+  //         setImageList((prev: []) => [...prev, url]);
+  //       });
+  //     });
+  //   });
+  // }, [imageListRef]);
 
   return (
     <Popse>
@@ -66,13 +76,7 @@ const Postpopupse = ({
           </CloseUpload>
           <CloseUpload__inne>
             <UploadIcon />
-            <input
-              type="file"
-              onChange={(e) => {
-                setImageUpload(e.target.value);
-              }}
-            />
-
+            <input type="file" onChange={addImageToPost} />
             <p>Add Photo/Videos</p>
             <span>or drag and drop</span>
           </CloseUpload__inne>

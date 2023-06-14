@@ -17,11 +17,7 @@ export const useAuth = () => useContext(AuthContext);
 const app = initFirebase()
 const auth = getAuth(app);
 
-export const AuthContextPRovider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+export const AuthContextPRovider = ({children}: {children: React.ReactNode}) => {
   const [user, setUser] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
