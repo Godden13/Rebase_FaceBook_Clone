@@ -151,11 +151,11 @@ export const Dropdown = styled.button`
 `;
 
 export const Whappy = styled(HiOutlineEmojiHappy)`
-  font-size: small;
+  font-size: 20px;
 `;
 
 export const LikedPost = styled(BiLike)`
-  font-size: 23px;
+  font-size: 20px;
   color: gray;
   cursor: pointer;
 `;
