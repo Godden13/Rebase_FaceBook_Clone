@@ -16,7 +16,7 @@ import { LeftAttr, MiddleAttr, RightAttr } from "@/Components/Molecules";
 import { Nav } from "@/Components/Organism";
 import NavImg from "@/assets/images/car.jpg";
 import Image from "next/image";
-export default function Navbar() {
+export default function Navbar({ setLogout }: any) {
   return (
     <Nav>
       <LeftAttr>

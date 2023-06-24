@@ -44,14 +44,10 @@ function Register({
     month: "",
     year: "",
   });
-<<<<<<< HEAD
+  const {user} = useAuth()
+  const id = user?.uid
+  console.log(user)
   const [custom, setCustom] = useState("")
-=======
-  const { user } = useAuth();
-  const id = user?.uid;
-  console.log(user);
-  const [custom, setCustom] = useState("");
->>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -59,13 +55,8 @@ function Register({
     password: "",
     gender: "",
   });
-<<<<<<< HEAD
    const router = useRouter()
-  const { signUp, confirmEmail, user } = useAuth();
-=======
-  const router = useRouter();
   const { signUp, confirmEmail } = useAuth();
->>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -80,10 +71,7 @@ function Register({
       ).toDateString(),
       gender: data.gender,
     });
-<<<<<<< HEAD
-=======
-    await signUp(data.email, data.password);
->>>>>>> 9ea28cade9b6805cf09200115a2564d0eab0e325
+    await signUp(data.email, data.password)
     router.push("/Pages/feet");
     await confirmEmail()
     console.log(user);
